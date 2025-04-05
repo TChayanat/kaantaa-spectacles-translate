@@ -1,0 +1,48 @@
+- !<AssetImportMetadata/63208ffe-0fe1-41b5-a153-f134cb5a416d>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 0e717736-9fe7-48e8-a6cd-13b65fbbde10
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 0e717736-9fe7-48e8-a6cd-13b65fbbde10
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 94a1d1e2-1458-44c2-a31d-ff7ba461f071
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/94a1d1e2-1458-44c2-a31d-ff7ba461f071>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 732ff1fa-279e-41fc-b92e-f4fe417ff56b
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    language: false
+    languagePlaceholder: false
+    retryInteractable: false
+    selectInteractable: false
+  ScriptTypesHidden:
+    {}
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - language: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      languagePlaceholder: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      selectInteractable: !<MappingBased.Interactable> 00000000-0000-0000-0000-000000000000
+      retryInteractable: !<MappingBased.Interactable> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Component.Text language
+    - // @input Component.Text languagePlaceholder
+    - // @input Interactable selectInteractable
+    - // @input Interactable retryInteractable
