@@ -1,0 +1,39 @@
+- !<AssetImportMetadata/86aaeefc-79c1-4aa6-9c33-9e018f03d693>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 64fcb07e-b2f5-4df7-b8c5-6383d1f710cc
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 64fcb07e-b2f5-4df7-b8c5-6383d1f710cc
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 508a1bff-97e7-496c-be91-2d7e20da263a
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/508a1bff-97e7-496c-be91-2d7e20da263a>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 69d25bbf-d10f-468e-b1af-568537f2cba0
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    audio: false
+  ScriptTypesHidden:
+    {}
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - audio: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Component.AudioComponent audio

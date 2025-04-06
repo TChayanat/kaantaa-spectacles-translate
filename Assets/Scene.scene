@@ -3,10 +3,12 @@
   objects:
     - !<own> 00000000-0000-0065-0000-000000000064
     - !<own> f02939ee-fb44-45ff-abf1-f431786bab40
-    - !<own> 0005641c-028d-459a-0000-000000014b4d
     - !<own> 46a5475d-2c8f-4dec-b86d-cdf7b338378a
-    - !<own> 77e0933b-f28a-498a-909a-76f49b67f985
-    - !<own> d45ed69f-1e84-4d14-8db4-ee11b353bf14
+    - !<own> 0005641c-028d-459a-0000-000000014b4d
+    - !<own> f4197b3c-d274-47f8-a415-30e4d7bccb05
+    - !<own> eafd06c4-352c-4dec-885e-ee156f3f38c9
+    - !<own> 0aabc631-c9d9-45f0-abd7-6c20934a488b
+    - !<own> 068be61a-9805-4a13-ad50-225d20ed71a2
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
@@ -278,6 +280,21 @@
     - !<own> d4b3a571-4b6d-4808-843e-2786db2d4c2f
   Components:
     []
+- !<SceneObject/068be61a-9805-4a13-ad50-225d20ed71a2>
+  PrefabRemaps:
+    []
+  Name: GeminiTest
+  Enabled: false
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> d45ed69f-1e84-4d14-8db4-ee11b353bf14
+  Components:
+    []
 - !<SceneObject/06b4b050-b87f-4d5e-bba1-372a3124272a>
   PrefabRemaps:
     []
@@ -338,6 +355,21 @@
     []
   Components:
     - !<own> 9fff4510-bcdd-4fba-98ce-81e08c9532f0
+- !<SceneObject/0aabc631-c9d9-45f0-abd7-6c20934a488b>
+  PrefabRemaps:
+    []
+  Name: Choose Language
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 77e0933b-f28a-498a-909a-76f49b67f985
+  Components:
+    []
 - !<SceneObject/0b0127d5-4473-4fa4-97b8-2ff0944cc48a>
   PrefabRemaps:
     []
@@ -720,7 +752,7 @@
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Text: "app name "
+  Text: Select Language
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
@@ -2881,6 +2913,22 @@
     - !<own> 77b20fbc-1c51-4a6d-b6f2-3db226ed9464
   Components:
     []
+- !<ScriptComponent/596357be-35aa-43b5-9d8c-762a6bd8a31c>
+  PrefabRemaps:
+    []
+  Name: EEEEE
+  Enabled: true
+  ScriptAsset: !<reference> 64fcb07e-b2f5-4df7-b8c5-6383d1f710cc
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      audio: !<reference.AudioComponent> bb606ea2-8e38-42bf-b29b-8b708fc39ea4
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/5afb12ee-0c02-49d1-892d-9c11467ccf9e>
   PrefabRemaps:
     []
@@ -6117,6 +6165,23 @@
     - !<own> 73878f4c-6df5-46ca-b140-8df3448039cd
   Components:
     []
+- !<AudioComponent/bb606ea2-8e38-42bf-b29b-8b708fc39ea4>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 5218a0ba-d02b-4f83-9763-1d4c9fc17167
+  EnableAutoplayLoop: false
+  Volume: 0.500000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<Text/bbcae33b-f5be-48ec-a6fd-1c17ecc75fdc>
   PrefabRemaps:
     []
@@ -7359,6 +7424,23 @@
     - !<own> 64357d48-d878-4a81-b0fd-993bc1ba362e
   Components:
     - !<own> c7040791-deb4-4566-a9cf-cf84dd52e314
+- !<AudioComponent/e46ebf0b-7cd1-4afe-953d-7e01a39aa312>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 93caa399-b1c1-4769-9c04-02bb8fc69808
+  EnableAutoplayLoop: true
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: false
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<DeviceTracking/e5553c8a-0b7e-4ef4-92d9-3e1318fb82c1>
   PrefabRemaps:
     []
@@ -7415,6 +7497,21 @@
     - !<own> 079ff6f1-ab1a-4285-9b97-a713fc625f3a
   Components:
     []
+- !<SceneObject/eafd06c4-352c-4dec-885e-ee156f3f38c9>
+  PrefabRemaps:
+    []
+  Name: Music
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> e46ebf0b-7cd1-4afe-953d-7e01a39aa312
 - !<SceneObject/eb0acfe9-cf8f-45e7-9c46-1c986e040bcd>
   PrefabRemaps:
     []
@@ -8374,6 +8471,22 @@
   Components:
     - !<own> 1196437d-7f1f-4064-9496-5dac4884ae4b
     - !<own> 0c0a0b6e-bd44-42d1-9938-ed233507a8cf
+- !<SceneObject/f4197b3c-d274-47f8-a415-30e4d7bccb05>
+  PrefabRemaps:
+    []
+  Name: EEEEE
+  Enabled: false
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> bb606ea2-8e38-42bf-b29b-8b708fc39ea4
+    - !<own> 596357be-35aa-43b5-9d8c-762a6bd8a31c
 - !<ScriptComponent/f447e34d-3e79-4aeb-9292-5c004fe57eaf>
   PrefabRemaps:
     []
