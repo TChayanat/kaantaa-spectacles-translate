@@ -29,6 +29,7 @@
     noMaxwellScene: false
     recallButton: false
     recallButtonText: false
+    recallFrame: false
     recallText: false
     yesMaxwellScene: false
   ScriptTypesHidden:
@@ -40,6 +41,7 @@
       noMaxwellScene: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       recallButton: !<MappingBased.Interactable> 00000000-0000-0000-0000-000000000000
       recallButtonText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      recallFrame: !<MappingBased.ContainerFrame> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
@@ -49,3 +51,4 @@
     - // @input Component.Text recallText
     - // @input Interactable recallButton
     - // @input Component.Text recallButtonText
+    - // @input ContainerFrame recallFrame

@@ -17,8 +17,7 @@ export class Gemini extends BaseScriptComponent {
             imageTex,
             (base64String) => {
                 print("Image encode Success!");
-                const textQuery = `Identify the main subject of the image using this JSON schema:
-                {
+                const textQuery = `Identify the main subject of the image. Respond using this structured JSON format:{
                     "name": String describe using one noun in ${LanguageSettings.globalLanguageVariable} language,
                     "romanization": Romanized pronunciation of the object's name,
                     "phonetic": Pronunciation of the object's name in Modern IPA,

@@ -1,4 +1,5 @@
 import { Interactable } from "./SpectaclesInteractionKit/Components/Interaction/Interactable/Interactable";
+import { ContainerFrame } from "./SpectaclesInteractionKit/Components/UI/ContainerFrame/ContainerFrame";
 import { InteractorEvent } from "./SpectaclesInteractionKit/Core/Interactor/InteractorEvent";
 
 export namespace GameSettings {
@@ -48,6 +49,9 @@ export class GameControls extends BaseScriptComponent {
     @input
     recallButtonText : Text
 
+    @input
+    recallFrame : ContainerFrame
+
     nouns : Array<string> = []
     onAwake() {
         GameSettings.gameControls = this;
@@ -80,16 +84,19 @@ export class GameControls extends BaseScriptComponent {
                 GameSettings.isRecall = true;
                 this.recallButtonText.text = "Goto Freeroam";
                 this.recallText.enabled = true;
+                this.recallFrame.enabled = true;
                 this.findNoun();
             }
             else {
                 GameSettings.isRecall = false;
                 this.recallButtonText.text = "Goto Recall";
                 this.recallText.enabled = false;
+                this.recallFrame.enabled = false;
             }
         };
         this.recallButton.onInteractorTriggerStart(onSelectTriggerStart)
         this.recallButton.getSceneObject().enabled = false;
+        this.recallFrame.enabled = false;
     }
     onUpdate() {
 

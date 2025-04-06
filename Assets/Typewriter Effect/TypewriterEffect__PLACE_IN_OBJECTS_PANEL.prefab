@@ -1,0 +1,183 @@
+- !<ObjectPrefab/cf3a1e10-b583-4f98-848c-66782c412039>
+  PackagePath: ""
+  objects:
+    - !<own> 65faac3c-2ca3-4da2-95b7-20b0c0d96fd0
+  LazyLoading: false
+  RetainAssets: true
+- !<ScreenTransform/1994e41b-0f0e-4d74-8c34-a7d97e3b0699>
+  PrefabRemaps:
+    []
+  Name: Screen Transform
+  Enabled: true
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0.000000, y: 0.000000}
+  Transform:
+    position: {x: 0.000000, y: 0.000000, z: -1.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -1.000000
+    bottom: -1.000000
+    right: 1.000000
+    top: 1.000000
+  Offset:
+    left: 0.000000
+    bottom: 0.000000
+    right: 0.000000
+    top: 0.000000
+- !<ScriptComponent/47d1d90f-8957-41f8-bee8-22e3d910fcb6>
+  PrefabRemaps:
+    []
+  Name: "Example [EDIT ME]"
+  Enabled: true
+  ScriptAsset: !<reference> ef1af1e5-8753-428a-ba51-d15bf57618e6
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      textInput: !<string[]>
+        - This is an example of a Typewriter Effect. Tap to continue...
+        - "call global.typeText(String : text, Boolean : replaceText) function from your script or use with behavior"
+        - see Example script for more details
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/65faac3c-2ca3-4da2-95b7-20b0c0d96fd0>
+  PrefabRemaps:
+    []
+  Name: TypewriterEffect__PLACE_IN_OBJECTS_PANEL
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -1.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> f49c92b1-c350-4db0-a3a6-cc8f8807422f
+    - !<own> e07c413a-4b9f-4e27-a8f5-51a996cff7fb
+    - !<own> 872e2b54-c9f4-4d07-96ba-edc606df74c0
+  Components:
+    - !<own> 66ec951f-75ae-42d3-91ed-0816aa17efa3
+    - !<own> 1994e41b-0f0e-4d74-8c34-a7d97e3b0699
+- !<ScreenRegionComponent/66ec951f-75ae-42d3-91ed-0816aa17efa3>
+  PrefabRemaps:
+    []
+  Name: Screen Region
+  Enabled: true
+  ScreenRegionType: FullFrame
+  ResizeWithKeyboard: false
+- !<SceneObject/872e2b54-c9f4-4d07-96ba-edc606df74c0>
+  PrefabRemaps:
+    []
+  Name: Text Object
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 21.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 9c2699c1-e9a5-43d6-9a97-4bd9b87ac7fe
+- !<Text3D/9c2699c1-e9a5-43d6-9a97-4bd9b87ac7fe>
+  PrefabRemaps:
+    []
+  Name: Text3D
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Top
+  HorizontalAlignment: Left
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 0c2145a8-70e5-4258-9710-6556a5a9b5d6
+  Text: ""
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 48
+  ExtrusionDepth: 0.400000
+  ExtrudeDirection: Both
+  Font: !<reference> 00000000-0000-0000-0000-000000000000
+  LayoutRect:
+    left: -7.500000
+    bottom: -2.250000
+    right: 7.500000
+    top: 2.250000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Wrap
+  AdvancedLayout: !<TextAdvancedLayout>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+- !<ScriptComponent/d22480b7-748b-4487-a235-77ba26f513fe>
+  PrefabRemaps:
+    []
+  Name: TypewriterEffect
+  Enabled: true
+  ScriptAsset: !<reference> ba8bb7bc-4f1d-4b45-b234-04751eedc4b4
+  ScriptInputsDefault:
+    Text: true
+    delayBetweenChars: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      TextType: 2
+      Text: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      Text3D: !<reference.Text3D> 9c2699c1-e9a5-43d6-9a97-4bd9b87ac7fe
+      delayBetweenChars: 0.100000
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/e07c413a-4b9f-4e27-a8f5-51a996cff7fb>
+  PrefabRemaps:
+    []
+  Name: "Example [EDIT SCRIPT]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 1.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 47d1d90f-8957-41f8-bee8-22e3d910fcb6
+- !<SceneObject/f49c92b1-c350-4db0-a3a6-cc8f8807422f>
+  PrefabRemaps:
+    []
+  Name: "TypewriterEffect [EDIT]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 1.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d22480b7-748b-4487-a235-77ba26f513fe
