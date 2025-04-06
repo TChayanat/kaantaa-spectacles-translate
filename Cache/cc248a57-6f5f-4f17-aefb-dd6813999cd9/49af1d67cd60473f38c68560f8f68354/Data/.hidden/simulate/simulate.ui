@@ -1,0 +1,127 @@
+
+{ 
+	"ui": 
+	[
+		{
+        	"label": "Graph Parameters",
+        	"widget": "group_start"
+        },
+{
+                	"bindingName": "emissionRadius",
+                	"label":       "Emission Radius",
+                	"widget":      "spinbox",
+                	"step":        "0.01",
+                	"sortIndex":   "0",
+                	"hint":        "",
+                	"default":     "1.0"
+                },
+                
+                {
+                	"bindingName": "forceStrength",
+                	"label":       "Force Strength",
+                	"widget":      "slider",
+                	"min":         0,
+                	"max":         5,
+                	"step":        "0.01",
+                	"sortIndex":   "1",
+                	"hint":        "",
+                	"default":     "1.0"
+                },
+                
+                {
+                	"bindingName": "spread",
+                	"label":       "Spread",
+                	"widget":      "slider",
+                	"min":         0,
+                	"max":         1,
+                	"step":        "0.01",
+                	"sortIndex":   "2",
+                	"hint":        "",
+                	"default":     "1.0"
+                },
+                
+                {
+                	"bindingName": "rotationSpeed",
+                	"label":       "Rotation Speed",
+                	"widget":      "slider",
+                	"min":         0,
+                	"max":         1,
+                	"step":        "0.01",
+                	"sortIndex":   "3",
+                	"hint":        "",
+                	"default":     "1.0"
+                },
+                
+                {
+                	"bindingName": "sizeMinMax",
+                	"label":       "Size Min/Max",
+                	"widget":      "spinbox",
+                	"step":        "0.01",
+                	"sortIndex":   "4",
+                	"hint":        "",
+                	"default":     "1.0"
+                },
+                
+                {
+                	"bindingName": "colorA",
+                	"label":       "Color A",
+                	"widget":      "color",
+                	"sortIndex":   "20",
+                	"hint":        "",
+                	"default":     "1.0"
+                },
+                
+                {
+                	"bindingName": "colorB",
+                	"label":       "Color B",
+                	"widget":      "color",
+                	"sortIndex":   "21",
+                	"hint":        "",
+                	"default":     "1.0"
+                },
+                
+                {
+                	"bindingName": "colorC",
+                	"label":       "Color C",
+                	"widget":      "color",
+                	"sortIndex":   "22",
+                	"hint":        "",
+                	"default":     "1.0"
+                },
+                
+                {
+                	"bindingName": "colorD",
+                	"label":       "Color D",
+                	"widget":      "color",
+                	"sortIndex":   "23",
+                	"hint":        "",
+                	"default":     "1.0"
+                },
+                
+                {
+                	"bindingName": "colorE",
+                	"label":       "Color E",
+                	"widget":      "color",
+                	"sortIndex":   "24",
+                	"hint":        "",
+                	"default":     "1.0"
+                },
+
+        {
+        	"widget": "group_end"
+        },
+        
+		
+	{
+		"bindingName": "alphaTestThreshold",
+		"widget": "slider",
+		"min" : 0.0,
+		"max" : 1.0,
+		"step": 0.001,
+		"default": 0.5,
+		"hint": "When the 'Alpha Test' blend mode is enabled, pixels with alpha values lower than this disappear."
+	}
+	
+	]
+	
+}

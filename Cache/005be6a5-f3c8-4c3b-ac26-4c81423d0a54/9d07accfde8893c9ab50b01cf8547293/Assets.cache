@@ -1,0 +1,139 @@
+- !<AssetCache>
+  AssetFiles:
+    {}
+  Assets:
+    []
+  SourceHash: 9d07accfde8893c9ab50b01cf8547293
+  FileHash: 04bad16634e998422a3f1712dd68445e
+  NativePackageItems:
+    - !<own> 94ae8954-0757-4b27-8ce2-9515757aff04
+    - !<own> df734ec6-0b6a-4e77-ac91-9566609b3e6e
+    - !<own> 435042c9-cad9-4521-a61b-8f914c1e9046
+    - !<own> 9fbb317f-6811-4b2c-803b-21b7a135c3a7
+- !<SceneObject/19345812-d386-4db3-adb7-35e0faaac350>
+  PrefabRemaps:
+    []
+  Name: Multi-Mesh VFX__PLACE_IN_OBJECTS_PANEL
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 73cd3f79-77e9-4f5d-8f9f-60e61bb5a3cd
+- !<AssetImportMetadata/435042c9-cad9-4521-a61b-8f914c1e9046>
+  ImportedAssetIds:
+    NativePackageDescriptor: !<reference> cd2bc4d4-f4c0-405f-a50e-576807d11239
+  ImporterName: NativePackageDescriptorImporter
+  PrimaryAsset: !<reference> cd2bc4d4-f4c0-405f-a50e-576807d11239
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<VFXAssetData/6e027eae-8085-4dcd-aabe-ec07c8d26568>
+  Mesh: !<reference> 4ffad41c-504b-4d43-8987-967c38a34862
+  SystemPassProperties:
+    39: !<VFXSystemPassProperties/dee1e364-81bc-4d89-bc1f-08b89cf61b8f>
+      FeedbackProperties:
+        {}
+      SimulateProperties:
+        {}
+      RenderProperties:
+        numberMeshes:
+          typeIdx: 1
+          value: 5.000000
+      FeedbackDefines:
+        []
+      SimulateDefines:
+        []
+      RenderDefines:
+        - NODE_46_DROPLIST_ITEM 1
+- !<VFXComponent/73cd3f79-77e9-4f5d-8f9f-60e61bb5a3cd>
+  PrefabRemaps:
+    []
+  Name: VFX Component
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  VFXAsset: !<reference> 369c2a62-6e50-4931-9fc9-e61d28c0b0d5
+- !<AssetImportMetadata/94ae8954-0757-4b27-8ce2-9515757aff04>
+  ImportedAssetIds:
+    VFXGraph: !<reference> 369c2a62-6e50-4931-9fc9-e61d28c0b0d5
+  ImporterName: VFXAssetImporter
+  PrimaryAsset: !<reference> 369c2a62-6e50-4931-9fc9-e61d28c0b0d5
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    VFXGraph: !<own> 6e027eae-8085-4dcd-aabe-ec07c8d26568
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefabAssetData/967e7a32-b3a8-4d87-9171-7faa4a9ea57d>
+  SourceRemaps:
+    - 17de9a01-d604-40bf-adec-8a716afbf899: 19345812-d386-4db3-adb7-35e0faaac350
+    - 2a100fe6-2dd3-4c36-93d0-eac44df2f3bb: fd4ec2c5-c594-42c0-b9a9-0e36f985688a
+    - d7faa4f0-577c-4c70-9ad8-24956cc020aa: 73cd3f79-77e9-4f5d-8f9f-60e61bb5a3cd
+  SourceState: !<own> fd4ec2c5-c594-42c0-b9a9-0e36f985688a
+- !<AssetImportMetadata/9fbb317f-6811-4b2c-803b-21b7a135c3a7>
+  ImportedAssetIds:
+    FileMesh: !<reference> 4ffad41c-504b-4d43-8987-967c38a34862
+  ImporterName: FileMeshImporter
+  PrimaryAsset: !<reference> 4ffad41c-504b-4d43-8987-967c38a34862
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<FileMeshImporterSettings>
+    ModifiedVertexFormats:
+      color: UNorm Byte
+      normal: Float
+      position: Float
+  CompressionSettings: !<SingleCompressionSettings>
+    CompressorName: None
+    CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<AssetImportMetadata/df734ec6-0b6a-4e77-ac91-9566609b3e6e>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 2a100fe6-2dd3-4c36-93d0-eac44df2f3bb
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 2a100fe6-2dd3-4c36-93d0-eac44df2f3bb
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> 967e7a32-b3a8-4d87-9171-7faa4a9ea57d
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefab/fd4ec2c5-c594-42c0-b9a9-0e36f985688a>
+  PackagePath: ""
+  objects:
+    - !<own> 19345812-d386-4db3-adb7-35e0faaac350
+  LazyLoading: false
+  RetainAssets: true

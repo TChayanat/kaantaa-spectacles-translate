@@ -1,0 +1,56 @@
+- !<AssetImportMetadata/fcc0cad9-212f-457f-9fd5-51f32d5f140a>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> 5ca32494-4acf-4d56-8024-a32fd54839b5
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> 5ca32494-4acf-4d56-8024-a32fd54839b5
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    AssetLibraryId: 6q3t8oUU9qolylknHbjjJV
+  AssetDataMap:
+    ObjectPrefab: !<own> ca2f728c-46f8-4d7c-a2f9-484d42915d14
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ObjectPrefab/910686b7-b276-4bf5-a040-014ffacf4a34>
+  PackagePath: Confetti__PLACE_IN_OBJECTS_PANEL
+  objects:
+    - !<own> bbab9e7f-703d-4385-927b-4c83d8ac2eb4
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/bbab9e7f-703d-4385-927b-4c83d8ac2eb4>
+  PrefabRemaps:
+    []
+  Name: Confetti__PLACE_IN_OBJECTS_PANEL
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> feb43e0b-c0be-4a19-95ef-bffe72a092bf
+- !<ObjectPrefabAssetData/ca2f728c-46f8-4d7c-a2f9-484d42915d14>
+  SourceRemaps:
+    - 2481d5d5-ece5-4932-a17e-8e994c88937d: bbab9e7f-703d-4385-927b-4c83d8ac2eb4
+    - 5ca32494-4acf-4d56-8024-a32fd54839b5: 910686b7-b276-4bf5-a040-014ffacf4a34
+    - 7ced6328-6d8b-443f-8779-18b5ee1d10e3: feb43e0b-c0be-4a19-95ef-bffe72a092bf
+  SourceState: !<own> 910686b7-b276-4bf5-a040-014ffacf4a34
+- !<VFXComponent/feb43e0b-c0be-4a19-95ef-bffe72a092bf>
+  PrefabRemaps:
+    []
+  Name: VFX
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  VFXAsset: !<reference> 3bf80179-e8b9-4ed3-be30-5cd731d1b3a6

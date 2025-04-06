@@ -1,0 +1,10 @@
+- !<AssetCache>
+  AssetFiles:
+    a97993b7-52ce-409f-a583-a665fea95792: 25c5fda7-3392-4506-9841-f4f9d42994d9/dd65413d0a2fde188e558c5c06a38fa0/Data/scene.bin
+  Assets:
+    - !<BinAsset/a97993b7-52ce-409f-a583-a665fea95792>
+      PackagePath: ""
+  SourceHash: dd65413d0a2fde188e558c5c06a38fa0
+  FileHash: 9a40c14bef8e431a41523bd43fa90cf6
+  NativePackageItems:
+    []
