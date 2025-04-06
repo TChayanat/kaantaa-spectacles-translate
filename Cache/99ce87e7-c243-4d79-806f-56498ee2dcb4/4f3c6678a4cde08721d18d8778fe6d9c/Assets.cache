@@ -1,35 +1,35 @@
 - !<AssetCache>
   AssetFiles:
     3bf80179-e8b9-4ed3-be30-5cd731d1b3a6: 99ce87e7-c243-4d79-806f-56498ee2dcb4/4f3c6678a4cde08721d18d8778fe6d9c/Data/Simple Emitter VFX.vfxgraph
-    c58d51b3-bfb4-402e-9977-2d5acb0cc906: 99ce87e7-c243-4d79-806f-56498ee2dcb4/4f3c6678a4cde08721d18d8778fe6d9c/Data/c852756/System_39/script_39.js
-    8e340df6-cc1f-4115-935a-0822235f4b34: 99ce87e7-c243-4d79-806f-56498ee2dcb4/4f3c6678a4cde08721d18d8778fe6d9c/Data/c852756/System_39/feedback_39.mat
-    d3a17672-675d-4c0c-9100-cb4aac13ab7e: 99ce87e7-c243-4d79-806f-56498ee2dcb4/4f3c6678a4cde08721d18d8778fe6d9c/Data/c852756/System_39/feedback_39.glsl
-    24ca1bd0-8893-42d1-91b2-15adcb7e1c2b: 99ce87e7-c243-4d79-806f-56498ee2dcb4/4f3c6678a4cde08721d18d8778fe6d9c/Data/c852756/System_39/render_39.mat
-    af8d6939-1095-472d-b6ac-47d3ed508b0b: 99ce87e7-c243-4d79-806f-56498ee2dcb4/4f3c6678a4cde08721d18d8778fe6d9c/Data/c852756/System_39/render_39.glsl
-    790d52d5-837c-4782-b65d-d95041a512e3: 99ce87e7-c243-4d79-806f-56498ee2dcb4/4f3c6678a4cde08721d18d8778fe6d9c/Data/c852756/System_39/simulate_39.mat
-    3d95ff0d-a5b0-4c38-bb4e-258cef89b9e7: 99ce87e7-c243-4d79-806f-56498ee2dcb4/4f3c6678a4cde08721d18d8778fe6d9c/Data/c852756/System_39/simulate_39.glsl
+    9113a10a-3bf7-4f9f-a636-c1410d0d5bf5: 99ce87e7-c243-4d79-806f-56498ee2dcb4/4f3c6678a4cde08721d18d8778fe6d9c/Data/c852756/System_39/script_39.js
+    412f0bdd-6dab-4f50-b369-d2ced53afdd0: 99ce87e7-c243-4d79-806f-56498ee2dcb4/4f3c6678a4cde08721d18d8778fe6d9c/Data/c852756/System_39/feedback_39.mat
+    c22e53d6-8e47-49cf-9f96-e0cacf962851: 99ce87e7-c243-4d79-806f-56498ee2dcb4/4f3c6678a4cde08721d18d8778fe6d9c/Data/c852756/System_39/feedback_39.glsl
+    d26cbe1c-e1ac-4e94-b53c-ede2c5ab3687: 99ce87e7-c243-4d79-806f-56498ee2dcb4/4f3c6678a4cde08721d18d8778fe6d9c/Data/c852756/System_39/render_39.mat
+    d9317be8-4781-4a7a-ba1e-216e8f700e17: 99ce87e7-c243-4d79-806f-56498ee2dcb4/4f3c6678a4cde08721d18d8778fe6d9c/Data/c852756/System_39/render_39.glsl
+    623af44c-6ff8-4b81-961f-b60dd841014f: 99ce87e7-c243-4d79-806f-56498ee2dcb4/4f3c6678a4cde08721d18d8778fe6d9c/Data/c852756/System_39/simulate_39.mat
+    acd293ce-5bc5-425f-808b-2ce2641da778: 99ce87e7-c243-4d79-806f-56498ee2dcb4/4f3c6678a4cde08721d18d8778fe6d9c/Data/c852756/System_39/simulate_39.glsl
   Assets:
     - !<VFXAsset/3bf80179-e8b9-4ed3-be30-5cd731d1b3a6>
       PackagePath: ""
       GraphPath: ""
       Systems:
-        39: !<VFXSystem/dc345111-7710-4b8b-ac28-922537e2f77c>
-          FeedbackMaterial: !<Material/8e340df6-cc1f-4115-935a-0822235f4b34>
+        39: !<VFXSystem/75945658-c673-47b0-9b82-cd727b45a2d8>
+          FeedbackMaterial: !<Material/412f0bdd-6dab-4f50-b369-d2ced53afdd0>
             PackagePath: ""
             PassesInfo:
-              - !<own> 722017c4-21fa-4910-babf-8570c73395f7
+              - !<own> 44aad686-646c-4738-b8e5-d13d4164ec92
             Name: Material_Feedback
-          SimulateMaterial: !<Material/790d52d5-837c-4782-b65d-d95041a512e3>
+          SimulateMaterial: !<Material/623af44c-6ff8-4b81-961f-b60dd841014f>
             PackagePath: ""
             PassesInfo:
-              - !<own> 1dacb6ba-c146-46bf-bda9-13e60fab6af9
+              - !<own> 9dfad5a1-7f1c-4530-bf5a-2a046291c8fb
             Name: Material_Simulate
-          RenderMaterial: !<Material/24ca1bd0-8893-42d1-91b2-15adcb7e1c2b>
+          RenderMaterial: !<Material/d26cbe1c-e1ac-4e94-b53c-ede2c5ab3687>
             PackagePath: ""
             PassesInfo:
-              - !<own> fbf79943-8cbf-4b4e-a408-68c317e5b194
+              - !<own> aa9efcd9-6749-4f06-8b91-a7f49ff16c22
             Name: Material_Render
-          FeedbackPass: !<Pass/d3a17672-675d-4c0c-9100-cb4aac13ab7e>
+          FeedbackPass: !<Pass/c22e53d6-8e47-49cf-9f96-e0cacf962851>
             PackagePath: ""
             DefaultDefines:
               []
@@ -342,7 +342,7 @@
                 []
               PassBindings:
                 []
-          SimulatePass: !<Pass/3d95ff0d-a5b0-4c38-bb4e-258cef89b9e7>
+          SimulatePass: !<Pass/acd293ce-5bc5-425f-808b-2ce2641da778>
             PackagePath: ""
             DefaultDefines:
               []
@@ -800,7 +800,7 @@
                   mDefaultVal: 0.500000
                   mValues:
                     []
-          RenderPass: !<Pass/af8d6939-1095-472d-b6ac-47d3ed508b0b>
+          RenderPass: !<Pass/d9317be8-4781-4a7a-ba1e-216e8f700e17>
             PackagePath: ""
             DefaultDefines:
               []
@@ -1126,7 +1126,7 @@
                   mDefaultVal: 0.500000
                   mValues:
                     []
-          Script: !<JavaScriptAsset/c58d51b3-bfb4-402e-9977-2d5acb0cc906>
+          Script: !<JavaScriptAsset/9113a10a-3bf7-4f9f-a636-c1410d0d5bf5>
             PackagePath: Manager_Script
             Description: ""
             SvgIcon: ""
@@ -1181,7 +1181,73 @@
   FileHash: d44e10f4b98c57e6eefa2b77ce4402fe
   NativePackageItems:
     []
-- !<PassInfo/1dacb6ba-c146-46bf-bda9-13e60fab6af9>
+- !<PassInfo/44aad686-646c-4738-b8e5-d13d4164ec92>
+  CachedProperties:
+    []
+  DepthWrite: false
+  DepthTest: false
+  DepthFunction: Always
+  TwoSided: true
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0.000000, y: 0.000000}
+  FrustumCulling: Auto
+  FrustumCullPad: 0.000000
+  InstanceCount: 1
+  Defines:
+    []
+  BlendMode: Disabled
+  Properties:
+    renderTarget0:
+      typeIdx: 9
+      value:
+        id: ffffffff-ffff-ffff-ffff-ffffffffffff
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    renderTarget1:
+      typeIdx: 9
+      value:
+        id: ffffffff-ffff-ffff-ffff-ffffffffffff
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    renderTarget2:
+      typeIdx: 9
+      value:
+        id: ffffffff-ffff-ffff-ffff-ffffffffffff
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    renderTarget3:
+      typeIdx: 9
+      value:
+        id: ffffffff-ffff-ffff-ffff-ffffffffffff
+        sampler:
+          filteringMode: Trilinear
+          wrapModeU: Repeat
+          wrapModeV: Repeat
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+  Pass: !<reference> c22e53d6-8e47-49cf-9f96-e0cacf962851
+- !<PassInfo/9dfad5a1-7f1c-4530-bf5a-2a046291c8fb>
   CachedProperties:
     - uReset:
         typeIdx: 0
@@ -1700,74 +1766,8 @@
     vfxTargetWidth:
       typeIdx: 0
       value: 0
-  Pass: !<reference> 3d95ff0d-a5b0-4c38-bb4e-258cef89b9e7
-- !<PassInfo/722017c4-21fa-4910-babf-8570c73395f7>
-  CachedProperties:
-    []
-  DepthWrite: false
-  DepthTest: false
-  DepthFunction: Always
-  TwoSided: true
-  ColorMask: {x: true, y: true, z: true, w: true}
-  CullMode: Back
-  PolygonOffset: {x: 0.000000, y: 0.000000}
-  FrustumCulling: Auto
-  FrustumCullPad: 0.000000
-  InstanceCount: 1
-  Defines:
-    []
-  BlendMode: Disabled
-  Properties:
-    renderTarget0:
-      typeIdx: 9
-      value:
-        id: ffffffff-ffff-ffff-ffff-ffffffffffff
-        sampler:
-          filteringMode: Trilinear
-          wrapModeU: Repeat
-          wrapModeV: Repeat
-          wrapModeW: ClampToEdge
-          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-          mipmaps: false
-        type: Texture2D
-    renderTarget1:
-      typeIdx: 9
-      value:
-        id: ffffffff-ffff-ffff-ffff-ffffffffffff
-        sampler:
-          filteringMode: Trilinear
-          wrapModeU: Repeat
-          wrapModeV: Repeat
-          wrapModeW: ClampToEdge
-          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-          mipmaps: false
-        type: Texture2D
-    renderTarget2:
-      typeIdx: 9
-      value:
-        id: ffffffff-ffff-ffff-ffff-ffffffffffff
-        sampler:
-          filteringMode: Trilinear
-          wrapModeU: Repeat
-          wrapModeV: Repeat
-          wrapModeW: ClampToEdge
-          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-          mipmaps: false
-        type: Texture2D
-    renderTarget3:
-      typeIdx: 9
-      value:
-        id: ffffffff-ffff-ffff-ffff-ffffffffffff
-        sampler:
-          filteringMode: Trilinear
-          wrapModeU: Repeat
-          wrapModeV: Repeat
-          wrapModeW: ClampToEdge
-          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-          mipmaps: false
-        type: Texture2D
-  Pass: !<reference> d3a17672-675d-4c0c-9100-cb4aac13ab7e
-- !<PassInfo/fbf79943-8cbf-4b4e-a408-68c317e5b194>
+  Pass: !<reference> acd293ce-5bc5-425f-808b-2ce2641da778
+- !<PassInfo/aa9efcd9-6749-4f06-8b91-a7f49ff16c22>
   CachedProperties:
     []
   DepthWrite: true
@@ -2000,4 +2000,4 @@
     vfxTargetWidth:
       typeIdx: 0
       value: 0
-  Pass: !<reference> af8d6939-1095-472d-b6ac-47d3ed508b0b
+  Pass: !<reference> d9317be8-4781-4a7a-ba1e-216e8f700e17
