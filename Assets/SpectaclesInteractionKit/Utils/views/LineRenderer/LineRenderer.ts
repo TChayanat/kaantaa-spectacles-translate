@@ -52,7 +52,11 @@ export default class LineRenderer extends View<LineViewConfig> {
     // Transformations should be done on the parent object rather than directly on the line renderer
 
     this.meshComponent = this.container.createComponent(
+<<<<<<< HEAD
       "Component.RenderMeshVisual",
+=======
+      "Component.RenderMeshVisual"
+>>>>>>> crop
     )
     this.mesh = this.buildMesh()
 
@@ -167,7 +171,11 @@ export default class LineRenderer extends View<LineViewConfig> {
   updateVertexPosition(index: number, newPos: vec3) {
     if (index >= this._points.length) {
       this.log.w(
+<<<<<<< HEAD
         `Index ${index} not in range for line with ${this._points.length} points!`,
+=======
+        `Index ${index} not in range for line with ${this._points.length} points!`
+>>>>>>> crop
       )
       return
     }
@@ -196,11 +204,19 @@ export default class LineRenderer extends View<LineViewConfig> {
         ]
       let prevSegment = utils.getSegmentNormalized(
         this._points[index - 1],
+<<<<<<< HEAD
         this._points[index],
       )
       let nextSegment = utils.getSegmentNormalized(
         this._points[index],
         this._points[index + 1],
+=======
+        this._points[index]
+      )
+      let nextSegment = utils.getSegmentNormalized(
+        this._points[index],
+        this._points[index + 1]
+>>>>>>> crop
       )
       tangent = utils.getTangent(prevSegment, nextSegment)
     }
@@ -209,11 +225,19 @@ export default class LineRenderer extends View<LineViewConfig> {
 
     this.meshBuilder.setVertexInterleaved(
       index * VERTICES_PER_POINT,
+<<<<<<< HEAD
       leftVertexData,
     )
     this.meshBuilder.setVertexInterleaved(
       index * VERTICES_PER_POINT + 1,
       rightVertexData,
+=======
+      leftVertexData
+    )
+    this.meshBuilder.setVertexInterleaved(
+      index * VERTICES_PER_POINT + 1,
+      rightVertexData
+>>>>>>> crop
     )
     this.meshBuilder.updateMesh()
   }
@@ -269,7 +293,11 @@ export default class LineRenderer extends View<LineViewConfig> {
   private buildGeometry() {
     if (this._points === undefined || this._points.length <= 1) {
       this.log.w(
+<<<<<<< HEAD
         "2 or more vertices must be provided in order to render a line!",
+=======
+        "2 or more vertices must be provided in order to render a line!"
+>>>>>>> crop
       )
       return
     }
@@ -329,7 +357,11 @@ export default class LineRenderer extends View<LineViewConfig> {
       vertexData.splice(
         dataIndex,
         SEGMENT_DATA_SIZE,
+<<<<<<< HEAD
         ...utils.buildSegment(this._points[i], prevSegment, tangent, uv_v),
+=======
+        ...utils.buildSegment(this._points[i], prevSegment, tangent, uv_v)
+>>>>>>> crop
       )
 
       if (i <= this._points.length - 1) {

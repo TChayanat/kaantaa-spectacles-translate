@@ -114,22 +114,38 @@ export class FrameInputHandler {
     this.targetWorldScaleCache.x > this.targetWorldScaleCache.y
       ? new vec2(
           3,
+<<<<<<< HEAD
           (3 * this.targetWorldScaleCache.y) / this.targetWorldScaleCache.x,
         )
       : new vec2(
           (3 * this.targetWorldScaleCache.x) / this.targetWorldScaleCache.y,
           3,
+=======
+          (3 * this.targetWorldScaleCache.y) / this.targetWorldScaleCache.x
+        )
+      : new vec2(
+          (3 * this.targetWorldScaleCache.x) / this.targetWorldScaleCache.y,
+          3
+>>>>>>> crop
         )
 
   maximumSize: vec2 =
     this.targetWorldScaleCache.x > this.targetWorldScaleCache.y
       ? new vec2(
           400,
+<<<<<<< HEAD
           (400 * this.targetWorldScaleCache.y) / this.targetWorldScaleCache.x,
         )
       : new vec2(
           (400 * this.targetWorldScaleCache.x) / this.targetWorldScaleCache.y,
           400,
+=======
+          (400 * this.targetWorldScaleCache.y) / this.targetWorldScaleCache.x
+        )
+      : new vec2(
+          (400 * this.targetWorldScaleCache.x) / this.targetWorldScaleCache.y,
+          400
+>>>>>>> crop
         )
 
   constructor(private options: FrameInputOptions) {

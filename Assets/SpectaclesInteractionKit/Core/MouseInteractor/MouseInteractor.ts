@@ -23,7 +23,11 @@ export class MouseInteractor extends BaseInteractor {
   @ui.group_start("MouseInteractor")
   @input
   @hint(
+<<<<<<< HEAD
     "Sets the return value of MouseInteractor.activeTargetingMode for cases where non-indirect targeting needs to be tested specifically. Useful whenever your code has checks for interactor.activeTargetingMode === TargetingMode.X.",
+=======
+    "Sets the return value of MouseInteractor.activeTargetingMode for cases where non-indirect targeting needs to be tested specifically. Useful whenever your code has checks for interactor.activeTargetingMode === TargetingMode.X."
+>>>>>>> crop
   )
   @widget(
     new ComboBoxWidget([
@@ -31,7 +35,11 @@ export class MouseInteractor extends BaseInteractor {
       new ComboBoxItem("Indirect", 2),
       new ComboBoxItem("All", 3),
       new ComboBoxItem("Poke", 4),
+<<<<<<< HEAD
     ]),
+=======
+    ])
+>>>>>>> crop
   )
   private mouseTargetingMode: number = 2
   @ui.group_end
@@ -154,8 +162,11 @@ export class MouseInteractor extends BaseInteractor {
       : InteractorTriggerType.None
 
     this.updateDragVector()
+<<<<<<< HEAD
 
     this.processTriggerEvents()
+=======
+>>>>>>> crop
   }
 
   protected clearCurrentHitInfo(): void {
@@ -174,11 +185,19 @@ export class MouseInteractor extends BaseInteractor {
 
   private defineTouchEvents(): void {
     this.createEvent("TouchStartEvent").bind((...args) =>
+<<<<<<< HEAD
       this.onTouchStartEvent(...args),
     )
 
     this.createEvent("TouchEndEvent").bind((...args) =>
       this.onTouchEndEvent(...args),
+=======
+      this.onTouchStartEvent(...args)
+    )
+
+    this.createEvent("TouchEndEvent").bind((...args) =>
+      this.onTouchEndEvent(...args)
+>>>>>>> crop
     )
   }
   private onTouchStartEvent(ev: TouchStartEvent): void {

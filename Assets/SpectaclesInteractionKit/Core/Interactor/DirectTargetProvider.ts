@@ -33,7 +33,11 @@ export class DirectTargetProvider extends ColliderTargetProvider {
 
   constructor(
     interactor: BaseInteractor,
+<<<<<<< HEAD
     protected config: DirectTargetProviderConfig,
+=======
+    protected override config: DirectTargetProviderConfig
+>>>>>>> crop
   ) {
     super(interactor, config)
 
@@ -45,8 +49,13 @@ export class DirectTargetProvider extends ColliderTargetProvider {
         config.colliderEnterRadius,
         this.onColliderOverlapStay.bind(this),
         null,
+<<<<<<< HEAD
         config.debugEnabled,
       ),
+=======
+        config.debugEnabled
+      )
+>>>>>>> crop
     )
 
     this.colliders.push(
@@ -55,8 +64,13 @@ export class DirectTargetProvider extends ColliderTargetProvider {
         config.colliderExitRadius,
         null,
         this.onColliderOverlapExit.bind(this),
+<<<<<<< HEAD
         config.debugEnabled,
       ),
+=======
+        config.debugEnabled
+      )
+>>>>>>> crop
     )
 
     this.ownerSceneObject.enabled = false
@@ -106,13 +120,20 @@ export class DirectTargetProvider extends ColliderTargetProvider {
     } else {
       this.ownerSceneObject.enabled = false
       this.clearCurrentInteractableHitInfo()
+<<<<<<< HEAD
       this._currentInteractionPlanes = []
+=======
+>>>>>>> crop
     }
   }
 
   protected override onColliderOverlapStay(
     event: OverlapEnterEventArgs,
+<<<<<<< HEAD
     allowOutOfFovInteraction = false,
+=======
+    allowOutOfFovInteraction = true
+>>>>>>> crop
   ): void {
     this.overlapEvent = event
     super.onColliderOverlapStay(event, allowOutOfFovInteraction)
@@ -123,7 +144,15 @@ export class DirectTargetProvider extends ColliderTargetProvider {
       return
     }
 
+<<<<<<< HEAD
     super.onColliderOverlapExit(event)
+=======
+    if (
+      event.overlap.collider === this._currentInteractableHitInfo?.hit.collider
+    ) {
+      this._currentInteractableHitInfo = null
+    }
+>>>>>>> crop
   }
 
   /** @inheritdoc */

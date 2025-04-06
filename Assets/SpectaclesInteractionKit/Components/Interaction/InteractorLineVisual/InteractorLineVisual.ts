@@ -3,6 +3,7 @@ import {
   InteractorTriggerType,
   TargetingMode,
 } from "../../../Core/Interactor/Interactor"
+<<<<<<< HEAD
 import animate, {CancelSet} from "../../../Utils/animate"
 import {withAlpha, withoutAlpha} from "../../../Utils/color"
 import InteractorLineRenderer, {VisualStyle} from "./InteractorLineRenderer"
@@ -11,6 +12,16 @@ import {InteractionManager} from "../../../Core/InteractionManager/InteractionMa
 import BaseInteractor from "../../../Core/Interactor/BaseInteractor"
 import WorldCameraFinderProvider from "../../../Providers/CameraProvider/WorldCameraFinderProvider"
 import {ViewConfig} from "../../../Utils/views/View"
+=======
+import InteractorLineRenderer, {VisualStyle} from "./InteractorLineRenderer"
+import animate, {CancelSet} from "../../../Utils/animate"
+import {withAlpha, withoutAlpha} from "../../../Utils/color"
+
+import BaseInteractor from "../../../Core/Interactor/BaseInteractor"
+import {InteractionManager} from "../../../Core/InteractionManager/InteractionManager"
+import {ViewConfig} from "../../../Utils/views/View"
+import WorldCameraFinderProvider from "../../../Providers/CameraProvider/WorldCameraFinderProvider"
+>>>>>>> crop
 
 const FADE_DURATION_SECS = 0.21
 

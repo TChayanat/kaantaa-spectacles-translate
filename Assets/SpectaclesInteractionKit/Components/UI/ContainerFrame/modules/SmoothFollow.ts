@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import {setTimeout} from "../../../../Utils/FunctionTimingUtils"
+=======
+import {setTimeout} from "../../../../Utils/debounce"
+>>>>>>> crop
 import {
   clamp,
   DegToRad,
@@ -61,7 +65,11 @@ export class SmoothFollow {
     this.resize(
       this.frame.innerSize.x +
         this.frame.border * 2 +
+<<<<<<< HEAD
         this.frame.constantPadding.x,
+=======
+        this.frame.constantPadding.x
+>>>>>>> crop
     )
     setTimeout(() => {
       this.clampPosition()
@@ -96,14 +104,22 @@ export class SmoothFollow {
       this.target.z,
       (1.1 * this.visibleWidth) /
         2 /
+<<<<<<< HEAD
         Math.tan((this.fieldOfView / 2) * DegToRad),
+=======
+        Math.tan((this.fieldOfView / 2) * DegToRad)
+>>>>>>> crop
     ) // handle very wide panels
     this.target.y = clamp(this.target.y, this.minElevation, this.maxElevation)
     const dist = new vec2(this.target.y, this.target.z).length
     const halfFov = Math.atan(
       (Math.tan((this.fieldOfView / 2) * DegToRad) * dist -
         this.visibleWidth / 2) /
+<<<<<<< HEAD
         this.target.z,
+=======
+        this.target.z
+>>>>>>> crop
     )
     this.target.x = clamp(this.target.x, -halfFov, halfFov)
     this.velocity = vec3.zero()
@@ -122,21 +138,33 @@ export class SmoothFollow {
         this.target.x,
         this.velocity.x,
         this.translationTime,
+<<<<<<< HEAD
         getDeltaTime(),
+=======
+        getDeltaTime()
+>>>>>>> crop
       )
       ;[pos.y, this.velocity.y] = smoothDamp(
         pos.y,
         this.target.y,
         this.velocity.y,
         this.translationTime,
+<<<<<<< HEAD
         getDeltaTime(),
+=======
+        getDeltaTime()
+>>>>>>> crop
       )
       ;[pos.z, this.velocity.z] = smoothDamp(
         pos.z,
         this.target.z,
         this.velocity.z,
         this.translationTime,
+<<<<<<< HEAD
         getDeltaTime(),
+=======
+        getDeltaTime()
+>>>>>>> crop
       )
       this.worldPos = this.bodyToWorld(this.cylindricalToCartesian(pos))
       ;[this.heading, this.omega] = smoothDampAngle(
@@ -144,7 +172,11 @@ export class SmoothFollow {
         this.cameraHeading,
         this.omega,
         this.rotationTime,
+<<<<<<< HEAD
         getDeltaTime(),
+=======
+        getDeltaTime()
+>>>>>>> crop
       )
       // force billboard
       this.worldRot = quat
@@ -157,7 +189,11 @@ export class SmoothFollow {
     return new vec3(
       Math.atan2(-v.x, -v.z),
       v.y,
+<<<<<<< HEAD
       Math.sqrt(v.x * v.x + v.z * v.z),
+=======
+      Math.sqrt(v.x * v.x + v.z * v.z)
+>>>>>>> crop
     )
   }
 

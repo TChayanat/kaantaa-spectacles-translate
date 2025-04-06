@@ -7,10 +7,14 @@ const TAG = "TimedDataContainer"
  * Custom data with timestamp
  */
 export class TimedData<T> {
+<<<<<<< HEAD
   constructor(
     public timestamp: number,
     public data: T,
   ) {}
+=======
+  constructor(public timestamp: number, public data: T) {}
+>>>>>>> crop
 }
 
 /**
@@ -35,7 +39,11 @@ export class TimedDataContainer<T> {
   constructor(
     private _windowMode: WindowMode,
     private _windowSize: number,
+<<<<<<< HEAD
     private sampleOps: SampleOps<T>,
+=======
+    private sampleOps: SampleOps<T>
+>>>>>>> crop
   ) {}
 
   /**

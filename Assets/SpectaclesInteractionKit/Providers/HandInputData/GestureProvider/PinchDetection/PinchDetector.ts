@@ -102,7 +102,11 @@ export class PinchDetector {
       }
       default: {
         throw new Error(
+<<<<<<< HEAD
           `${TAG}: No matching PinchDetectionSelection found, could not create strategy`,
+=======
+          `${TAG}: No matching PinchDetectionSelection found, could not create strategy`
+>>>>>>> crop
         )
       }
     }

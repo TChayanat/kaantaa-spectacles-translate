@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import {InteractionPlane} from "../../Components/Interaction/InteractionPlane/InteractionPlane"
+=======
+>>>>>>> crop
 import TargetProvider from "../../Providers/TargetProvider/TargetProvider"
 import {notEmpty} from "../../Utils/notEmpty"
 import BaseInteractor from "./BaseInteractor"
@@ -16,6 +19,7 @@ export type ColliderTargetProviderConfig = {
 export abstract class ColliderTargetProvider extends TargetProvider {
   protected ownerSceneObject: SceneObject
 
+<<<<<<< HEAD
   // If the collider is in an interaction plane's interaction zone, cache the plane.
   protected _currentInteractionPlanes: InteractionPlane[] = []
 
@@ -23,11 +27,21 @@ export abstract class ColliderTargetProvider extends TargetProvider {
   constructor(
     interactor: BaseInteractor,
     protected config: ColliderTargetProviderConfig,
+=======
+  protected interactor: BaseInteractor
+  constructor(
+    interactor: BaseInteractor,
+    protected config: ColliderTargetProviderConfig
+>>>>>>> crop
   ) {
     super()
     this.interactor = interactor
     this.ownerSceneObject = global.scene.createSceneObject(
+<<<<<<< HEAD
       "ColliderTargetProvider",
+=======
+      "ColliderTargetProvider"
+>>>>>>> crop
     )
     this.ownerSceneObject.setParent(this.interactor.sceneObject)
   }
@@ -43,6 +57,7 @@ export abstract class ColliderTargetProvider extends TargetProvider {
   }
 
   /**
+<<<<<<< HEAD
    * Returns an array of InteractionPlanes with interaction zones overlapping with the collider.
    */
   get currentInteractionPlanes(): InteractionPlane[] {
@@ -62,6 +77,8 @@ export abstract class ColliderTargetProvider extends TargetProvider {
   }
 
   /**
+=======
+>>>>>>> crop
    * @returns the direct collider position for direct manipulation
    */
   get colliderPosition(): vec3 {
@@ -89,7 +106,10 @@ export abstract class ColliderTargetProvider extends TargetProvider {
     } else {
       this.ownerSceneObject.enabled = false
       this.clearCurrentInteractableHitInfo()
+<<<<<<< HEAD
       this._currentInteractionPlanes = []
+=======
+>>>>>>> crop
     }
   }
 
@@ -103,7 +123,11 @@ export abstract class ColliderTargetProvider extends TargetProvider {
     radius: number,
     onOverlapStay: ((eventArgs: OverlapStayEventArgs) => void) | null,
     onOverlapExit: ((eventArgs: OverlapExitEventArgs) => void) | null,
+<<<<<<< HEAD
     debugDrawEnabled: boolean,
+=======
+    debugDrawEnabled: boolean
+>>>>>>> crop
   ): ColliderComponent {
     const collider = sceneObject.createComponent("Physics.ColliderComponent")
 
@@ -126,7 +150,11 @@ export abstract class ColliderTargetProvider extends TargetProvider {
 
   protected onColliderOverlapStay(
     event: OverlapEnterEventArgs,
+<<<<<<< HEAD
     allowOutOfFovInteraction = false,
+=======
+    allowOutOfFovInteraction = true
+>>>>>>> crop
   ): void {
     if (this.config.shouldPreventTargetUpdate?.()) {
       return
@@ -160,10 +188,15 @@ export abstract class ColliderTargetProvider extends TargetProvider {
     this._currentInteractableHitInfo = this.getInteractableHitFromRayCast(
       hits,
       0,
+<<<<<<< HEAD
       allowOutOfFovInteraction,
     )
 
     this.updateInteractionPlanesFromOverlap(event.currentOverlaps)
+=======
+      allowOutOfFovInteraction
+    )
+>>>>>>> crop
   }
 
   protected onColliderOverlapExit(event: OverlapEnterEventArgs): void {
@@ -172,6 +205,7 @@ export abstract class ColliderTargetProvider extends TargetProvider {
     ) {
       this._currentInteractableHitInfo = null
     }
+<<<<<<< HEAD
 
     this.removeInteractionPlaneFromOverlap(event.overlap)
   }
@@ -198,5 +232,7 @@ export abstract class ColliderTargetProvider extends TargetProvider {
         this._currentInteractionPlanes.splice(index, 1)
       }
     }
+=======
+>>>>>>> crop
   }
 }

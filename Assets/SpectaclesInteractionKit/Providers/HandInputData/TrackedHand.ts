@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 import Event, {PublicApi} from "../../Utils/Event"
 import {CancelToken, setTimeout} from "../../Utils/FunctionTimingUtils"
+=======
+import {CancelToken, setTimeout} from "../../Utils/debounce"
+import Event, {PublicApi} from "../../Utils/Event"
+>>>>>>> crop
 import NativeLogger from "../../Utils/NativeLogger"
 import {
   PinchDetectionSelection,
@@ -7,7 +12,10 @@ import {
 } from "./GestureProvider/PinchDetection/PinchDetector"
 import {JointNode, JOINT_HIERARCHY} from "./Joints"
 
+<<<<<<< HEAD
 import {DegToRad} from "../../Utils/mathUtils"
+=======
+>>>>>>> crop
 import {validate} from "../../Utils/validate"
 import WorldCameraFinderProvider from "../CameraProvider/WorldCameraFinderProvider"
 import {TargetingData} from "../TargetProvider/TargetingData"
@@ -33,8 +41,11 @@ export enum TrackingEvent {
 
 const TAG = "TrackedHand"
 const HAND_FACING_THRESHOLD = 40.0
+<<<<<<< HEAD
 const FLAT_JOINT_ANGLE_THRESHOLD = Math.cos(150 * DegToRad)
 const BENT_JOINT_ANGLE_THRESHOLD = Math.cos(80 * DegToRad)
+=======
+>>>>>>> crop
 const POINTING_PITCH_THRESHOLD = -60.0
 
 // GestureModule can take up to 350ms to determine if a pinch has been sustained.
@@ -47,12 +58,15 @@ export type OrientationVectors = {
   cameraForward: vec3
 }
 
+<<<<<<< HEAD
 export enum PalmState {
   None,
   Flat,
   Closed,
 }
 
+=======
+>>>>>>> crop
 /**
  * Manages a tracked hand, instantiates fingers and wrists.
  * Also manages the {@link ObjectTracking3D} and creates
@@ -119,6 +133,7 @@ export default class TrackedHand implements BaseHand {
 
   private _targetingData: TargetingData | null = null
 
+<<<<<<< HEAD
   private _isPhoneInHand: boolean = false
 
   private onPhoneInHandBeginEvent = new Event()
@@ -130,13 +145,22 @@ export default class TrackedHand implements BaseHand {
   constructor(private config: BaseHandConfig) {
     this.ownerSceneObject = this.sceneObjectManager.createSceneObject(
       this.handType === "left" ? "LeftHandModelOwner" : "RightHandModelOwner",
+=======
+  constructor(private config: BaseHandConfig) {
+    this.ownerSceneObject = this.sceneObjectManager.createSceneObject(
+      this.handType === "left" ? "LeftHandModelOwner" : "RightHandModelOwner"
+>>>>>>> crop
     )
 
     this.cameraObject = this.worldCamera.getComponent().getSceneObject()
     this.ownerSceneObject.setParent(this.cameraObject)
 
     this.objectTracking3DComponent = this.ownerSceneObject.createComponent(
+<<<<<<< HEAD
       "Component.ObjectTracking3D",
+=======
+      "Component.ObjectTracking3D"
+>>>>>>> crop
     )
 
     if (this.objectTracking3DComponent === undefined) {
@@ -154,7 +178,11 @@ export default class TrackedHand implements BaseHand {
 
     const logObjectTrackingEvent = (eventName: TrackingEvent) => {
       this.log.d(
+<<<<<<< HEAD
         `Received event from ObjectTracking3D: handType: ${this.config.handType}, eventType: ${eventName}`,
+=======
+        `Received event from ObjectTracking3D: handType: ${this.config.handType}, eventType: ${eventName}`
+>>>>>>> crop
       )
     }
     this.objectTracking3DComponent.onTrackingStarted = () => {
@@ -199,6 +227,7 @@ export default class TrackedHand implements BaseHand {
     this.onPinchUp = this.pinchDetector.onPinchUp
     this.onPinchCancel = this.pinchDetector.onPinchCancel
 
+<<<<<<< HEAD
     const gestureModule: any = this.gestureModuleProvider.getModule()
 
     if (gestureModule !== undefined) {
@@ -207,6 +236,16 @@ export default class TrackedHand implements BaseHand {
           ? GestureModule.HandType.Right
           : GestureModule.HandType.Left
       try {
+=======
+    const gestureModule = this.gestureModuleProvider.getModule()
+
+    try {
+      if (gestureModule !== undefined) {
+        const gestureHandType =
+          this.handType === "right"
+            ? GestureModule.HandType.Right
+            : GestureModule.HandType.Left
+>>>>>>> crop
         gestureModule
           .getTargetingDataEvent(gestureHandType)
           .add((args: TargetingDataArgs) => {
@@ -214,13 +253,20 @@ export default class TrackedHand implements BaseHand {
             const rayDirectionInCameraParent: vec3 = args.rayDirectionInWorld
             const [rayOriginInWorld, rayDirectionInWorld] = this.rayToWorld(
               rayOriginInCameraParent,
+<<<<<<< HEAD
               rayDirectionInCameraParent,
+=======
+              rayDirectionInCameraParent
+>>>>>>> crop
             )
 
             this._targetingData = {
               targetingDirectionInWorld: rayDirectionInWorld,
               targetingLocusInWorld: rayOriginInWorld,
+<<<<<<< HEAD
               intendsToTarget: args.handIntendsToTarget,
+=======
+>>>>>>> crop
             }
             this.log.v(
               "HandEvent : " +
@@ -228,6 +274,7 @@ export default class TrackedHand implements BaseHand {
                 " rayOriginInWorld: " +
                 rayOriginInWorld +
                 " rayDirectionInWorld: " +
+<<<<<<< HEAD
                 rayDirectionInWorld,
             )
           })
@@ -259,6 +306,14 @@ export default class TrackedHand implements BaseHand {
       } catch (error) {
         this.log.e(`Error subscribing to gesture phone in hand event: ${error}`)
       }
+=======
+                rayDirectionInWorld
+            )
+          })
+      }
+    } catch (error) {
+      this.log.e(`Error subscribing to targeting ray event: ${error}`)
+>>>>>>> crop
     }
 
     try {
@@ -266,7 +321,11 @@ export default class TrackedHand implements BaseHand {
         this.palmTapDetector = new PalmTapDetector(GestureModule.HandType.Right)
       }
     } catch (error) {
+<<<<<<< HEAD
       this.log.w(`PalmTapDetector is not supported: ${error}`)
+=======
+      this.log.w("PalmTapDetector is not supported")
+>>>>>>> crop
     }
   }
 
@@ -283,7 +342,11 @@ export default class TrackedHand implements BaseHand {
     this.objectTracking3DComponent.enabled = this.enabled
     this.onEnabledChangedEvent.invoke(this._enabled)
     this.log.v(
+<<<<<<< HEAD
       "HandEvent : " + "Hand Enabled Changed Event" + " to " + this._enabled,
+=======
+      "HandEvent : " + "Hand Enabled Changed Event" + " to " + this._enabled
+>>>>>>> crop
     )
   }
 
@@ -294,7 +357,11 @@ export default class TrackedHand implements BaseHand {
 
     const facingCameraAngle = this.getFacingCameraAngle()
     return Boolean(
+<<<<<<< HEAD
       facingCameraAngle !== null && facingCameraAngle < HAND_FACING_THRESHOLD,
+=======
+      facingCameraAngle !== null && facingCameraAngle < HAND_FACING_THRESHOLD
+>>>>>>> crop
     )
   }
 
@@ -366,18 +433,27 @@ export default class TrackedHand implements BaseHand {
      */
     const handOrientationVectors = this.getHandOrientation()
     const dotHandCamera = handOrientationVectors.up.dot(
+<<<<<<< HEAD
       handOrientationVectors.cameraForward,
+=======
+      handOrientationVectors.cameraForward
+>>>>>>> crop
     )
 
     const angle =
       MathUtils.RadToDeg *
       Math.acos(
+<<<<<<< HEAD
         this.config.handType === "right" ? dotHandCamera : -dotHandCamera,
+=======
+        this.config.handType === "right" ? dotHandCamera : -dotHandCamera
+>>>>>>> crop
       )
 
     return angle
   }
 
+<<<<<<< HEAD
   get palmState(): PalmState {
     const middleKnuckleBendDotProduct = this.getMiddleKnuckleBendDotProduct()
     if (middleKnuckleBendDotProduct === null) {
@@ -415,6 +491,8 @@ export default class TrackedHand implements BaseHand {
     return midToUpperDirection.dot(midToKnuckleDirection)
   }
 
+=======
+>>>>>>> crop
   getPalmPitchAngle(): number | null {
     if (!this.isTracked()) {
       return null
@@ -666,10 +744,13 @@ export default class TrackedHand implements BaseHand {
     return this._targetingData
   }
 
+<<<<<<< HEAD
   get isPhoneInHand(): boolean {
     return this._isPhoneInHand
   }
 
+=======
+>>>>>>> crop
   isTracked(): boolean {
     return this.objectTracking3DComponent.isTracking()
   }
@@ -698,9 +779,13 @@ export default class TrackedHand implements BaseHand {
     } else {
       return {
         state: "available",
+<<<<<<< HEAD
         data: {
           isTapping: this.palmTapDetector.isTapping,
         },
+=======
+        data: {isTapping: this.palmTapDetector.isTapping},
+>>>>>>> crop
       }
     }
   }
@@ -810,7 +895,11 @@ export default class TrackedHand implements BaseHand {
     for (const joint of children) {
       this.keypoints.set(
         joint.name,
+<<<<<<< HEAD
         new Keypoint(joint.name, this.objectTracking3DComponent),
+=======
+        new Keypoint(joint.name, this.objectTracking3DComponent)
+>>>>>>> crop
       )
       this.attachJoints(joint.children)
     }
@@ -831,35 +920,55 @@ export default class TrackedHand implements BaseHand {
       this.thumbBaseJoint,
       this.thumbKnuckle,
       this.thumbMidJoint,
+<<<<<<< HEAD
       this.thumbTip,
+=======
+      this.thumbTip
+>>>>>>> crop
     )
     this.indexFingerPoints.push(
       this.indexToWrist,
       this.indexKnuckle,
       this.indexMidJoint,
       this.indexUpperJoint,
+<<<<<<< HEAD
       this.indexTip,
+=======
+      this.indexTip
+>>>>>>> crop
     )
     this.middleFingerPoints.push(
       this.middleToWrist,
       this.middleKnuckle,
       this.middleMidJoint,
       this.middleUpperJoint,
+<<<<<<< HEAD
       this.middleTip,
+=======
+      this.middleTip
+>>>>>>> crop
     )
     this.ringFingerPoints.push(
       this.ringToWrist,
       this.ringKnuckle,
       this.ringMidJoint,
       this.ringUpperJoint,
+<<<<<<< HEAD
       this.ringTip,
+=======
+      this.ringTip
+>>>>>>> crop
     )
     this.pinkyFingerPoints.push(
       this.pinkyToWrist,
       this.pinkyKnuckle,
       this.pinkyMidJoint,
       this.pinkyUpperJoint,
+<<<<<<< HEAD
       this.pinkyTip,
+=======
+      this.pinkyTip
+>>>>>>> crop
     )
     this.allPoints.push(
       this.wrist,
@@ -867,13 +976,21 @@ export default class TrackedHand implements BaseHand {
       ...this.indexFingerPoints,
       ...this.middleFingerPoints,
       ...this.ringFingerPoints,
+<<<<<<< HEAD
       ...this.pinkyFingerPoints,
+=======
+      ...this.pinkyFingerPoints
+>>>>>>> crop
     )
   }
 
   private rayToWorld(
     rayOriginInCameraRootSpace: vec3,
+<<<<<<< HEAD
     rayDirectionInCameraRootSpace: vec3,
+=======
+    rayDirectionInCameraRootSpace: vec3
+>>>>>>> crop
   ): [rayOriginWorld: vec3, rayDirectionWorld: vec3] {
     const cameraParent = this.cameraObject.getParent()
 
@@ -882,10 +999,17 @@ export default class TrackedHand implements BaseHand {
     }
     const cameraRoot = cameraParent.getTransform().getWorldTransform()
     const rayEndPointCameraRootSpace = rayOriginInCameraRootSpace.add(
+<<<<<<< HEAD
       rayDirectionInCameraRootSpace,
     )
     const rayOriginInWorld = cameraRoot.multiplyPoint(
       rayOriginInCameraRootSpace,
+=======
+      rayDirectionInCameraRootSpace
+    )
+    const rayOriginInWorld = cameraRoot.multiplyPoint(
+      rayOriginInCameraRootSpace
+>>>>>>> crop
     )
     const rayEndInWorld = cameraRoot.multiplyPoint(rayEndPointCameraRootSpace)
     const rayDirectionInWorld = rayEndInWorld.sub(rayOriginInWorld)

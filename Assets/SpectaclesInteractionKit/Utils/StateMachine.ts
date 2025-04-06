@@ -6,7 +6,10 @@ import NativeLogger from "./NativeLogger"
 import State, {StateConfig, Transition} from "./State"
 
 import {LensConfig} from "./LensConfig"
+<<<<<<< HEAD
 import {DispatchedUpdateEvent} from "./UpdateDispatcher"
+=======
+>>>>>>> crop
 
 const TAG = "StateMachine"
 
@@ -17,6 +20,7 @@ export default class StateMachine {
   private stateCount = 0
   private verboseLogs = false
 
+<<<<<<< HEAD
   private log: NativeLogger
   private lateUpdateEvent: DispatchedUpdateEvent
   private updateEvent: DispatchedUpdateEvent
@@ -44,6 +48,23 @@ export default class StateMachine {
     this._currentState = null
     this.lateUpdateEvent.enabled = false
     this.updateEvent.enabled = false
+=======
+  private log = new NativeLogger(TAG)
+
+  constructor(name: string) {
+    this.name = name ?? "StateMachine"
+
+    let lensConfig = LensConfig.getInstance()
+    let updateDispatcher = lensConfig.updateDispatcher
+    updateDispatcher.createUpdateEvent("StateMachineUpdate").bind(() => {
+      this.update()
+    })
+    updateDispatcher
+      .createLateUpdateEvent("StateMachineLateUpdate")
+      .bind(() => {
+        this.lateUpdate()
+      })
+>>>>>>> crop
   }
 
   get currentState(): State | null {

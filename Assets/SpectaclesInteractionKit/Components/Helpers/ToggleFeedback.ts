@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 import {validate} from "../../Utils/validate"
 import {Interactable} from "../Interaction/Interactable/Interactable"
 import {ToggleButton} from "../UI/ToggleButton/ToggleButton"
+=======
+import {Interactable} from "../Interaction/Interactable/Interactable"
+import {ToggleButton} from "../UI/ToggleButton/ToggleButton"
+import {validate} from "../../Utils/validate"
+>>>>>>> crop
 
 /**
  * This class provides visual feedback for a {@link ToggleButton} by changing the material of the provided {@link RenderMeshVisual}s when the button is toggled on or off.

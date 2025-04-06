@@ -8,10 +8,14 @@ export default class AxisAngle {
    * @param axis - the axis of the rotation
    * @param angle - the angle of the rotation
    */
+<<<<<<< HEAD
   constructor(
     public axis: vec3,
     public angle: number,
   ) {}
+=======
+  constructor(public axis: vec3, public angle: number) {}
+>>>>>>> crop
 
   /**
    * @returns a new rotation created from 'this' where the angle is multiplied by the given factor.

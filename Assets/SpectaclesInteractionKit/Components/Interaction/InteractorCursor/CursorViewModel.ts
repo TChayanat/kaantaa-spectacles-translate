@@ -1,6 +1,9 @@
 import {Interactable} from "../../../Components/Interaction/Interactable/Interactable"
 import {InteractableManipulation} from "../../../Components/Interaction/InteractableManipulation/InteractableManipulation"
+<<<<<<< HEAD
 import {HandInteractor} from "../../../Core/HandInteractor/HandInteractor"
+=======
+>>>>>>> crop
 import {InteractionManager} from "../../../Core/InteractionManager/InteractionManager"
 import {
   Interactor,
@@ -136,7 +139,11 @@ export class CursorViewModel {
   constructor(
     private enableCursorHolding: boolean,
     private enableFilter: boolean,
+<<<<<<< HEAD
     private _interactor?: Interactor,
+=======
+    private _interactor?: Interactor
+>>>>>>> crop
   ) {
     // If passing an Interactor within the constructor, ensure the Interactor callbacks are setup correctly.
     if (_interactor !== undefined) {
@@ -160,7 +167,11 @@ export class CursorViewModel {
         this.currentManipulation =
           interactable !== null
             ? interactable.sceneObject.getComponent(
+<<<<<<< HEAD
                 InteractableManipulation.getTypeName(),
+=======
+                InteractableManipulation.getTypeName()
+>>>>>>> crop
               )
             : null
         this.isScrolling =
@@ -224,7 +235,11 @@ export class CursorViewModel {
         this.animateCursorDistance(
           distance,
           "ease-in-out-cubic",
+<<<<<<< HEAD
           DEFAULT_IDLE_ANIMATE_DURATION_SECONDS,
+=======
+          DEFAULT_IDLE_ANIMATE_DURATION_SECONDS
+>>>>>>> crop
         )
       },
       onUpdate: (): void => {
@@ -232,7 +247,11 @@ export class CursorViewModel {
 
         this.updateIndirectCursorPosition(
           this.interactor?.interactionStrength ?? null,
+<<<<<<< HEAD
           position,
+=======
+          position
+>>>>>>> crop
         )
       },
       transitions: [
@@ -261,7 +280,11 @@ export class CursorViewModel {
             this.animateCursorDistance(
               distance,
               "linear",
+<<<<<<< HEAD
               DEFAULT_HOVER_ANIMATE_DURATION_SECONDS,
+=======
+              DEFAULT_HOVER_ANIMATE_DURATION_SECONDS
+>>>>>>> crop
             )
           },
         },
@@ -289,7 +312,11 @@ export class CursorViewModel {
 
           this.cursorDistance =
             this.interactor?.targetHitInfo?.hit.position.distance(
+<<<<<<< HEAD
               this.interactor.startPoint,
+=======
+              this.interactor.startPoint
+>>>>>>> crop
             ) ?? this.cursorDistance
         }
 
@@ -299,7 +326,11 @@ export class CursorViewModel {
 
         this.updateIndirectCursorPosition(
           this.interactor?.interactionStrength ?? null,
+<<<<<<< HEAD
           position,
+=======
+          position
+>>>>>>> crop
         )
       },
       transitions: [
@@ -330,7 +361,11 @@ export class CursorViewModel {
             return (
               this.interactor?.currentTrigger !== InteractorTriggerType.None &&
               this.isScrolling &&
+<<<<<<< HEAD
               (this.scrollView?.isDragging ?? false)
+=======
+              this.interactor?.currentDragVector !== null
+>>>>>>> crop
             )
           },
         },
@@ -350,7 +385,11 @@ export class CursorViewModel {
          */
         this.updateIndirectCursorPosition(
           DEFAULT_MANIPULATE_STRENGTH,
+<<<<<<< HEAD
           this.getHeldCursorPosition(),
+=======
+          this.getHeldCursorPosition()
+>>>>>>> crop
         )
       },
       transitions: [
@@ -385,7 +424,11 @@ export class CursorViewModel {
 
         this.updateIndirectCursorPosition(
           this.interactor?.interactionStrength ?? null,
+<<<<<<< HEAD
           planecastPosition,
+=======
+          planecastPosition
+>>>>>>> crop
         )
       },
 
@@ -424,7 +467,11 @@ export class CursorViewModel {
   private getPlanecastCursorPosition(): vec3 | null {
     if (this.interactor === null) {
       this.log.d(
+<<<<<<< HEAD
         "Cursor failed to get planecast position due to null interactor, and will return null.",
+=======
+        "Cursor failed to get planecast position due to null interactor, and will return null."
+>>>>>>> crop
       )
       return null
     }
@@ -459,7 +506,11 @@ export class CursorViewModel {
     const direction = this.interactor?.direction ?? null
     if (this.interactor === null || origin === null || direction === null) {
       this.log.d(
+<<<<<<< HEAD
         "Cursor failed to get far field position due to null interactor, origin, or direction, and will return null.",
+=======
+        "Cursor failed to get far field position due to null interactor, origin, or direction, and will return null."
+>>>>>>> crop
       )
       return null
     }
@@ -492,7 +543,11 @@ export class CursorViewModel {
           .getTransform()
           .getWorldTransform()
           .multiplyPoint(
+<<<<<<< HEAD
             this.interactor?.targetHitInfo?.localHitPosition ?? vec3.zero(),
+=======
+            this.interactor?.targetHitInfo?.localHitPosition ?? vec3.zero()
+>>>>>>> crop
           ) ?? null
     } else if (wasTriggering && !isTriggering) {
       // On the frame that the Interactor stops triggering, maintain the same cursor position as previous frame to account for targeting changes.
@@ -549,7 +604,11 @@ export class CursorViewModel {
   private animateCursorDistance(
     distance: number,
     easing: keyof typeof easingFunctions,
+<<<<<<< HEAD
     duration: number,
+=======
+    duration: number
+>>>>>>> crop
   ) {
     // Ensure only one thing is modifying the cursor distance at a time
     this.distanceCancelSet.cancel()
@@ -605,7 +664,11 @@ export class CursorViewModel {
    */
   private updateIndirectCursorPosition(
     interactionStrength: number | null,
+<<<<<<< HEAD
     position: vec3 | null,
+=======
+    position: vec3 | null
+>>>>>>> crop
   ): void {
     if (position !== null) {
       if (!this.isAnimating) {
@@ -632,6 +695,7 @@ export class CursorViewModel {
   // Check if the interactor is not in a state that should hide the cursor (poke or direct), as well as if the interactor is active/targeting.
   private checkVisibleTargetingState(): boolean {
     if (this.interactor?.enabled) {
+<<<<<<< HEAD
       // If the interactor is targeting via direct pinch or poke (but not necessarily near field mode due to no plane), hide the cursor.
       const isVisibleTargetingMode =
         (this.interactor.activeTargetingMode &
@@ -645,6 +709,12 @@ export class CursorViewModel {
 
       return (
         ((isVisibleTargetingMode && isNotNearField) ||
+=======
+      return (
+        ((this.interactor.activeTargetingMode &
+          (TargetingMode.Poke | TargetingMode.Direct | TargetingMode.None)) ===
+          0 ||
+>>>>>>> crop
           this.interactor.inputType === InteractorInputType.Mouse) &&
         this.interactor.isActive() &&
         this.interactor.isTargeting()
@@ -668,7 +738,11 @@ export class CursorViewModel {
         DEFAULT_MID_FIELD_THRESHOLD_CM,
         DEFAULT_FAR_FIELD_THRESHOLD_CM,
         0,
+<<<<<<< HEAD
         1,
+=======
+        1
+>>>>>>> crop
       )
 
       return DEFAULT_MID_FIELD_SCALE + scaleDifference * t
@@ -683,7 +757,11 @@ export class CursorViewModel {
         DEFAULT_NEAR_FIELD_THRESHOLD_CM,
         DEFAULT_MID_FIELD_THRESHOLD_CM,
         0,
+<<<<<<< HEAD
         1,
+=======
+        1
+>>>>>>> crop
       )
 
       return DEFAULT_NEAR_FIELD_SCALE + scaleDifference * t

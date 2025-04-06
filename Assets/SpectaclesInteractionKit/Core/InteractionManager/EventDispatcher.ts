@@ -58,7 +58,11 @@ export class EventDispatcher {
     this.getInteractableAncestors(
       eventArgs.target.sceneObject.getParent(),
       ancestors,
+<<<<<<< HEAD
       eventArgs.origin?.sceneObject,
+=======
+      eventArgs.origin?.sceneObject
+>>>>>>> crop
     )
 
     const stoppableEventArgs = {
@@ -74,7 +78,11 @@ export class EventDispatcher {
   private getInteractableAncestors(
     node: SceneObject | null,
     ancestors: Interactable[],
+<<<<<<< HEAD
     excludedNode: SceneObject | undefined = undefined,
+=======
+    excludedNode: SceneObject | undefined = undefined
+>>>>>>> crop
   ) {
     if (node === null || node === excludedNode) {
       return
@@ -90,7 +98,11 @@ export class EventDispatcher {
 
   private trickleDown(
     ancestors: Interactable[],
+<<<<<<< HEAD
     eventArgs: StoppableEventArgs,
+=======
+    eventArgs: StoppableEventArgs
+>>>>>>> crop
   ) {
     for (let i = ancestors.length - 1; i >= 0; i--) {
       if (eventArgs.propagationStopped) {
@@ -143,7 +155,11 @@ export class EventDispatcher {
 
   private invokeEvent(
     event: InteractorEvent,
+<<<<<<< HEAD
     eventName: InteractableEventName,
+=======
+    eventName: InteractableEventName
+>>>>>>> crop
   ) {
     const interactable = event.interactable
     switch (eventName) {

@@ -1,10 +1,16 @@
+<<<<<<< HEAD
 import {validate} from "../../Utils/validate"
 import {Interactable} from "../Interaction/Interactable/Interactable"
+=======
+import {Interactable} from "../Interaction/Interactable/Interactable"
+import {validate} from "../../Utils/validate"
+>>>>>>> crop
 /**
  * This class provides audio feedback for interactable objects. It allows configuration of audio tracks for hover, trigger start, and trigger end events. The class also provides access to the audio component for further customization.
  */
 @component
 export class InteractableAudioFeedback extends BaseScriptComponent {
+<<<<<<< HEAD
   @input
   private _playAudioOnHover: boolean = true
   @input("Asset.AudioTrackAsset")
@@ -28,6 +34,22 @@ export class InteractableAudioFeedback extends BaseScriptComponent {
   @hint("This sound will play when ending the trigger of the Interactable")
   @allowUndefined
   private _triggerEndAudioTrack: AudioTrackAsset | undefined
+=======
+  @input("Asset.AudioTrackAsset")
+  @hint("This sound will play when the Interactable is hovered")
+  @allowUndefined
+  hoverAudioTrack: AudioTrackAsset | undefined
+
+  @input("Asset.AudioTrackAsset")
+  @hint("This sound will play when starting the trigger the Interactable")
+  @allowUndefined
+  triggerStartAudioTrack: AudioTrackAsset | undefined
+
+  @input("Asset.AudioTrackAsset")
+  @hint("This sound will play when ending the trigger of the Interactable")
+  @allowUndefined
+  triggerEndAudioTrack: AudioTrackAsset | undefined
+>>>>>>> crop
 
   private _hoverAudioComponent: AudioComponent | undefined
   private _triggerStartAudioComponent: AudioComponent | undefined
@@ -45,6 +67,7 @@ export class InteractableAudioFeedback extends BaseScriptComponent {
   }
 
   /**
+<<<<<<< HEAD
    * Set the AudioTrackAsset to play when the Interactable receives a hover event.
    */
   set hoverAudioTrack(track: AudioTrackAsset) {
@@ -195,6 +218,8 @@ export class InteractableAudioFeedback extends BaseScriptComponent {
   }
 
   /**
+=======
+>>>>>>> crop
    * Returns the AudioComponent used for hover feedback for further configuration (such as volume).
    */
   get hoverAudioComponent(): AudioComponent | undefined {
@@ -220,7 +245,11 @@ export class InteractableAudioFeedback extends BaseScriptComponent {
 
     this.interactable.onHoverEnter.add(() => {
       try {
+<<<<<<< HEAD
         if (this.playAudioOnHover && this._hoverAudioComponent) {
+=======
+        if (this._hoverAudioComponent) {
+>>>>>>> crop
           this._hoverAudioComponent.play(1)
         }
       } catch (e) {
@@ -230,7 +259,11 @@ export class InteractableAudioFeedback extends BaseScriptComponent {
 
     this.interactable.onTriggerStart.add(() => {
       try {
+<<<<<<< HEAD
         if (this.playAudioOnTriggerStart && this._triggerStartAudioComponent) {
+=======
+        if (this._triggerStartAudioComponent) {
+>>>>>>> crop
           this._triggerStartAudioComponent.play(1)
         }
       } catch (e) {
@@ -240,7 +273,11 @@ export class InteractableAudioFeedback extends BaseScriptComponent {
 
     this.interactable.onTriggerEnd.add(() => {
       try {
+<<<<<<< HEAD
         if (this.playAudioOnTriggerEnd && this._triggerEndAudioComponent) {
+=======
+        if (this._triggerEndAudioComponent) {
+>>>>>>> crop
           this._triggerEndAudioComponent.play(1)
         }
       } catch (e) {
@@ -250,7 +287,11 @@ export class InteractableAudioFeedback extends BaseScriptComponent {
   }
 
   private init() {
+<<<<<<< HEAD
     if (this.playAudioOnHover) {
+=======
+    if (this.hoverAudioTrack) {
+>>>>>>> crop
       this._hoverAudioComponent = this.getSceneObject().createComponent(
         "Component.AudioComponent",
       ) as AudioComponent
@@ -259,6 +300,7 @@ export class InteractableAudioFeedback extends BaseScriptComponent {
         this._hoverAudioComponent,
         Audio.PlaybackMode?.LowLatency,
       )
+<<<<<<< HEAD
 
       if (this.hoverAudioTrack === undefined) {
         this.hoverAudioTrack = requireAsset(
@@ -269,6 +311,12 @@ export class InteractableAudioFeedback extends BaseScriptComponent {
     }
 
     if (this.playAudioOnTriggerStart) {
+=======
+      this._hoverAudioComponent.audioTrack = this.hoverAudioTrack
+    }
+
+    if (this.triggerStartAudioTrack) {
+>>>>>>> crop
       this._triggerStartAudioComponent = this.getSceneObject().createComponent(
         "Component.AudioComponent",
       ) as AudioComponent
@@ -277,6 +325,7 @@ export class InteractableAudioFeedback extends BaseScriptComponent {
         this._triggerStartAudioComponent,
         Audio.PlaybackMode?.LowLatency,
       )
+<<<<<<< HEAD
 
       if (this.triggerStartAudioTrack === undefined) {
         this.triggerStartAudioTrack = requireAsset(
@@ -287,6 +336,12 @@ export class InteractableAudioFeedback extends BaseScriptComponent {
     }
 
     if (this.playAudioOnTriggerEnd) {
+=======
+      this._triggerStartAudioComponent.audioTrack = this.triggerStartAudioTrack
+    }
+
+    if (this.triggerEndAudioTrack) {
+>>>>>>> crop
       this._triggerEndAudioComponent = this.getSceneObject().createComponent(
         "Component.AudioComponent",
       ) as AudioComponent
@@ -295,12 +350,15 @@ export class InteractableAudioFeedback extends BaseScriptComponent {
         this._triggerEndAudioComponent,
         Audio.PlaybackMode?.LowLatency,
       )
+<<<<<<< HEAD
 
       if (this.triggerEndAudioTrack === undefined) {
         this.triggerEndAudioTrack = requireAsset(
           "../../Assets/Audio/TriggerEndAudioTrack.wav",
         ) as AudioTrackAsset
       }
+=======
+>>>>>>> crop
       this._triggerEndAudioComponent.audioTrack = this.triggerEndAudioTrack
     }
 

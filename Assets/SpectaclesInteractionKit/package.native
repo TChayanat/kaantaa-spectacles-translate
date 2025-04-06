@@ -3,8 +3,13 @@
   StudioVersion:
     major: 5
     minor: 7
+<<<<<<< HEAD
     patch: 0
     build: 25021204
+=======
+    patch: 2
+    build: 25030805
+>>>>>>> crop
     type: Unset
   Description: |-
     Release
@@ -19,12 +24,21 @@
     - Ensure the device type override is set to Spectacles (cogwheel at the top-right of the preview panel > Device Type Override > Spectacles).
     - Ensure that this package is unpacked in your scene (right-click the package in Asset Browser and unpack if given the option).
   SvgIcon: ""
+<<<<<<< HEAD
   InternalVersion: 3
   VersionMajor: 0
   VersionMinor: 11
   VersionPatch: 0
   UpdateCheckpoint: 55
   ExportUid: 2103d25e-7c18-4e97-b47c-4020ab1bcf42
+=======
+  InternalVersion: 1
+  VersionMajor: 0
+  VersionMinor: 9
+  VersionPatch: 0
+  UpdateCheckpoint: 55
+  ExportUid: 27f3c934-ef5e-44b9-bd76-323f5e059500
+>>>>>>> crop
   ComponentUid: 0f7a0bbe-777c-41a5-b979-0b0430f25836
   CurrentVisibility: Editable
   MaxVisibility: Editable
@@ -32,6 +46,7 @@
   AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
     Name: SpectaclesInteractionKit
     AssetId: 1aPW5eMfMPeP1615dXiqyN
+<<<<<<< HEAD
     Hash: 83c6083f14cebce02a9efe48b56b80c6
     Version:
       major: 0
@@ -40,3 +55,13 @@
       build: 0
   coreVersion: 300
   clientVersion: 13.290000
+=======
+    Hash: 3bb4e7729a7f07552ef0c94f23a2ab37
+    Version:
+      major: 0
+      minor: 9
+      patch: 0
+      build: 0
+  coreVersion: 301
+  clientVersion: 13.300000
+>>>>>>> crop

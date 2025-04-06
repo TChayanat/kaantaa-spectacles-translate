@@ -3,7 +3,10 @@ import {HandType} from "../../Providers/HandInputData/HandType"
 import TargetProvider, {
   InteractableHitInfo,
 } from "../../Providers/TargetProvider/TargetProvider"
+<<<<<<< HEAD
 import {clamp} from "../../Utils/mathUtils"
+=======
+>>>>>>> crop
 import {isDescendantOf} from "../../Utils/SceneObjectUtils"
 import {TargetingMode} from "../Interactor/Interactor"
 import {WindowMode} from "./raycastAlgorithms/TimeDataContainer"
@@ -16,8 +19,11 @@ export type PokeTargetProviderConfig = {
 
 const POKE_SPHERECAST_RADIUS = 0.7
 
+<<<<<<< HEAD
 const POKE_STRENGTH_DISTANCE_THRESHOLD_CM = 2.5
 
+=======
+>>>>>>> crop
 /**
  * Hand based poke target provider. Uses a sphere cast from index mid joint
  * to index tip
@@ -36,8 +42,11 @@ export class PokeTargetProvider extends TargetProvider {
 
   private _drawDebug: boolean = this.config.drawDebug
 
+<<<<<<< HEAD
   private initialPokePosition: vec3 | null = null
 
+=======
+>>>>>>> crop
   constructor(protected config: PokeTargetProviderConfig) {
     super()
     this.probe.debugDrawEnabled = this.config.drawDebug
@@ -82,7 +91,10 @@ export class PokeTargetProvider extends TargetProvider {
     if (!this.isAvailable()) {
       this._currentInteractableHitInfo = null
       this.endPointHistory.clear()
+<<<<<<< HEAD
       this.initialPokePosition = null
+=======
+>>>>>>> crop
       return
     }
     this.raycastJoints()
@@ -94,6 +106,7 @@ export class PokeTargetProvider extends TargetProvider {
       this.startPoint,
       this.endPoint,
       (hits) => {
+<<<<<<< HEAD
         const currentInteractable =
           this.currentInteractableHitInfo?.interactable ?? null
         this._currentInteractableHitInfo =
@@ -111,6 +124,13 @@ export class PokeTargetProvider extends TargetProvider {
 
         this.endPointHistory.pushWithoutDuplicate(getTime(), this.endPoint)
       },
+=======
+        this._currentInteractableHitInfo =
+          this.getInteractableHitFromRayCast(hits)
+
+        this.endPointHistory.pushWithoutDuplicate(getTime(), this.endPoint)
+      }
+>>>>>>> crop
     )
   }
 
@@ -128,6 +148,7 @@ export class PokeTargetProvider extends TargetProvider {
   }
 
   protected override getInteractableHitFromRayCast(
+<<<<<<< HEAD
     hits: RayCastHit[],
     offset = 0,
     allowOutOfFovInteraction = false,
@@ -144,6 +165,14 @@ export class PokeTargetProvider extends TargetProvider {
 
       const interactable = this.interactionManager.getInteractableByCollider(
         hit.collider,
+=======
+    hits: RayCastHit[]
+  ): InteractableHitInfo | null {
+    const hitInfos: InteractableHitInfo[] = []
+    for (const hit of hits) {
+      const interactable = this.interactionManager.getInteractableByCollider(
+        hit.collider
+>>>>>>> crop
       )
 
       if (
@@ -160,7 +189,11 @@ export class PokeTargetProvider extends TargetProvider {
             .multiplyPoint(hit.position),
           hit: {
             collider: hit.collider,
+<<<<<<< HEAD
             distance: hit.distance + offset,
+=======
+            distance: hit.distance,
+>>>>>>> crop
             normal: hit.normal,
             position: hit.position,
             skipRemaining: false,
@@ -189,7 +222,11 @@ export class PokeTargetProvider extends TargetProvider {
   }
 
   private getNearestDeeplyNestedInteractable(
+<<<<<<< HEAD
     hitInfos: InteractableHitInfo[],
+=======
+    hitInfos: InteractableHitInfo[]
+>>>>>>> crop
   ): InteractableHitInfo | null {
     const infos = hitInfos.reverse()
 
@@ -200,7 +237,11 @@ export class PokeTargetProvider extends TargetProvider {
         targetHitInfo === null ||
         isDescendantOf(
           currentHitInfo.interactable.sceneObject,
+<<<<<<< HEAD
           targetHitInfo.interactable.sceneObject,
+=======
+          targetHitInfo.interactable.sceneObject
+>>>>>>> crop
         )
       ) {
         targetHitInfo = currentHitInfo
@@ -222,6 +263,7 @@ export class PokeTargetProvider extends TargetProvider {
 
   /** @inheritdoc */
   getInteractionStrength() {
+<<<<<<< HEAD
     if (this.currentInteractableHitInfo === null) {
       return 0
     }
@@ -239,6 +281,9 @@ export class PokeTargetProvider extends TargetProvider {
       )
 
     return interactionStrength
+=======
+    return this.currentInteractableHitInfo !== null ? 1 : 0
+>>>>>>> crop
   }
 
   /** @inheritdoc */

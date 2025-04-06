@@ -54,20 +54,26 @@ export default class HciPinchDetectionStrategy
     this.gestureModule = this.gestureModuleProvider.getModule()
     if (this.gestureModule !== undefined) {
       this.gestureModule.getPinchDownEvent(this.gestureHandType).add(() => {
+<<<<<<< HEAD
         this.log.i(
           `GestureModule PinchDownEvent: { hand type: ${
             this.gestureHandType === 0 ? "Left" : "Right"
           } }`,
         )
+=======
+>>>>>>> crop
         this._onPinchDetectedEvent.invoke(PinchEventType.Down)
       })
 
       this.gestureModule.getPinchUpEvent(this.gestureHandType).add(() => {
+<<<<<<< HEAD
         this.log.i(
           `GestureModule PinchUpEvent: { hand type: ${
             this.gestureHandType === 0 ? "Left" : "Right"
           } }`,
         )
+=======
+>>>>>>> crop
         this._onPinchDetectedEvent.invoke(PinchEventType.Up)
       })
 
@@ -77,6 +83,15 @@ export default class HciPinchDetectionStrategy
           .add((args: PinchStrengthArgs) => {
             const proximity = args.strength
             this._onPinchProximityEvent.invoke(proximity)
+<<<<<<< HEAD
+=======
+            this.log.v(
+              "PinchEvent : " +
+                "Pinch Strength Event" +
+                " : proximity : " +
+                proximity
+            )
+>>>>>>> crop
           })
       }
     }

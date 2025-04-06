@@ -1,8 +1,15 @@
 import {Interactable} from "../../../Components/Interaction/Interactable/Interactable"
+<<<<<<< HEAD
 import {Slider} from "../../../Components/UI/Slider/Slider"
 import {ToggleButton} from "../../../Components/UI/ToggleButton/ToggleButton"
 import {validate} from "../../../Utils/validate"
 import {RocketConfigurator} from "./RocketConfigurator"
+=======
+import {RocketConfigurator} from "./RocketConfigurator"
+import {Slider} from "../../../Components/UI/Slider/Slider"
+import {ToggleButton} from "../../../Components/UI/ToggleButton/ToggleButton"
+import {validate} from "../../../Utils/validate"
+>>>>>>> crop
 
 const FLIGHT_END_EVENT_NAME = "flightEnded"
 
@@ -35,6 +42,7 @@ export class RocketLaunchControl extends BaseScriptComponent {
   rocketAnimationPlayer!: AnimationPlayer
 
   @input
+<<<<<<< HEAD
   rocketAudioComponent!: AudioComponent
 
   @input
@@ -44,6 +52,8 @@ export class RocketLaunchControl extends BaseScriptComponent {
   rocketLandSFX!: AudioTrackAsset
 
   @input
+=======
+>>>>>>> crop
   flightPathText!: Text
 
   @input
@@ -172,9 +182,12 @@ export class RocketLaunchControl extends BaseScriptComponent {
     this.rocketConf.exhaustControl.turnOnExhausts()
     this.rocketConf.exhaustControl.turnOnSmokes()
 
+<<<<<<< HEAD
     this.rocketAudioComponent.audioTrack = this.rocketLaunchSFX
     this.rocketAudioComponent.play(1)
 
+=======
+>>>>>>> crop
     this.engineReadyEvent.reset(0.5)
   }
 
@@ -236,9 +249,12 @@ export class RocketLaunchControl extends BaseScriptComponent {
     print("Landing Started!")
     validate(this.rocketConf.exhaustControl)
     this.rocketConf.exhaustControl.turnOffExhausts()
+<<<<<<< HEAD
 
     this.rocketAudioComponent.audioTrack = this.rocketLandSFX
     this.rocketAudioComponent.play(1)
+=======
+>>>>>>> crop
   }
 
   private setupAnimationAButtonCallbacks = (): void => {

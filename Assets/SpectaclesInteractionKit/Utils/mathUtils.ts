@@ -52,7 +52,11 @@ export function inverseLerp(start: number, end: number, value: number) {
 export function interpolateVec3(
   vectorA: vec3,
   vectorB: vec3,
+<<<<<<< HEAD
   ratio: number,
+=======
+  ratio: number
+>>>>>>> crop
 ): vec3 {
   return vectorA.uniformScale(1 - ratio).add(vectorB.uniformScale(ratio))
 }
@@ -84,7 +88,11 @@ export function mapValue(
   inMax: number,
   inMin: number,
   outMax: number,
+<<<<<<< HEAD
   outMin: number,
+=======
+  outMin: number
+>>>>>>> crop
 ): number {
   return ((val - inMax) / (inMin - inMax)) * (outMin - outMax) + outMax
 }
@@ -109,7 +117,11 @@ export function smoothDamp(
   target: number,
   velocity: number,
   smoothTime: number,
+<<<<<<< HEAD
   deltaTime: number,
+=======
+  deltaTime: number
+>>>>>>> crop
 ): [number, number] {
   // https://en.wikipedia.org/wiki/Mass-spring-damper_model
   // m * x''(t) + c * x'(t) + k * x(t) = 0
@@ -150,7 +162,11 @@ export function smoothDampAngle(
   target: number,
   velocity: number,
   smoothTime: number,
+<<<<<<< HEAD
   deltaTime: number,
+=======
+  deltaTime: number
+>>>>>>> crop
 ): [number, number] {
   if (target - current > Math.PI) current += 2 * Math.PI
   if (target - current < -Math.PI) current -= 2 * Math.PI
@@ -169,7 +185,11 @@ export function smoothSlide(
   current: number,
   velocity: number,
   smoothTime: number,
+<<<<<<< HEAD
   deltaTime: number,
+=======
+  deltaTime: number
+>>>>>>> crop
 ): [number, number] {
   // smooth slide equation (k = 0)
   // c * x'(t) + x''(t) = 0

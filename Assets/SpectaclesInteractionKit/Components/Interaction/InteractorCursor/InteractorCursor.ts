@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {
   Interactor,
   InteractorInputType,
@@ -10,6 +11,9 @@ import {
   CircleVisualConfig,
   CircleVisualMaterialParameters,
 } from "./CircleVisual"
+=======
+import {CircleVisual, CircleVisualConfig} from "./CircleVisual"
+>>>>>>> crop
 import {
   CursorData,
   CursorState,
@@ -17,12 +21,28 @@ import {
   CursorViewState,
   ManipulateLineData,
 } from "./CursorViewModel"
+<<<<<<< HEAD
 
 import {InteractionManager} from "../../../Core/InteractionManager/InteractionManager"
 import BaseInteractor from "../../../Core/Interactor/BaseInteractor"
 import {CursorControllerProvider} from "../../../Providers/CursorControllerProvider/CursorControllerProvider"
 import {HandType} from "../../../Providers/HandInputData/HandType"
 import Event from "../../../Utils/Event"
+=======
+import {
+  Interactor,
+  InteractorInputType,
+} from "../../../Core/Interactor/Interactor"
+import LineRenderer, {
+  LineViewConfig,
+} from "../../../Utils/views/LineRenderer/LineRenderer"
+
+import BaseInteractor from "../../../Core/Interactor/BaseInteractor"
+import {CursorControllerProvider} from "../../../Providers/CursorControllerProvider/CursorControllerProvider"
+import Event from "../../../Utils/Event"
+import {HandType} from "../../../Providers/HandInputData/HandType"
+import {InteractionManager} from "../../../Core/InteractionManager/InteractionManager"
+>>>>>>> crop
 import {validate} from "../../../Utils/validate"
 
 export enum CursorMode {
@@ -34,6 +54,7 @@ export enum CursorMode {
   Custom = "Custom",
 }
 
+<<<<<<< HEAD
 export type CursorParameters = {
   worldPosition: vec3
   worldRotation: vec3
@@ -41,6 +62,8 @@ export type CursorParameters = {
   isShown: boolean
 } & CircleVisualMaterialParameters
 
+=======
+>>>>>>> crop
 const TAG = "InteractorCursor"
 
 const LINE_VERTICES = 10
@@ -284,6 +307,7 @@ export class InteractorCursor extends BaseScriptComponent {
     this.circleVisual.renderOrder = renderOrder
   }
 
+<<<<<<< HEAD
   /**
    * @returns the transform and material parameters of the cursor to allow other cursor implementations to re-use the same values.
    */
@@ -307,6 +331,8 @@ export class InteractorCursor extends BaseScriptComponent {
     }
   }
 
+=======
+>>>>>>> crop
   private updateManipulateLine(data: ManipulateLineData) {
     this.manipulateLine.points = this.getCurvedLinePoints(
       data.origin,

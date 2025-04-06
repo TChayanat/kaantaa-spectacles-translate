@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {HandInteractor} from "../../../Core/HandInteractor/HandInteractor"
 import {HandInputData} from "../../../Providers/HandInputData/HandInputData"
 import {HandType} from "../../../Providers/HandInputData/HandType"
@@ -17,6 +18,21 @@ export enum HandVisualSelection {
   Occluder = "Occluder",
 }
 
+=======
+import {GlowEffectView} from "./GlowEffectView"
+import {HandInputData} from "../../../Providers/HandInputData/HandInputData"
+import {HandType} from "../../../Providers/HandInputData/HandType"
+import {HandVisuals} from "../../../Providers/HandInputData/HandVisuals"
+import {InputChecker} from "../../../Utils/InputChecker"
+import {InteractionConfigurationProvider} from "../../../Providers/InteractionConfigurationProvider/InteractionConfigurationProvider"
+import RadialOcclusionView from "./RadialOcclusionView"
+import TrackedHand from "../../../Providers/HandInputData/TrackedHand"
+import {findSceneObjectByName} from "../../../Utils/SceneObjectUtils"
+import {validate} from "../../../Utils/validate"
+
+const TAG = "HandVisual"
+
+>>>>>>> crop
 /**
  * This class provides a visual representation of the hand, with the ability to automatically wire joints to the hand mesh. It also provides the ability to add a radial gradient occlusion effect and a glow effect to the hand mesh.
  */
@@ -32,6 +48,7 @@ export class HandVisual extends BaseScriptComponent implements HandVisuals {
     ]),
   )
   private handType!: string
+<<<<<<< HEAD
   @input
   @widget(
     new ComboBoxWidget([
@@ -41,6 +58,9 @@ export class HandVisual extends BaseScriptComponent implements HandVisuals {
   )
   private selectVisual: string = "Default"
   @input handInteractor: HandInteractor
+=======
+
+>>>>>>> crop
   @input
   /**
    * Reference to the RenderMeshVisual of the hand mesh.
@@ -145,8 +165,13 @@ export class HandVisual extends BaseScriptComponent implements HandVisuals {
   @ui.group_end
   @ui.group_start("Glow Effect")
   @input
+<<<<<<< HEAD
   @hint("Whether or not the thumb should glow when poking")
   private shouldThumbPokeGlow: boolean = false
+=======
+  @hint("Whether or not the glow effect is enabled")
+  private glowEnabled: boolean = true
+>>>>>>> crop
   @input
   @hint("The plane mesh on which the glow texture/material will be rendered")
   private unitPlaneMesh!: RenderMesh
@@ -155,6 +180,7 @@ export class HandVisual extends BaseScriptComponent implements HandVisuals {
   private tipGlowMaterial!: Material
   @input
   @widget(new ColorWidget())
+<<<<<<< HEAD
   @hint("The color the glow will be when you are not pinching/poking")
   private hoverColor!: vec4
   @input
@@ -165,6 +191,14 @@ export class HandVisual extends BaseScriptComponent implements HandVisuals {
   @widget(new ColorWidget())
   @hint("The color the glow will be when you are pinching/poking too far")
   private behindColor!: vec4
+=======
+  @hint("The color the glow will be when you are not pinching")
+  private idleColor!: vec4
+  @input
+  @widget(new ColorWidget())
+  @hint("The color the glow will be when you are pinching")
+  private pinchDownColor!: vec4
+>>>>>>> crop
   @input
   @hint(
     "How close index finger of tapping hand has to be to tapped hand to initiate tap glow",
@@ -195,6 +229,7 @@ export class HandVisual extends BaseScriptComponent implements HandVisuals {
   private gradientQuadRenderOrder: number = 9997
   @ui.group_end
   @ui.group_end
+<<<<<<< HEAD
   @ui.group_start("Hand Mesh Materials")
   @input
   @hint(
@@ -207,12 +242,15 @@ export class HandVisual extends BaseScriptComponent implements HandVisuals {
   )
   private handOccluderMaterial: Material
   @ui.group_end
+=======
+>>>>>>> crop
 
   // Dependencies
   private handProvider: HandInputData = HandInputData.getInstance()
   private interactionConfigurationProvider: InteractionConfigurationProvider =
     InteractionConfigurationProvider.getInstance()
   private inputChecker = new InputChecker(TAG)
+<<<<<<< HEAD
   private hand: TrackedHand | undefined
   private radialOcclusionView: RadialOcclusionView | undefined
   private glowEffectView: GlowEffectView | undefined
@@ -238,6 +276,18 @@ export class HandVisual extends BaseScriptComponent implements HandVisuals {
     return this._handVisualSelection
   }
 
+=======
+
+  private hand: TrackedHand | undefined
+
+  private radialOcclusionView: RadialOcclusionView | undefined
+  private glowEffectView: GlowEffectView | undefined
+
+  private _enabled: boolean = true
+
+  initialized = false
+
+>>>>>>> crop
   private defineScriptEvents() {
     this.createEvent("OnStartEvent").bind(() => {
       this.initialize()
@@ -319,7 +369,11 @@ export class HandVisual extends BaseScriptComponent implements HandVisuals {
     if (this.radialOcclusionView !== undefined) {
       this.radialOcclusionView.enabled = enabled
     }
+<<<<<<< HEAD
     this.handMesh.sceneObject.enabled = enabled
+=======
+    this.handMesh.enabled = enabled
+>>>>>>> crop
   }
 
   onAwake(): void {
@@ -439,22 +493,38 @@ export class HandVisual extends BaseScriptComponent implements HandVisuals {
     // The joints are now ready and the effects can be initialized
 
     this.hand.initHandVisuals()
+<<<<<<< HEAD
+=======
+
+    if (!this.glowEnabled) {
+      return
+    }
+
+>>>>>>> crop
     this.glowEffectView = new GlowEffectView({
       handType: this.handType as HandType,
       unitPlaneMesh: this.unitPlaneMesh,
       tipGlowMaterial: this.tipGlowMaterial,
+<<<<<<< HEAD
       hoverColor: this.hoverColor,
       triggerColor: this.triggerColor,
       behindColor: this.behindColor,
+=======
+      idleColor: this.idleColor,
+      pinchDownColor: this.pinchDownColor,
+>>>>>>> crop
       tapProximityThreshold: this.tapProximityThreshold,
       tapTexture: this.tapTexture,
       pinchTexture: this.pinchTexture,
       tipGlowRenderOrder: this.tipGlowRenderOrder,
+<<<<<<< HEAD
       handInteractor: this.handInteractor,
       visualSelection: this._handVisualSelection,
       handOutlineMaterial: this.handOutlineMaterial,
       handOccluderMaterial: this.handOccluderMaterial,
       shouldThumbPokeGlow: this.shouldThumbPokeGlow,
+=======
+>>>>>>> crop
     })
 
     if (!this.occluderEnabled) {

@@ -53,7 +53,11 @@ export class DragProvider {
    */
   getDragVector(
     currentPosition: vec3 | null,
+<<<<<<< HEAD
     enableInstantDrag: boolean | null,
+=======
+    enableInstantDrag: boolean | null
+>>>>>>> crop
   ): vec3 | null {
     if (currentPosition === null) {
       return null
@@ -77,7 +81,11 @@ export class DragProvider {
 
   private isDragDetected(
     position: vec3,
+<<<<<<< HEAD
     enableInstantDrag: boolean | null,
+=======
+    enableInstantDrag: boolean | null
+>>>>>>> crop
   ): boolean {
     if (this._originPosition === null) {
       this._originPosition = position

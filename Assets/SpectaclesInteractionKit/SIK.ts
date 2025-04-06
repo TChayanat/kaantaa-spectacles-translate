@@ -35,5 +35,9 @@ export const SIK: SIKAPI = new Proxy(
           throw new Error(`Property ${String(prop)} does not exist on SIK API`)
       }
     },
+<<<<<<< HEAD
   },
+=======
+  }
+>>>>>>> crop
 ) as SIKAPI

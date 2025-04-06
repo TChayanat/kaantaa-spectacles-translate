@@ -236,10 +236,17 @@ export default class DefaultHeadlockController {
 
     // Move the sphere around the user's head and updates the target to maintain the same angle.
     const translationOffset = this.translationCalculator.updateCenter(
+<<<<<<< HEAD
       this.cameraTransform.getWorldPosition(),
     )
     this.targetTransform.setWorldPosition(
       translationOffset.add(this.targetTransform.getWorldPosition()),
+=======
+      this.cameraTransform.getWorldPosition()
+    )
+    this.targetTransform.setWorldPosition(
+      translationOffset.add(this.targetTransform.getWorldPosition())
+>>>>>>> crop
     )
 
     // Rotate the target along the sphere to reach the desired offsets.
@@ -257,7 +264,11 @@ export default class DefaultHeadlockController {
             this.getCenterToTargetVector(),
             vec3.up(),
             this.getFaceForwardVector(),
+<<<<<<< HEAD
             this.cameraTransform.up,
+=======
+            this.cameraTransform.up
+>>>>>>> crop
           )
           break
         case RotationAxis.Yaw:
@@ -268,13 +279,22 @@ export default class DefaultHeadlockController {
                   new vec3(
                     this.cameraTransform.left.x,
                     0,
+<<<<<<< HEAD
                     this.cameraTransform.left.z,
                   ),
+=======
+                    this.cameraTransform.left.z
+                  )
+>>>>>>> crop
                 )
               : vec3.up(),
             this.getCenterToTargetVector(),
             this.cameraTransform.right.projectOnPlane(vec3.up()),
+<<<<<<< HEAD
             this.getFaceForwardVector(),
+=======
+            this.getFaceForwardVector()
+>>>>>>> crop
           )
           break
         default:
@@ -282,7 +302,11 @@ export default class DefaultHeadlockController {
       }
 
       this.targetTransform.setWorldPosition(
+<<<<<<< HEAD
         rotationOffset.add(this.targetTransform.getWorldPosition()),
+=======
+        rotationOffset.add(this.targetTransform.getWorldPosition())
+>>>>>>> crop
       )
     }
   }
@@ -300,16 +324,28 @@ export default class DefaultHeadlockController {
     let offset = this.getFaceForwardVector().uniformScale(this.distance)
     let pitchQuaternion = quat.angleAxis(
       MathUtils.DegToRad * (this.headlockComponent.pitchOffsetDegrees ?? 0),
+<<<<<<< HEAD
       vec3.left(),
+=======
+      vec3.left()
+>>>>>>> crop
     )
     offset = pitchQuaternion.multiplyVec3(offset)
     let yawQuaternion = quat.angleAxis(
       MathUtils.DegToRad * (this.headlockComponent.yawOffsetDegrees ?? 0),
+<<<<<<< HEAD
       vec3.up(),
     )
     offset = yawQuaternion.multiplyVec3(offset)
     this.targetTransform.setWorldPosition(
       this.cameraTransform.getWorldPosition().add(offset),
+=======
+      vec3.up()
+    )
+    offset = yawQuaternion.multiplyVec3(offset)
+    this.targetTransform.setWorldPosition(
+      this.cameraTransform.getWorldPosition().add(offset)
+>>>>>>> crop
     )
   }
 }

@@ -296,7 +296,11 @@ export default class View<Config extends ViewConfig = ViewConfig> {
   protected addChild<Child extends View<any>>(
     child: Child,
     configure?: (c: Child) => void,
+<<<<<<< HEAD
     preserveWorldTransform: boolean = false,
+=======
+    preserveWorldTransform: boolean = false
+>>>>>>> crop
   ): Child {
     child.attachToParent(this, preserveWorldTransform)
     this.childViews.push(child)
@@ -316,11 +320,19 @@ export default class View<Config extends ViewConfig = ViewConfig> {
   // construct and add a child
   protected newChild<
     Conf,
+<<<<<<< HEAD
     Child extends View<Conf extends ViewConfig ? Conf : never>,
   >(
     ctor: {new (conf: Conf): Child},
     conf: Conf,
     customize?: (c: Child) => void,
+=======
+    Child extends View<Conf extends ViewConfig ? Conf : never>
+  >(
+    ctor: {new (conf: Conf): Child},
+    conf: Conf,
+    customize?: (c: Child) => void
+>>>>>>> crop
   ): Child {
     return this.addChild(new ctor(conf), customize)
   }
@@ -385,7 +397,11 @@ export default class View<Config extends ViewConfig = ViewConfig> {
   // traversal
   protected recursivelySetChildProperty<
     FieldName extends keyof this,
+<<<<<<< HEAD
     FieldType extends this[FieldName],
+=======
+    FieldType extends this[FieldName]
+>>>>>>> crop
   >(fieldName: FieldName, newValue: FieldType) {
     let viewStack: any[] = [...this.childViews]
     while (viewStack.length > 0) {
@@ -401,7 +417,11 @@ export default class View<Config extends ViewConfig = ViewConfig> {
 
   private attachToParent(
     parent: View<any> | SceneObject,
+<<<<<<< HEAD
     preserveWorldTransform: boolean = false,
+=======
+    preserveWorldTransform: boolean = false
+>>>>>>> crop
   ) {
     // set the scene object parent
     let parentSceneObject: SceneObject =
@@ -415,7 +435,11 @@ export default class View<Config extends ViewConfig = ViewConfig> {
 
   private cascadeAttachToSceneCallbacks(
     parentDefaults: Defaults | null = null,
+<<<<<<< HEAD
     parentView: View | null = null,
+=======
+    parentView: View | null = null
+>>>>>>> crop
   ) {
     // creates a prototype cain so that defaults will "fall back"
     // to the parent's defaults
@@ -430,7 +454,11 @@ export default class View<Config extends ViewConfig = ViewConfig> {
     let defaults =
       parentDefaults !== null && this._defaults !== null
         ? objectWithFallback(this._defaults, parentDefaults)
+<<<<<<< HEAD
         : (parentDefaults ?? this._defaults ?? {})
+=======
+        : parentDefaults ?? this._defaults ?? {}
+>>>>>>> crop
 
     // cache the computed defaults for any future attaches
     this._defaults = defaults

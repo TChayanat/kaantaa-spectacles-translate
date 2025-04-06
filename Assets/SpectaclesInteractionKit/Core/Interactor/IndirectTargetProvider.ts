@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 import TargetProvider, {
   InteractableHitInfo,
 } from "../../Providers/TargetProvider/TargetProvider"
 import {RaycastInfo, RayProvider} from "./RayProvider"
+=======
+import {RayProvider, RaycastInfo} from "./RayProvider"
+import TargetProvider, {
+  InteractableHitInfo,
+} from "../../Providers/TargetProvider/TargetProvider"
+>>>>>>> crop
 
 import BaseInteractor from "./BaseInteractor"
 import {TargetingMode} from "./Interactor"

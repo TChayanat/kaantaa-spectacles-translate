@@ -4,7 +4,11 @@
  * @returns - the same reference if not destroyed on the LensCore side, or null if destroyed
  */
 export function getSafeReference<
+<<<<<<< HEAD
   T extends SceneObject | Component | Text | ScriptComponent,
+=======
+  T extends SceneObject | Component | Text | ScriptComponent
+>>>>>>> crop
 >(reference: T | null): T | null {
   if (reference && !isNull(reference)) {
     return reference

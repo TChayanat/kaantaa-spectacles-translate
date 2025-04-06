@@ -21,7 +21,11 @@
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
+<<<<<<< HEAD
   ComponentUid: 55597347-1685-4a90-a96e-7d76d4f484e4
+=======
+  ComponentUid: f6f5edbd-fa45-4f50-ac73-b236af800c95
+>>>>>>> crop
   ExportUid: 00000000-0000-0000-0000-000000000000
   CurrentVisibility: Editable
   MaxVisibility: Editable

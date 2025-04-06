@@ -80,7 +80,11 @@ export default class HeadlockRotationCalculator {
   private calculateRotationOffset(
     angle: number,
     axisVector: vec3,
+<<<<<<< HEAD
     positionVector: vec3,
+=======
+    positionVector: vec3
+>>>>>>> crop
   ): vec3 {
     const rotationQuaternion = quat.angleAxis(angle, axisVector)
 
@@ -95,7 +99,11 @@ export default class HeadlockRotationCalculator {
       newPositionVector = vec3.lerp(
         positionVector,
         newPositionVector,
+<<<<<<< HEAD
         this.axisEasing * timeRatio,
+=======
+        this.axisEasing * timeRatio
+>>>>>>> crop
       )
     }
     const rotationOffset = newPositionVector.sub(positionVector)
@@ -114,7 +122,11 @@ export default class HeadlockRotationCalculator {
     positionVector: vec3,
     originVector: vec3,
     forwardVector: vec3,
+<<<<<<< HEAD
     upVector?: vec3,
+=======
+    upVector?: vec3
+>>>>>>> crop
   ): number {
     const positionVectorOnPlane = positionVector
       .projectOnPlane(axisVector)
@@ -131,11 +143,19 @@ export default class HeadlockRotationCalculator {
     if (this.axis === RotationAxis.Pitch && upVector !== undefined) {
       const forwardVectorOnXZ = new vec2(
         forwardVectorOnPlane.x,
+<<<<<<< HEAD
         forwardVectorOnPlane.z,
       ).normalize()
       const positionVectorOnXZ = new vec2(
         positionVectorOnPlane.x,
         positionVectorOnPlane.z,
+=======
+        forwardVectorOnPlane.z
+      ).normalize()
+      const positionVectorOnXZ = new vec2(
+        positionVectorOnPlane.x,
+        positionVectorOnPlane.z
+>>>>>>> crop
       ).normalize()
 
       const sameDirection =
@@ -182,7 +202,11 @@ export default class HeadlockRotationCalculator {
     positionVector: vec3,
     originVector: vec3,
     forwardVector: vec3,
+<<<<<<< HEAD
     upVector?: vec3,
+=======
+    upVector?: vec3
+>>>>>>> crop
   ): vec3 {
     if (this.skipRotation()) {
       return vec3.zero()
@@ -192,12 +216,20 @@ export default class HeadlockRotationCalculator {
       positionVector,
       originVector,
       forwardVector,
+<<<<<<< HEAD
       upVector,
+=======
+      upVector
+>>>>>>> crop
     )
     const rotationOffset = this.calculateRotationOffset(
       angle,
       axisVector,
+<<<<<<< HEAD
       positionVector,
+=======
+      positionVector
+>>>>>>> crop
     )
 
     return rotationOffset

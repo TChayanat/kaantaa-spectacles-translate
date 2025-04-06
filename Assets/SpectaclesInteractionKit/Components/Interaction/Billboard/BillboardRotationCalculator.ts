@@ -10,7 +10,10 @@ export type RotationCalculatorConfig = {
 const TAG = "BillboardRotationCalculator"
 
 const DEFAULT_DURATION = 0.033
+<<<<<<< HEAD
 export const ALMOST_ONE = 1 - Number.MIN_VALUE
+=======
+>>>>>>> crop
 
 /**
  * BillboardRotationCalculator is used to calculate the quaternion to rotate an object by to align with a new vector along an axis.
@@ -58,7 +61,11 @@ export default class BillboardRotationCalculator {
   // Returns the quaternion representing the rotation necessary for the target to align with the camera.
   private calculateRotationQuaternion(
     rotationRadians: number,
+<<<<<<< HEAD
     axisVector: vec3,
+=======
+    axisVector: vec3
+>>>>>>> crop
   ): quat {
     let rotationQuaternion: quat = quat.angleAxis(rotationRadians, axisVector)
 
@@ -95,7 +102,11 @@ export default class BillboardRotationCalculator {
     axisVector: vec3,
     forwardVector: vec3,
     cameraVector: vec3,
+<<<<<<< HEAD
     originVector: vec3,
+=======
+    originVector: vec3
+>>>>>>> crop
   ): number {
     let forwardVectorOnPlane = forwardVector.projectOnPlane(axisVector)
     let cameraVectorOnPlane = cameraVector.projectOnPlane(axisVector)
@@ -118,26 +129,41 @@ export default class BillboardRotationCalculator {
     axisVector: vec3,
     forwardVector: vec3,
     cameraVector: vec3,
+<<<<<<< HEAD
     originVector: vec3,
+=======
+    originVector: vec3
+>>>>>>> crop
   ): quat {
     if (this.skipRotation()) {
       return quat.quatIdentity()
     }
 
+<<<<<<< HEAD
     if (axisVector.dot(forwardVector) > ALMOST_ONE) {
       return quat.quatIdentity()
     }
+=======
+>>>>>>> crop
     let angle = this.calculateAxisAngle(
       axisVector,
       forwardVector,
       cameraVector,
+<<<<<<< HEAD
       originVector,
+=======
+      originVector
+>>>>>>> crop
     )
     let rotationRadians = this.calculateAxisRotation(angle)
 
     let rotationQuaternion = this.calculateRotationQuaternion(
       rotationRadians,
+<<<<<<< HEAD
       axisVector,
+=======
+      axisVector
+>>>>>>> crop
     )
 
     return rotationQuaternion
@@ -155,16 +181,25 @@ export default class BillboardRotationCalculator {
     axisVector: vec3,
     forwardVector: vec3,
     cameraVector: vec3,
+<<<<<<< HEAD
     originVector: vec3,
   ) {
     if (axisVector.dot(forwardVector) > ALMOST_ONE) {
       return quat.quatIdentity()
     }
+=======
+    originVector: vec3
+  ) {
+>>>>>>> crop
     let angle = this.calculateAxisAngle(
       axisVector,
       forwardVector,
       cameraVector,
+<<<<<<< HEAD
       originVector,
+=======
+      originVector
+>>>>>>> crop
     )
 
     return this.axisEnabled
