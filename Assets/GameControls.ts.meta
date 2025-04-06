@@ -1,0 +1,45 @@
+- !<AssetImportMetadata/f63e0ec8-30b0-4ca7-9cc3-b84106ff854c>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> c16b50b8-3d45-4800-aec3-52d4783475d3
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> c16b50b8-3d45-4800-aec3-52d4783475d3
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 320d827d-4d14-427d-8ebe-342dd9890715
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/320d827d-4d14-427d-8ebe-342dd9890715>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 69b87545-5126-4a85-81da-4d3a17ae0da8
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    noMaxwellScene: false
+    recallText: false
+    yesMaxwellScene: false
+  ScriptTypesHidden:
+    {}
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - recallText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      yesMaxwellScene: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      noMaxwellScene: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input SceneObject yesMaxwellScene
+    - // @input SceneObject noMaxwellScene
+    - // @input Component.Text recallText

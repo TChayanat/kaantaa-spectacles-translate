@@ -1,8 +1,17 @@
 import { Interactable } from "./SpectaclesInteractionKit/Components/Interaction/Interactable/Interactable";
 import { InteractorEvent } from "./SpectaclesInteractionKit/Core/Interactor/InteractorEvent";
 
+export namespace LanguageSettings {
+    export let globalLanguageVariable : string = "";
+}
 @component
 export class LanguageControls extends BaseScriptComponent {
+    @input
+    public chooseLanguageScene : SceneObject
+    @input
+    public geminiScene : SceneObject
+    @input
+    public cameraServiceScene : SceneObject
 
     @input
     public language : Text;
@@ -30,7 +39,10 @@ export class LanguageControls extends BaseScriptComponent {
     }
     onStart() {
         let onSelectTriggerStart = (event: InteractorEvent) => {
-            // !! MOVE ON TO NEXT STEP!
+            LanguageSettings.globalLanguageVariable = this.language.text;
+            this.geminiScene.enabled = true
+            this.cameraServiceScene.enabled = true
+            this.chooseLanguageScene.enabled = false
         };
 
         let onRetryTriggerStart = (event: InteractorEvent) => {

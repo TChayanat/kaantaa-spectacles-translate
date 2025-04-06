@@ -1,7 +1,8 @@
-import { SIK } from "SpectaclesInteractionKit/SIK";
+import { SIK } from "../../SpectaclesInteractionKit/SIK";
 import { CropRegion } from "./CropRegion";
 import { Gemini } from "./Gemini";
 import { CaptionBehavior } from "./CaptionBehavior";
+import { GameControls, GameSettings } from "../../GameControls";
 
 const BOX_MIN_SIZE = 8; //min size in cm for image capture
 
@@ -34,7 +35,30 @@ export class PictureBehavior extends BaseScriptComponent {
   private rotMat = new mat3();
 
   private updateEvent = null;
-
+  makeGeminiCall() {
+    if (!GameSettings.isRecall) {
+      this.gemini.makeImageRequest(
+        this.captureRendMesh.mainPass.captureImage,
+        (response) => {
+          this.loadingObj.enabled = false;
+          this.loadCaption(response);
+        }
+      );
+    }
+    else {
+      this.gemini.makeImageCheck(
+        GameSettings.currentNoun, 
+        this.captureRendMesh.mainPass.captureImage, 
+        (response) => {
+          if (response == true) {
+            GameControls.scoreAnswer("yes");
+          }
+          else {
+            GameControls.scoreAnswer("no");
+          }
+        });
+    }
+  }
   onAwake() {
     this.loadingObj.enabled = false;
     this.loadingTrans = this.loadingObj.getTransform();
@@ -67,13 +91,7 @@ export class PictureBehavior extends BaseScriptComponent {
         this.cropRegion.enabled = false;
         this.captureRendMesh.mainPass.captureImage =
           ProceduralTextureProvider.createFromTexture(this.screenCropTexture);
-        this.gemini.makeImageRequest(
-          this.captureRendMesh.mainPass.captureImage,
-          (response) => {
-            this.loadingObj.enabled = false;
-            this.loadCaption(response);
-          }
-        );
+        this.makeGeminiCall();
       });
       delayedEvent.reset(0.1);
     } else {
@@ -142,13 +160,7 @@ export class PictureBehavior extends BaseScriptComponent {
       this.loadingObj.enabled = true;
       this.cropRegion.enabled = false;
 
-      this.gemini.makeImageRequest(
-        this.captureRendMesh.mainPass.captureImage,
-        (response) => {
-          this.loadingObj.enabled = false;
-          this.loadCaption(response);
-        }
-      );
+      this.makeGeminiCall();
     }
   }
 
