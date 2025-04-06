@@ -103,6 +103,10 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    enablePokeDirectionality: true
+    acceptableXDirections: true
+    acceptableYDirections: true
+    acceptableZDirections: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -110,6 +114,10 @@
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
       allowMultipleInteractors: false
+      enablePokeDirectionality: false
+      acceptableXDirections: !<float> 3.000000
+      acceptableYDirections: !<float> 3.000000
+      acceptableZDirections: !<float> 3.000000
   ScriptTypes:
     "":
       {}

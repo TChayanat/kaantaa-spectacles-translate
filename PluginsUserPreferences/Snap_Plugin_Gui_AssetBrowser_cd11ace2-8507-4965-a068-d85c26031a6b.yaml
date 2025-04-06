@@ -1,7 +1,7 @@
 CollapsedEntities:
   type: stringset
   value:
-    size: 615
+    size: 599
     values:
       - Audio
       - Audio/eeeee.mp3
@@ -37,15 +37,6 @@ CollapsedEntities:
       - SpectaclesInteractionKit/Assets/Materials/PinchButtonToggleOnDefault.mat
       - SpectaclesInteractionKit/Assets/Materials/PinchButtonToggleOnIcon.mat
       - SpectaclesInteractionKit/Assets/Materials/PinchButtonToggleOnSelect.mat
-      - SpectaclesInteractionKit/Assets/Materials/PlatformUI/ButtonHover.mat
-      - SpectaclesInteractionKit/Assets/Materials/PlatformUI/ButtonIdle.mat
-      - SpectaclesInteractionKit/Assets/Materials/PlatformUI/ButtonPinched.mat
-      - SpectaclesInteractionKit/Assets/Materials/PlatformUI/CapsuleButtonHover.mat
-      - SpectaclesInteractionKit/Assets/Materials/PlatformUI/CapsuleButtonIdle.mat
-      - SpectaclesInteractionKit/Assets/Materials/PlatformUI/CapsuleButtonPinched.mat
-      - SpectaclesInteractionKit/Assets/Materials/PlatformUI/RoundButtonGlowHover.mat
-      - SpectaclesInteractionKit/Assets/Materials/PlatformUI/RoundButtonGlowIdle.mat
-      - SpectaclesInteractionKit/Assets/Materials/PlatformUI/RoundButtonGlowPinched.mat
       - SpectaclesInteractionKit/Assets/Materials/PlatformUI/RoundButtonHover.mat
       - SpectaclesInteractionKit/Assets/Materials/PlatformUI/RoundButtonPinched.mat
       - SpectaclesInteractionKit/Assets/Materials/PlatformUI/RoundButton_Idle.mat
@@ -54,11 +45,6 @@ CollapsedEntities:
       - SpectaclesInteractionKit/Assets/Materials/PlatformUI/ScrollButtonIdle.mat
       - SpectaclesInteractionKit/Assets/Materials/PlatformUI/ScrollButtonPinched.mat
       - SpectaclesInteractionKit/Assets/Materials/PlatformUI/Slider_Platform.mat
-      - SpectaclesInteractionKit/Assets/Materials/PlatformUI/StateButtonToggledHover.mat
-      - SpectaclesInteractionKit/Assets/Materials/PlatformUI/StateButtonToggledPinched.mat
-      - SpectaclesInteractionKit/Assets/Materials/PlatformUI/ToggleButtonToggledHover.mat
-      - SpectaclesInteractionKit/Assets/Materials/PlatformUI/ToggleButtonToggledIdle.mat
-      - SpectaclesInteractionKit/Assets/Materials/PlatformUI/ToggleButtonToggledPinched.mat
       - SpectaclesInteractionKit/Assets/Materials/ScaleBasedTargetOutline.mat
       - SpectaclesInteractionKit/Assets/Materials/ScrollBarButton.mat
       - SpectaclesInteractionKit/Assets/Materials/ScrollBarSlider.mat
@@ -547,7 +533,6 @@ CollapsedEntities:
       - SpectaclesInteractionKit/Providers/InteractionConfigurationProvider/SIKLogLevelProvider.ts
       - SpectaclesInteractionKit/Providers/MobileInputData
       - SpectaclesInteractionKit/Providers/MobileInputData/MobileInputData.ts
-      - SpectaclesInteractionKit/Providers/MobileInputData/MotionControllerProvider.ts
       - SpectaclesInteractionKit/Providers/TargetProvider
       - SpectaclesInteractionKit/Providers/TargetProvider/TargetProvider.ts
       - SpectaclesInteractionKit/Providers/TargetProvider/TargetingData.ts
@@ -556,7 +541,6 @@ CollapsedEntities:
       - SpectaclesInteractionKit/Utils/BistableThreshold.ts
       - SpectaclesInteractionKit/Utils/Event.ts
       - SpectaclesInteractionKit/Utils/Filter.ts
-      - SpectaclesInteractionKit/Utils/FunctionTimingUtils.ts
       - SpectaclesInteractionKit/Utils/InputChecker.ts
       - SpectaclesInteractionKit/Utils/InspectorCallbacks.ts
       - SpectaclesInteractionKit/Utils/LensConfig.ts
