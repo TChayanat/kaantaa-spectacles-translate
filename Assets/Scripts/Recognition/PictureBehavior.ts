@@ -45,10 +45,10 @@ export class PictureBehavior extends BaseScriptComponent {
         this.captureRendMesh.mainPass.captureImage,
         (response) => {
           this.loadingObj.enabled = false;
-          GlobalJSON.globalJson = response;
+          GlobalJSON.globalJson = JSON.parse(response);
           GlobalJSON.responsePending = true;
           GameSettings.gameControls.addNoun(JSON.parse(response).name);
-          this.loadCaption(response);
+          this.loadCaption(JSON.parse(response).name + "\n" + JSON.parse(response).romanization);
         }
       );
     }

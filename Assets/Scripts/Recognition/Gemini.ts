@@ -7,7 +7,7 @@ export class Gemini extends BaseScriptComponent {
     private ImageQuality = CompressionQuality.HighQuality;
     private ImageEncoding = EncodingType.Jpg;
 
-    private key = "";
+    private key = "AIzaSyBefsyRIGeFYW5AfhTjjMNwR2oO54OSqO8";
 
     onAwake() {}
 
@@ -94,9 +94,8 @@ export class Gemini extends BaseScriptComponent {
 
             if (bodyJson.candidates[0].content.parts[0].text && bodyJson.candidates[0].content.parts[0].text.length > 0) {
                 bodyJson.mainText = bodyJson.candidates[0].content.parts[0].text.slice(8, -3);
-                var mainJson = JSON.parse(bodyJson.mainText);
-                callback(`${mainJson.name}\n${mainJson.romanization}\n${mainJson.eng}\n${mainJson.etymology}`);
                 print(bodyJson.mainText);
+                callback(bodyJson.mainText);
             }
         } else {
             print("error code: " + resp.status);
