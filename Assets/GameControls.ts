@@ -1,3 +1,6 @@
+import { Interactable } from "./SpectaclesInteractionKit/Components/Interaction/Interactable/Interactable";
+import { InteractorEvent } from "./SpectaclesInteractionKit/Core/Interactor/InteractorEvent";
+
 export namespace GameSettings {
     export let isRecall = false
     export let currentNoun = ""
@@ -20,11 +23,13 @@ export class GameControls extends BaseScriptComponent {
         GameControls._yesMaxwellScene.enabled = true
         await new Promise(resolve => globalThis.setTimeout(resolve, 1000)); // 1 second
         GameControls._yesMaxwellScene.enabled = false
+        GameSettings.gameControls.findNoun();
     }
     static async runNaur() {
         GameControls._noMaxwellScene.enabled = true
         await new Promise(resolve => globalThis.setTimeout(resolve, 1000)); // 1 second
         GameControls._noMaxwellScene.enabled = false
+        GameSettings.gameControls.findNoun();
     }
 
     @input
@@ -35,8 +40,15 @@ export class GameControls extends BaseScriptComponent {
     @input
     recallText : Text
 
+    @input
+    recallButton : Interactable
+
+    @input
+    recallButtonText : Text
+
     nouns : Array<string> = []
     onAwake() {
+        GameSettings.gameControls = this;
         GameControls._yesMaxwellScene = this.yesMaxwellScene;
         GameControls._noMaxwellScene = this.noMaxwellScene;
         this.createEvent("OnStartEvent").bind(() => {
@@ -60,7 +72,21 @@ export class GameControls extends BaseScriptComponent {
         }
     }
     onStart() {
-        
+        let onSelectTriggerStart = (event: InteractorEvent) => {
+            if (GameSettings.isRecall == false) {
+                GameSettings.isRecall = true;
+                this.recallButtonText.text = "Goto Freeroam";
+                this.recallText.enabled = true;
+                this.findNoun();
+            }
+            else {
+                GameSettings.isRecall = false;
+                this.recallButtonText.text = "Goto Recall";
+                this.recallText.enabled = false;
+            }
+        };
+        this.recallButton.onInteractorTriggerStart(onSelectTriggerStart)
+        this.recallButton.getSceneObject().enabled = false;
     }
     onUpdate() {
 

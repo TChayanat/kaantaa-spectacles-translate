@@ -26,11 +26,10 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
-    cameraServiceScene: false
     chooseLanguageScene: false
-    geminiScene: false
     language: false
     languagePlaceholder: false
+    nextScenes: false
     retryInteractable: false
     selectInteractable: false
   ScriptTypesHidden:
@@ -42,15 +41,14 @@
       selectInteractable: !<MappingBased.Interactable> 00000000-0000-0000-0000-000000000000
       retryInteractable: !<MappingBased.Interactable> 00000000-0000-0000-0000-000000000000
       chooseLanguageScene: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      geminiScene: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      cameraServiceScene: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      nextScenes: !<reference.SceneObject[]>
+        []
   ScriptTypes:
     -
       {}
   InputLines:
     - // @input SceneObject chooseLanguageScene
-    - // @input SceneObject geminiScene
-    - // @input SceneObject cameraServiceScene
+    - "// @input SceneObject[] nextScenes"
     - // @input Component.Text language
     - // @input Component.Text languagePlaceholder
     - // @input Interactable selectInteractable

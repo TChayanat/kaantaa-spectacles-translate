@@ -27,6 +27,8 @@
   MaxVisibility: Editable
   ScriptInputsHidden:
     noMaxwellScene: false
+    recallButton: false
+    recallButtonText: false
     recallText: false
     yesMaxwellScene: false
   ScriptTypesHidden:
@@ -36,6 +38,8 @@
     - recallText: !<reference.Text> 00000000-0000-0000-0000-000000000000
       yesMaxwellScene: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       noMaxwellScene: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      recallButton: !<MappingBased.Interactable> 00000000-0000-0000-0000-000000000000
+      recallButtonText: !<reference.Text> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
@@ -43,3 +47,5 @@
     - // @input SceneObject yesMaxwellScene
     - // @input SceneObject noMaxwellScene
     - // @input Component.Text recallText
+    - // @input Interactable recallButton
+    - // @input Component.Text recallButtonText

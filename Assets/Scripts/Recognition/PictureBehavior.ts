@@ -47,6 +47,7 @@ export class PictureBehavior extends BaseScriptComponent {
           this.loadingObj.enabled = false;
           GlobalJSON.globalJson = response;
           GlobalJSON.responsePending = true;
+          GameSettings.gameControls.addNoun(JSON.parse(response).name);
           this.loadCaption(response);
         }
       );
