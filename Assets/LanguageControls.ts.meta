@@ -27,6 +27,7 @@
   MaxVisibility: Editable
   ScriptInputsHidden:
     chooseLanguageScene: false
+    gameContainerFrame: false
     language: false
     languagePlaceholder: false
     nextScenes: false
@@ -43,6 +44,7 @@
       chooseLanguageScene: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       nextScenes: !<reference.SceneObject[]>
         []
+      gameContainerFrame: !<MappingBased.ContainerFrame> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
@@ -53,3 +55,4 @@
     - // @input Component.Text languagePlaceholder
     - // @input Interactable selectInteractable
     - // @input Interactable retryInteractable
+    - // @input ContainerFrame gameContainerFrame

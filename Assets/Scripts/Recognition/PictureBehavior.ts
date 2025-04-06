@@ -48,7 +48,8 @@ export class PictureBehavior extends BaseScriptComponent {
           GlobalJSON.globalJson = JSON.parse(response);
           GlobalJSON.responsePending = true;
           GameSettings.gameControls.addNoun(JSON.parse(response).name);
-          this.loadCaption(JSON.parse(response).name + "\n" + JSON.parse(response).romanization);
+          this.loadCaption(JSON.parse(response).name + "\n" + JSON.parse(response).romanization
+              + "\n" + JSON.parse(response).eng);
         }
       );
     }

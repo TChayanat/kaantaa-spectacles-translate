@@ -1,5 +1,6 @@
 import { Interactable } from "./SpectaclesInteractionKit/Components/Interaction/Interactable/Interactable";
 import { InteractorEvent } from "./SpectaclesInteractionKit/Core/Interactor/InteractorEvent";
+import {ContainerFrame} from "./SpectaclesInteractionKit/Components/UI/ContainerFrame/ContainerFrame";
 
 export namespace LanguageSettings {
     export let globalLanguageVariable : string = "";
@@ -24,6 +25,9 @@ export class LanguageControls extends BaseScriptComponent {
     @input
     public retryInteractable : Interactable;
 
+    @input
+    public gameContainerFrame : ContainerFrame;
+
     onAwake() {
         this.createEvent("OnStartEvent").bind(() => {
             this.onStart();
@@ -42,6 +46,7 @@ export class LanguageControls extends BaseScriptComponent {
             for (let i = 0; i < this.nextScenes.length; i++) {
                 this.nextScenes[i].enabled = true;
             }
+            this.gameContainerFrame.enabled = true;
             this.chooseLanguageScene.enabled = false
         };
 

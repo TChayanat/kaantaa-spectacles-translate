@@ -41,7 +41,7 @@ export class Gemini extends BaseScriptComponent {
             imageTex,
             (base64String) => {
                 print("Image encode Success!");
-                const textQuery = `return a single boolean value whether the provided image is similar
+                const textQuery = `return a single boolean word whether the provided image is similar
                 enough to the word, ${word}`;
                 this.checkGemini(textQuery, base64String, callback);
             },

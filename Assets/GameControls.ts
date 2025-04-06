@@ -24,16 +24,22 @@ export class GameControls extends BaseScriptComponent {
     }
     static async runYay() {
         GameControls._yesMaxwellScene.enabled = true
-        await new Promise(resolve => globalThis.setTimeout(resolve, 1000)); // 1 second
-        GameControls._yesMaxwellScene.enabled = false
-        GameSettings.gameControls.findNoun();
+        this.timestamp = Date.now()
+        this.awaitingMaxwell = true;
     }
     static async runNaur() {
         GameControls._noMaxwellScene.enabled = true
-        await new Promise(resolve => globalThis.setTimeout(resolve, 1000)); // 1 second
-        GameControls._noMaxwellScene.enabled = false
+        this.timestamp = Date.now()
+        this.awaitingMaxwell = true;
+    }
+    static finishMaxwell() {
+        GameControls._yesMaxwellScene.enabled = false;
+        GameControls._noMaxwellScene.enabled = false;
         GameSettings.gameControls.findNoun();
     }
+    static awaitingMaxwell = false;
+    static timestamp;
+
 
     @input
     yesMaxwellScene : SceneObject
@@ -84,21 +90,24 @@ export class GameControls extends BaseScriptComponent {
                 GameSettings.isRecall = true;
                 this.recallButtonText.text = "Goto Freeroam";
                 this.recallText.enabled = true;
-                this.recallFrame.enabled = true;
                 this.findNoun();
             }
             else {
                 GameSettings.isRecall = false;
                 this.recallButtonText.text = "Goto Recall";
                 this.recallText.enabled = false;
-                this.recallFrame.enabled = false;
             }
         };
         this.recallButton.onInteractorTriggerStart(onSelectTriggerStart)
         this.recallButton.getSceneObject().enabled = false;
-        this.recallFrame.enabled = false;
     }
     onUpdate() {
-
+        if (GameControls.awaitingMaxwell == true) {
+            let nowDate = Date.now();
+            if (nowDate - GameControls.timestamp > 1000) {
+                GameControls.awaitingMaxwell = false;
+                GameControls.finishMaxwell();
+            }
+        }
     }
 }

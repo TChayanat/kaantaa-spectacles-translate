@@ -10,9 +10,9 @@
     - !<own> e3dcf8e0-55c0-40ab-82f2-2ee3c28f37d9
     - !<own> 16c71f82-fec5-460e-a52d-62fab1a77f56
     - !<own> 27ff64a5-1473-40b2-9f3a-30608bb74c8d
-    - !<own> 999378e9-34b4-49b2-8b87-9c73d6e622b9
     - !<own> 3df6d79c-f4c6-4974-a40b-af21cbb1c2c6
     - !<own> 3d83861a-145b-4e70-a7e4-2fac4b0d05d0
+    - !<own> 82b16d0e-6f11-4c6c-b3a7-b0202dce8bb4
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
@@ -3699,7 +3699,7 @@
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
@@ -5231,7 +5231,7 @@
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
-    - !<own> 82b16d0e-6f11-4c6c-b3a7-b0202dce8bb4
+    []
   Components:
     []
 - !<ScriptComponent/665e8ee6-a9bb-479a-9f07-746c2f4fdb91>
@@ -6781,8 +6781,8 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 2.218170, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    position: {x: -18.931150, y: -9.710496, z: -3.723896}
+    rotation: {x: -179.984375, y: 83.968857, z: 0.014972}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
@@ -8194,8 +8194,8 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    position: {x: 0.000000, y: 11.590000, z: 16.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
@@ -9157,13 +9157,14 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: -1.595310, z: -16.294922}
+    position: {x: 0.000000, y: -60.000000, z: -16.294922}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 83c154a9-e763-4a13-9900-dacf3070d8ce
     - !<own> 793e3138-841d-4f76-9c25-3d1d4aaf84cc
+    - !<own> 999378e9-34b4-49b2-8b87-9c73d6e622b9
   Components:
     - !<own> 031d9192-2416-4f5e-bd93-572eac05b4df
 - !<AudioComponent/cfb2664f-a66b-44e1-b36c-5c6565fe29ea>
@@ -9488,13 +9489,15 @@
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
   Text: |
-    Book with colored geometric cover.
+    Book with colored 
+    geometric
+     cover.
 
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
   SizeToFit: false
-  FontSize: 55
+  FontSize: 39
   Font: !<reference> 1d37f555-027b-4350-be26-ce8756e24840
   LayoutRect:
     left: -7.000000
@@ -11071,6 +11074,7 @@
       languagePlaceholder: !<reference.Text> 1f02aa8c-6cdf-458b-a299-96ed905e523e
       selectInteractable: !<MappingBased.Interactable> a86fb786-ab82-4ece-b467-ed83bc064c0d
       retryInteractable: !<MappingBased.Interactable> 70db6e01-2102-4a96-8781-1fc5adb693a3
+      gameContainerFrame: !<MappingBased.ContainerFrame> 031d9192-2416-4f5e-bd93-572eac05b4df
   ScriptTypes:
     "":
       {}

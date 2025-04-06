@@ -58,7 +58,7 @@ export function setTimeout(callback: () => void, time: number): CancelToken {
   let updateDispatcher = LensConfig.getInstance().updateDispatcher
 
   let delayedEvent = updateDispatcher.createDelayedEvent()
-  delayedEvent.reset(time / 1000)
+  delayedEvent.reset(time / 3000)
   delayedEvent.bind((eventData: any) => {
     if (!cancelToken.cancelled) {
       callback()
