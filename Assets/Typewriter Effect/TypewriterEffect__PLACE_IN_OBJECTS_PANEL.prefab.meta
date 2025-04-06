@@ -1,0 +1,212 @@
+- !<AssetImportMetadata/8d7a013b-0bb0-4cc1-983f-64d0b77b099c>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> e1f6abf6-e683-446c-8abd-aaa51bd615ad
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> e1f6abf6-e683-446c-8abd-aaa51bd615ad
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    AssetLibraryId: 6VHjuRCxlDZm4LM0C2fpld
+  AssetDataMap:
+    ObjectPrefab: !<own> e577e65b-fde4-4e5d-a5e7-8a13a60d903c
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/0dbe9651-da90-477c-9ab6-07e22e835374>
+  PrefabRemaps:
+    []
+  Name: Text Object
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 21.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> fcbaf02d-efee-496c-b83c-d197ec89f58c
+- !<ScreenRegionComponent/23586990-df77-4a1c-85f3-84ef0c7e1173>
+  PrefabRemaps:
+    []
+  Name: Screen Region
+  Enabled: true
+  ScreenRegionType: FullFrame
+  ResizeWithKeyboard: false
+- !<SceneObject/2bf9b17c-01c4-4fa6-8cbf-d713bbb86e2f>
+  PrefabRemaps:
+    []
+  Name: "Example [EDIT SCRIPT]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 1.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 40192221-b6b5-44d1-b07a-d20427f68e69
+- !<ScriptComponent/376fc7ca-ecf2-4ae8-af0b-b9526330a8b2>
+  PrefabRemaps:
+    []
+  Name: TypewriterEffect
+  Enabled: true
+  ScriptAsset: !<reference> 272f7882-7d38-48c1-95d0-87d6053c72d1
+  ScriptInputsDefault:
+    Text: true
+    delayBetweenChars: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      TextType: 2
+      Text: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      Text3D: !<reference.Text3D> fcbaf02d-efee-496c-b83c-d197ec89f58c
+      delayBetweenChars: 0.100000
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/40192221-b6b5-44d1-b07a-d20427f68e69>
+  PrefabRemaps:
+    []
+  Name: "Example [EDIT ME]"
+  Enabled: true
+  ScriptAsset: !<reference> f80a92df-8a41-4991-91c3-8d34fe13f711
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      textInput: !<string[]>
+        - This is an example of a Typewriter Effect. Tap to continue...
+        - "call global.typeText(String : text, Boolean : replaceText) function from your script or use with behavior"
+        - see Example script for more details
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/8ae569ef-a005-4f3a-80a6-ad2ea2cf9bdd>
+  PrefabRemaps:
+    []
+  Name: TypewriterEffect__PLACE_IN_OBJECTS_PANEL
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: -1.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> f0d623b5-cb56-40c1-9996-8885e358dbe2
+    - !<own> 2bf9b17c-01c4-4fa6-8cbf-d713bbb86e2f
+    - !<own> 0dbe9651-da90-477c-9ab6-07e22e835374
+  Components:
+    - !<own> 23586990-df77-4a1c-85f3-84ef0c7e1173
+    - !<own> d1a49041-4f41-4d6d-8007-5e3edba64d03
+- !<ObjectPrefab/c5b74a6d-c88f-42ab-8699-1cf251584b40>
+  PackagePath: TypewriterEffect__PLACE_IN_OBJECTS_PANEL
+  objects:
+    - !<own> 8ae569ef-a005-4f3a-80a6-ad2ea2cf9bdd
+  LazyLoading: false
+  RetainAssets: true
+- !<ScreenTransform/d1a49041-4f41-4d6d-8007-5e3edba64d03>
+  PrefabRemaps:
+    []
+  Name: Screen Transform
+  Enabled: true
+  IsAdvanced: false
+  Constraints:
+    pinToLeft: false
+    pinToTop: false
+    pinToRight: false
+    pinToBottom: false
+    fixedWidth: false
+    fixedHeight: false
+    deactivatedFixedSprite: false
+    deactivatedFixedPivot: false
+  Pivot: {x: 0.000000, y: 0.000000}
+  Transform:
+    position: {x: 0.000000, y: 0.000000, z: -1.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  RawMode: true
+  ForceBasic: true
+  Anchor:
+    left: -1.000000
+    bottom: -1.000000
+    right: 1.000000
+    top: 1.000000
+  Offset:
+    left: 0.000000
+    bottom: 0.000000
+    right: 0.000000
+    top: 0.000000
+- !<ObjectPrefabAssetData/e577e65b-fde4-4e5d-a5e7-8a13a60d903c>
+  SourceRemaps:
+    - 3d94c658-82d4-43dd-b367-e1be94b73ab0: d1a49041-4f41-4d6d-8007-5e3edba64d03
+    - 4bbcc2c8-8ee4-406d-a781-28b3818b29ef: 23586990-df77-4a1c-85f3-84ef0c7e1173
+    - 7f24b8e1-da2d-42e5-b1f1-03b51bd954f4: 376fc7ca-ecf2-4ae8-af0b-b9526330a8b2
+    - 8588e3af-71f7-4c8e-863d-347e9b2746d6: 0dbe9651-da90-477c-9ab6-07e22e835374
+    - 88fcd32a-fb50-4dff-9ec5-f13f0aa38b49: 2bf9b17c-01c4-4fa6-8cbf-d713bbb86e2f
+    - 9873c34a-a3ff-4305-a407-3f1a152fa1e8: 8ae569ef-a005-4f3a-80a6-ad2ea2cf9bdd
+    - aafdf302-0488-4884-869e-cacfd5be69e0: f0d623b5-cb56-40c1-9996-8885e358dbe2
+    - c613cf0c-904e-4fe6-9f9c-eab920e1346b: 40192221-b6b5-44d1-b07a-d20427f68e69
+    - e1f6abf6-e683-446c-8abd-aaa51bd615ad: c5b74a6d-c88f-42ab-8699-1cf251584b40
+    - fadbe4d7-567f-4d57-b7f6-06ea165a5a8e: fcbaf02d-efee-496c-b83c-d197ec89f58c
+  SourceState: !<own> c5b74a6d-c88f-42ab-8699-1cf251584b40
+- !<SceneObject/f0d623b5-cb56-40c1-9996-8885e358dbe2>
+  PrefabRemaps:
+    []
+  Name: "TypewriterEffect [EDIT]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 1.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 376fc7ca-ecf2-4ae8-af0b-b9526330a8b2
+- !<Text3D/fcbaf02d-efee-496c-b83c-d197ec89f58c>
+  PrefabRemaps:
+    []
+  Name: Text3D
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Top
+  HorizontalAlignment: Left
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 8b5f87e4-f198-4c83-8e8b-fb05a89503a9
+  Text: ""
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 48
+  ExtrusionDepth: 0.400000
+  ExtrudeDirection: Both
+  Font: !<reference> 00000000-0000-0000-0000-000000000000
+  LayoutRect:
+    left: -7.500000
+    bottom: -2.250000
+    right: 7.500000
+    top: 2.250000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Wrap
+  AdvancedLayout: !<TextAdvancedLayout>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
