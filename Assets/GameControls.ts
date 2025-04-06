@@ -12,11 +12,13 @@ export class GameControls extends BaseScriptComponent {
     static _noMaxwellScene;
     static _yesMaxwellScene;
     static scoreAnswer(arg0: string) {
-        if (arg0 == "yes") {
-            this.runYay();
-        }
-        else {
-            this.runNaur();
+        if (GameSettings.currentNoun != "") {
+            if (arg0 == "yes") {
+                this.runYay();
+            }
+            else {
+                this.runNaur();
+            }
         }
     }
     static async runYay() {
@@ -65,6 +67,7 @@ export class GameControls extends BaseScriptComponent {
     }
     findNoun() {
         if (this.nouns.length == 0) {
+            GameSettings.currentNoun = "";
             this.recallText.text = "Nothing to recall."
         } else {
             GameSettings.currentNoun = this.nouns.pop();
