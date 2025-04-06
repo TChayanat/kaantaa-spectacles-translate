@@ -1,0 +1,10 @@
+- !<AssetCache>
+  AssetFiles:
+    7aac945a-5685-4d57-8cae-15173efc5a46: 8eed179f-6b4d-4b22-ab36-1df1d49d9d12/9c3698ec04c2250c1778087e531e14e6/Data/license.txt
+  Assets:
+    - !<BinAsset/7aac945a-5685-4d57-8cae-15173efc5a46>
+      PackagePath: ""
+  SourceHash: 9c3698ec04c2250c1778087e531e14e6
+  FileHash: f825b97c4e8c2bea1d69afdb5263ea96
+  NativePackageItems:
+    []

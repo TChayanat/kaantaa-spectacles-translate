@@ -1,0 +1,12 @@
+ExternalSources:
+  type: "std::map<class Es::Uuid,class Es::Path,struct std::less<class Es::Uuid>,class std::allocator<struct std::pair<class Es::Uuid const ,class Es::Path> > >"
+  value:
+    - 3d86e759-df60-4c18-b74f-00799cd21a07: "C:/Users/azidoazidesquare/Downloads/youtube_IxX_QHay02M_audio.mp3"
+    - 4df4181d-f2ee-4b95-b0bc-ab6b9ea190d4: "C:/Users/azidoazidesquare/Downloads/explosion-green-screen.gif"
+    - a1de799a-1751-46a1-b1cf-b43f82339ecd: "C:/Users/azidoazidesquare/Downloads/explosao.gif"
+    - adcf5fa1-7ffe-40aa-b17c-87bb2e8b223b: "C:/Users/azidoazidesquare/Downloads/oiiaioooooiai-cat/textures/Muchkin2_BaseColor.png"
+    - bf33ed0f-d21d-4aa5-b616-97c1ad6d46ce: "C:/Users/azidoazidesquare/Downloads/youtube_HeLDnCwIYw8_audio.mp3"
+    - c9b622dd-83e6-4e0a-b315-99d785294560: "C:/Users/azidoazidesquare/Downloads/omg-bruh-oh-hell-nah.mp3"
+    - ca1104e7-5e9c-48e4-ba40-e6eef489330f: "C:/Users/azidoazidesquare/Downloads/oiiaioooooiai-cat/source/OiiaioooooiaiFin.fbx"
+    - d96442ea-3f9e-4945-8e93-99cc8413c74f: "C:/Users/azidoazidesquare/Downloads/maxwell_the_cat_with_bones_animation/scene.gltf"
+  options: 4

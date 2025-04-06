@@ -1,0 +1,2170 @@
+- !<AssetCache>
+  AssetFiles:
+    e7f4ec35-7632-4cb0-be7b-7ced11e2cb52: ca1104e7-5e9c-48e4-ba40-e6eef489330f/27fe39add132aea536d284128337912e/Data/Meshes/Muchkin1.002.mesh
+    c750afd7-2807-461f-b3f5-783daf734983: ca1104e7-5e9c-48e4-ba40-e6eef489330f/27fe39add132aea536d284128337912e/Data/.hidden/Muchkin2.ss_graph
+    9ee560d8-3b9f-40bc-a021-ecc282ad349f: ca1104e7-5e9c-48e4-ba40-e6eef489330f/27fe39add132aea536d284128337912e/Data/.hidden/white.jpg
+  Assets:
+    - !<ObjectPrefab/326d8b0a-57a5-4724-aadc-417eb2efac09>
+      PackagePath: ""
+      objects:
+        - !<own> 8c52c36b-d34d-4bc7-ae2c-3e4891a3faaa
+      LazyLoading: false
+      RetainAssets: true
+    - !<AnimationAsset/108938b0-afb6-4eb4-94fd-e6a7974aa751>
+      PackagePath: Animations/BaseLayer
+      AnimationPropertiesLayers:
+        Muchkin1.002:
+          position:
+            - time: 0.000000
+              value: {x: 0.000000, y: 0.000000, z: 0.000000}
+            - time: 1.083333
+              value: {x: 0.000000, y: 0.000000, z: 0.000000}
+            - time: 1.116667
+              value: {x: 0.000000, y: 0.036040, z: 0.000000}
+            - time: 1.150000
+              value: {x: 0.000000, y: 0.136813, z: 0.000000}
+            - time: 1.183333
+              value: {x: 0.000000, y: 0.291301, z: 0.000000}
+            - time: 1.216667
+              value: {x: 0.000000, y: 0.488486, z: 0.000000}
+            - time: 1.250000
+              value: {x: 0.000000, y: 0.717349, z: 0.000000}
+            - time: 1.283333
+              value: {x: 0.000000, y: 0.966872, z: 0.000000}
+            - time: 1.316666
+              value: {x: 0.000000, y: 1.226036, z: 0.000000}
+            - time: 1.350000
+              value: {x: 0.000000, y: 1.483822, z: 0.000000}
+            - time: 1.383333
+              value: {x: 0.000000, y: 1.729213, z: 0.000000}
+            - time: 1.416666
+              value: {x: 0.000000, y: 1.951190, z: 0.000000}
+            - time: 1.450000
+              value: {x: 0.000000, y: 2.138734, z: 0.000000}
+            - time: 1.483333
+              value: {x: 0.000000, y: 2.280827, z: 0.000000}
+            - time: 1.516666
+              value: {x: 0.000000, y: 2.366451, z: 0.000000}
+            - time: 1.541667
+              value: {x: 0.000000, y: 2.386982, z: 0.000000}
+            - time: 1.575000
+              value: {x: 0.000000, y: 2.347328, z: 0.000000}
+            - time: 1.608333
+              value: {x: 0.000000, y: 2.233836, z: 0.000000}
+            - time: 1.641667
+              value: {x: 0.000000, y: 2.054710, z: 0.000000}
+            - time: 1.675000
+              value: {x: 0.000000, y: 1.818154, z: 0.000000}
+            - time: 1.708333
+              value: {x: 0.000000, y: 1.532373, z: 0.000000}
+            - time: 1.741666
+              value: {x: 0.000000, y: 1.205570, z: 0.000000}
+            - time: 1.775000
+              value: {x: 0.000000, y: 0.845951, z: 0.000000}
+            - time: 1.808333
+              value: {x: 0.000000, y: 0.461718, z: 0.000000}
+            - time: 1.841666
+              value: {x: 0.000000, y: 0.061077, z: 0.000000}
+            - time: 1.908333
+              value: {x: 0.000000, y: -0.756613, z: 0.000000}
+            - time: 1.941666
+              value: {x: 0.000000, y: -1.157254, z: 0.000000}
+            - time: 1.975000
+              value: {x: 0.000000, y: -1.541487, z: 0.000000}
+            - time: 2.008333
+              value: {x: 0.000000, y: -1.901109, z: 0.000000}
+            - time: 2.041666
+              value: {x: 0.000000, y: -2.227912, z: 0.000000}
+            - time: 2.075000
+              value: {x: 0.000000, y: -2.513694, z: 0.000000}
+            - time: 2.108333
+              value: {x: 0.000000, y: -2.750251, z: 0.000000}
+            - time: 2.141666
+              value: {x: 0.000000, y: -2.929378, z: 0.000000}
+            - time: 2.174999
+              value: {x: 0.000000, y: -3.042871, z: 0.000000}
+            - time: 2.208333
+              value: {x: 0.000000, y: -3.082526, z: 0.000000}
+            - time: 2.241667
+              value: {x: 0.000000, y: -2.954538, z: 0.000000}
+            - time: 2.275000
+              value: {x: 0.000000, y: -2.596661, z: 0.000000}
+            - time: 2.308333
+              value: {x: 0.000000, y: -2.048024, z: 0.000000}
+            - time: 2.341666
+              value: {x: 0.000000, y: -1.347757, z: 0.000000}
+            - time: 2.375000
+              value: {x: 0.000000, y: -0.534990, z: 0.000000}
+            - time: 2.408333
+              value: {x: 0.000000, y: 0.351146, z: 0.000000}
+            - time: 2.441666
+              value: {x: 0.000000, y: 1.271521, z: 0.000000}
+            - time: 2.475000
+              value: {x: 0.000000, y: 2.187005, z: 0.000000}
+            - time: 2.508333
+              value: {x: 0.000000, y: 3.058468, z: 0.000000}
+            - time: 2.541666
+              value: {x: 0.000000, y: 3.846780, z: 0.000000}
+            - time: 2.575000
+              value: {x: 0.000000, y: 4.512810, z: 0.000000}
+            - time: 2.608333
+              value: {x: 0.000000, y: 5.017429, z: 0.000000}
+            - time: 2.641666
+              value: {x: 0.000000, y: 5.321507, z: 0.000000}
+            - time: 2.666667
+              value: {x: 0.000000, y: 5.394421, z: 0.000000}
+            - time: 2.700000
+              value: {x: 0.000000, y: 5.270872, z: 0.000000}
+            - time: 2.733333
+              value: {x: 0.000000, y: 4.923213, z: 0.000000}
+            - time: 2.766667
+              value: {x: 0.000000, y: 4.385921, z: 0.000000}
+            - time: 2.800000
+              value: {x: 0.000000, y: 3.693476, z: 0.000000}
+            - time: 2.833333
+              value: {x: 0.000000, y: 2.880356, z: 0.000000}
+            - time: 2.866667
+              value: {x: 0.000000, y: 1.981040, z: 0.000000}
+            - time: 2.900000
+              value: {x: 0.000000, y: 1.030006, z: 0.000000}
+            - time: 2.933333
+              value: {x: 0.000000, y: 0.061732, z: 0.000000}
+            - time: 2.966666
+              value: {x: 0.000000, y: -0.889303, z: 0.000000}
+            - time: 3.000000
+              value: {x: 0.000000, y: -1.788620, z: 0.000000}
+            - time: 3.033333
+              value: {x: 0.000000, y: -2.601741, z: 0.000000}
+            - time: 3.066666
+              value: {x: 0.000000, y: -3.294187, z: 0.000000}
+            - time: 3.100000
+              value: {x: 0.000000, y: -3.831481, z: 0.000000}
+            - time: 3.133333
+              value: {x: 0.000000, y: -4.179142, z: 0.000000}
+            - time: 3.166666
+              value: {x: 0.000000, y: -4.302693, z: 0.000000}
+            - time: 3.200000
+              value: {x: 0.000000, y: -4.199914, z: 0.000000}
+            - time: 3.233333
+              value: {x: 0.000000, y: -3.912527, z: 0.000000}
+            - time: 3.266667
+              value: {x: 0.000000, y: -3.471954, z: 0.000000}
+            - time: 3.300000
+              value: {x: 0.000000, y: -2.909617, z: 0.000000}
+            - time: 3.333333
+              value: {x: 0.000000, y: -2.256941, z: 0.000000}
+            - time: 3.366667
+              value: {x: 0.000000, y: -1.545347, z: 0.000000}
+            - time: 3.400000
+              value: {x: 0.000000, y: -0.806258, z: 0.000000}
+            - time: 3.433333
+              value: {x: 0.000000, y: -0.071096, z: 0.000000}
+            - time: 3.466666
+              value: {x: 0.000000, y: 0.628715, z: 0.000000}
+            - time: 3.500000
+              value: {x: 0.000000, y: 1.261753, z: 0.000000}
+            - time: 3.533333
+              value: {x: 0.000000, y: 1.796595, z: 0.000000}
+            - time: 3.566666
+              value: {x: 0.000000, y: 2.201819, z: 0.000000}
+            - time: 3.600000
+              value: {x: 0.000000, y: 2.446002, z: 0.000000}
+            - time: 3.625000
+              value: {x: 0.000000, y: 2.504552, z: 0.000000}
+            - time: 3.658333
+              value: {x: 0.000000, y: 2.425791, z: 0.000000}
+            - time: 3.691667
+              value: {x: 0.000000, y: 2.209352, z: 0.000000}
+            - time: 3.725000
+              value: {x: 0.000000, y: 1.885004, z: 0.000000}
+            - time: 3.758333
+              value: {x: 0.000000, y: 1.482514, z: 0.000000}
+            - time: 3.791667
+              value: {x: 0.000000, y: 1.031651, z: 0.000000}
+            - time: 3.825000
+              value: {x: 0.000000, y: 0.562183, z: 0.000000}
+            - time: 3.858333
+              value: {x: 0.000000, y: 0.103878, z: 0.000000}
+            - time: 3.891666
+              value: {x: 0.000000, y: -0.313496, z: 0.000000}
+            - time: 3.925000
+              value: {x: 0.000000, y: -0.660172, z: 0.000000}
+            - time: 3.958333
+              value: {x: 0.000000, y: -0.906380, z: 0.000000}
+            - time: 3.991666
+              value: {x: 0.000000, y: -1.022353, z: 0.000000}
+            - time: 4.000000
+              value: {x: 0.000000, y: -1.027509, z: 0.000000}
+            - time: 4.033333
+              value: {x: 0.000000, y: -0.804345, z: 0.000000}
+            - time: 4.066667
+              value: {x: 0.000000, y: -0.208475, z: 0.000000}
+            - time: 4.100000
+              value: {x: 0.000000, y: 0.649670, z: 0.000000}
+            - time: 4.133333
+              value: {x: 0.000000, y: 1.659659, z: 0.000000}
+            - time: 4.166667
+              value: {x: 0.000000, y: 2.711060, z: 0.000000}
+            - time: 4.200000
+              value: {x: 0.000000, y: 3.693442, z: 0.000000}
+            - time: 4.233333
+              value: {x: 0.000000, y: 4.496374, z: 0.000000}
+            - time: 4.266666
+              value: {x: 0.000000, y: 5.009423, z: 0.000000}
+            - time: 4.291667
+              value: {x: 0.000000, y: 5.137544, z: 0.000000}
+            - time: 4.325000
+              value: {x: 0.000000, y: 4.878614, z: 0.000000}
+            - time: 4.358333
+              value: {x: 0.000000, y: 4.175801, z: 0.000000}
+            - time: 4.391666
+              value: {x: 0.000000, y: 3.140076, z: 0.000000}
+            - time: 4.425000
+              value: {x: 0.000000, y: 1.882408, z: 0.000000}
+            - time: 4.491666
+              value: {x: 0.000000, y: -0.854873, z: 0.000000}
+            - time: 4.525000
+              value: {x: 0.000000, y: -2.112545, z: 0.000000}
+            - time: 4.558333
+              value: {x: 0.000000, y: -3.148276, z: 0.000000}
+            - time: 4.591666
+              value: {x: 0.000000, y: -3.851096, z: 0.000000}
+            - time: 4.625000
+              value: {x: 0.000000, y: -4.110035, z: 0.000000}
+            - time: 4.658333
+              value: {x: 0.000000, y: -4.032466, z: 0.000000}
+            - time: 4.691667
+              value: {x: 0.000000, y: -3.815570, z: 0.000000}
+            - time: 4.725000
+              value: {x: 0.000000, y: -3.483063, z: 0.000000}
+            - time: 4.758333
+              value: {x: 0.000000, y: -3.058658, z: 0.000000}
+            - time: 4.791667
+              value: {x: 0.000000, y: -2.566072, z: 0.000000}
+            - time: 4.825000
+              value: {x: 0.000000, y: -2.029020, z: 0.000000}
+            - time: 4.858333
+              value: {x: 0.000000, y: -1.471217, z: 0.000000}
+            - time: 4.891666
+              value: {x: 0.000000, y: -0.916378, z: 0.000000}
+            - time: 4.925000
+              value: {x: 0.000000, y: -0.388219, z: 0.000000}
+            - time: 4.958333
+              value: {x: 0.000000, y: 0.089546, z: 0.000000}
+            - time: 4.991666
+              value: {x: 0.000000, y: 0.493200, z: 0.000000}
+            - time: 5.025000
+              value: {x: 0.000000, y: 0.799030, z: 0.000000}
+            - time: 5.058333
+              value: {x: 0.000000, y: 0.983319, z: 0.000000}
+            - time: 5.083333
+              value: {x: 0.000000, y: 1.027509, z: 0.000000}
+            - time: 5.116667
+              value: {x: 0.000000, y: 0.952804, z: 0.000000}
+            - time: 5.150000
+              value: {x: 0.000000, y: 0.745527, z: 0.000000}
+            - time: 5.183333
+              value: {x: 0.000000, y: 0.430928, z: 0.000000}
+            - time: 5.216667
+              value: {x: 0.000000, y: 0.034261, z: 0.000000}
+            - time: 5.250000
+              value: {x: 0.000000, y: -0.419224, z: 0.000000}
+            - time: 5.283333
+              value: {x: 0.000000, y: -0.904273, z: 0.000000}
+            - time: 5.316667
+              value: {x: 0.000000, y: -1.395635, z: 0.000000}
+            - time: 5.350000
+              value: {x: 0.000000, y: -1.868059, z: 0.000000}
+            - time: 5.383333
+              value: {x: 0.000000, y: -2.296291, z: 0.000000}
+            - time: 5.416667
+              value: {x: 0.000000, y: -2.655081, z: 0.000000}
+            - time: 5.450000
+              value: {x: 0.000000, y: -2.919176, z: 0.000000}
+            - time: 5.483333
+              value: {x: 0.000000, y: -3.063323, z: 0.000000}
+            - time: 5.500000
+              value: {x: 0.000000, y: -3.082526, z: 0.000000}
+            - time: 5.533333
+              value: {x: 0.000000, y: -3.026498, z: 0.000000}
+            - time: 5.566667
+              value: {x: 0.000000, y: -2.871041, z: 0.000000}
+            - time: 5.600000
+              value: {x: 0.000000, y: -2.635092, z: 0.000000}
+            - time: 5.633333
+              value: {x: 0.000000, y: -2.337592, z: 0.000000}
+            - time: 5.666667
+              value: {x: 0.000000, y: -1.997479, z: 0.000000}
+            - time: 5.700000
+              value: {x: 0.000000, y: -1.633692, z: 0.000000}
+            - time: 5.733333
+              value: {x: 0.000000, y: -1.265170, z: 0.000000}
+            - time: 5.766666
+              value: {x: 0.000000, y: -0.910852, z: 0.000000}
+            - time: 5.800000
+              value: {x: 0.000000, y: -0.589678, z: 0.000000}
+            - time: 5.833333
+              value: {x: 0.000000, y: -0.320585, z: 0.000000}
+            - time: 5.866666
+              value: {x: 0.000000, y: -0.122514, z: 0.000000}
+            - time: 5.883329
+              value: {x: 0.000000, y: -0.056042, z: 0.000000}
+            - time: 5.916667
+              value: {x: 0.000000, y: -0.000000, z: 0.000000}
+          rotation:
+            - time: 0.000000
+              value: {0: 0.000000, 1: 0.000000, 2: 0.000000, 3: 1.000000}
+            - time: 1.083333
+              value: {0: 0.000000, 1: 0.000000, 2: 0.000000, 3: 1.000000}
+            - time: 1.150000
+              value: {0: 0.000000, 1: 0.751398, 2: 0.000000, 3: 0.659849}
+            - time: 1.250000
+              value: {0: -0.000000, 1: -0.849808, 2: -0.000000, 3: 0.527092}
+            - time: 1.316666
+              value: {0: 0.000000, 1: -0.164061, 2: 0.000000, 3: 0.986450}
+            - time: 1.416666
+              value: {0: 0.000000, 1: 0.896468, 2: 0.000000, 3: 0.443108}
+            - time: 1.516666
+              value: {0: 0.000000, 1: -0.683882, 2: 0.000000, 3: 0.729592}
+            - time: 1.541667
+              value: {0: 0.000000, 1: -0.420366, 2: 0.000000, 3: 0.907355}
+            - time: 1.641667
+              value: {0: 0.000000, 1: 0.746669, 2: 0.000000, 3: 0.665196}
+            - time: 1.741666
+              value: {0: -0.000000, 1: -0.853024, 2: -0.000000, 3: 0.521871}
+            - time: 1.808333
+              value: {0: 0.000000, 1: -0.169850, 2: 0.000000, 3: 0.985470}
+            - time: 1.908333
+              value: {0: 0.000000, 1: 0.893752, 2: 0.000000, 3: 0.448562}
+            - time: 2.008333
+              value: {0: 0.000000, 1: -0.689009, 2: 0.000000, 3: 0.724753}
+            - time: 2.041666
+              value: {0: 0.000000, 1: -0.328749, 2: 0.000000, 3: 0.944417}
+            - time: 2.141666
+              value: {0: 0.000000, 1: 0.807538, 2: 0.000000, 3: 0.589816}
+            - time: 2.241667
+              value: {0: -0.000000, 1: -0.800131, 2: -0.000000, 3: 0.599825}
+            - time: 2.308333
+              value: {0: 0.000000, 1: -0.078567, 2: 0.000000, 3: 0.996909}
+            - time: 2.375000
+              value: {0: 0.000000, 1: 0.695944, 2: 0.000000, 3: 0.718096}
+            - time: 2.441666
+              value: {0: 0.000000, 1: 0.998906, 2: 0.000000, 3: -0.046774}
+            - time: 2.508333
+              value: {0: 0.000000, 1: -0.626242, 2: 0.000000, 3: 0.779628}
+            - time: 2.541666
+              value: {0: 0.000000, 1: -0.250611, 2: 0.000000, 3: 0.968088}
+            - time: 2.608333
+              value: {0: 0.000000, 1: 0.558875, 2: 0.000000, 3: 0.829252}
+            - time: 2.666667
+              value: {0: 0.000000, 1: 0.971865, 2: 0.000000, 3: 0.235537}
+            - time: 2.733333
+              value: {0: -0.000000, 1: -0.821219, 2: -0.000000, 3: 0.570613}
+            - time: 2.800000
+              value: {0: 0.000000, 1: -0.119008, 2: 0.000000, 3: 0.992893}
+            - time: 2.866667
+              value: {0: 0.000000, 1: 0.662502, 2: 0.000000, 3: 0.749060}
+            - time: 2.933333
+              value: {0: 0.000000, 1: 0.999992, 2: 0.000000, 3: 0.004052}
+            - time: 3.000000
+              value: {0: 0.000000, 1: -0.669219, 2: 0.000000, 3: 0.743065}
+            - time: 3.066666
+              value: {0: 0.000000, 1: 0.107380, 2: 0.000000, 3: 0.994218}
+            - time: 3.100000
+              value: {0: 0.000000, 1: 0.503456, 2: 0.000000, 3: 0.864021}
+            - time: 3.166666
+              value: {0: 0.000000, 1: 0.979273, 2: 0.000000, 3: 0.202547}
+            - time: 3.200000
+              value: {0: 0.000000, 1: 0.976917, 2: 0.000000, 3: -0.213620}
+            - time: 3.233333
+              value: {0: -0.000000, 1: -0.805521, 2: -0.000000, 3: 0.592567}
+            - time: 3.266667
+              value: {0: 0.000000, 1: -0.495030, 2: 0.000000, 3: 0.868876}
+            - time: 3.300000
+              value: {0: 0.000000, 1: -0.099300, 2: 0.000000, 3: 0.995058}
+            - time: 3.333333
+              value: {0: 0.000000, 1: 0.313289, 2: 0.000000, 3: 0.949658}
+            - time: 3.400000
+              value: {0: 0.000000, 1: 0.914397, 2: 0.000000, 3: 0.404819}
+            - time: 3.433333
+              value: {0: 0.000000, 1: 1.000000, 2: 0.000000, 3: -0.000447}
+            - time: 3.466666
+              value: {0: 0.000000, 1: 0.914160, 2: 0.000000, 3: -0.405354}
+            - time: 3.500000
+              value: {0: 0.000000, 1: -0.671936, 2: 0.000000, 3: 0.740609}
+            - time: 3.533333
+              value: {0: 0.000000, 1: -0.315075, 2: 0.000000, 3: 0.949067}
+            - time: 3.566666
+              value: {0: 0.000000, 1: 0.095284, 2: 0.000000, 3: 0.995450}
+            - time: 3.600000
+              value: {0: 0.000000, 1: 0.489103, 2: 0.000000, 3: 0.872226}
+            - time: 3.658333
+              value: {0: 0.000000, 1: 0.945004, 2: 0.000000, 3: 0.327058}
+            - time: 3.691667
+              value: {0: 0.000000, 1: 0.996680, 2: 0.000000, 3: -0.081417}
+            - time: 3.725000
+              value: {0: 0.000000, 1: 0.879564, 2: 0.000000, 3: -0.475780}
+            - time: 3.758333
+              value: {0: 0.000000, 1: -0.613874, 2: 0.000000, 3: 0.789404}
+            - time: 3.791667
+              value: {0: 0.000000, 1: -0.244819, 2: 0.000000, 3: 0.969569}
+            - time: 3.825000
+              value: {0: 0.000000, 1: 0.165163, 2: 0.000000, 3: 0.986266}
+            - time: 3.858333
+              value: {0: 0.000000, 1: 0.547024, 2: 0.000000, 3: 0.837117}
+            - time: 3.891666
+              value: {0: 0.000000, 1: 0.836745, 2: 0.000000, 3: 0.547593}
+            - time: 3.925000
+              value: {0: 0.000000, 1: 0.986027, 2: 0.000000, 3: 0.166586}
+            - time: 3.958333
+              value: {0: 0.000000, 1: 0.970291, 2: 0.000000, 3: -0.241943}
+            - time: 3.991666
+              value: {0: -0.000000, 1: -0.792619, 2: -0.000000, 3: 0.609718}
+            - time: 4.033333
+              value: {0: 0.000000, 1: -0.390790, 2: 0.000000, 3: 0.920480}
+            - time: 4.066667
+              value: {0: 0.000000, 1: 0.008940, 2: 0.000000, 3: 0.999960}
+            - time: 4.100000
+              value: {0: 0.000000, 1: 0.406803, 2: 0.000000, 3: 0.913516}
+            - time: 4.133333
+              value: {0: 0.000000, 1: 0.736943, 2: 0.000000, 3: 0.675955}
+            - time: 4.166667
+              value: {0: 0.000000, 1: 0.945036, 2: 0.000000, 3: 0.326966}
+            - time: 4.200000
+              value: {0: 0.000000, 1: 0.997140, 2: 0.000000, 3: -0.075574}
+            - time: 4.233333
+              value: {0: 0.000000, 1: 0.885166, 2: 0.000000, 3: -0.465275}
+            - time: 4.266666
+              value: {0: 0.000000, 1: -0.628008, 2: 0.000000, 3: 0.778207}
+            - time: 4.291667
+              value: {0: 0.000000, 1: -0.364772, 2: 0.000000, 3: 0.931097}
+            - time: 4.325000
+              value: {0: 0.000000, 1: 0.033682, 2: 0.000000, 3: 0.999433}
+            - time: 4.358333
+              value: {0: 0.000000, 1: 0.426214, 2: 0.000000, 3: 0.904622}
+            - time: 4.391666
+              value: {0: 0.000000, 1: 0.748936, 2: 0.000000, 3: 0.662642}
+            - time: 4.425000
+              value: {0: 0.000000, 1: 0.949659, 2: 0.000000, 3: 0.313285}
+            - time: 4.458333
+              value: {0: 0.000000, 1: 0.996256, 2: 0.000000, 3: -0.086455}
+            - time: 4.491666
+              value: {0: 0.000000, 1: 0.881720, 2: 0.000000, 3: -0.471772}
+            - time: 4.525000
+              value: {0: 0.000000, 1: -0.625092, 2: 0.000000, 3: 0.780551}
+            - time: 4.558333
+              value: {0: 0.000000, 1: -0.268166, 2: 0.000000, 3: 0.963373}
+            - time: 4.591666
+              value: {0: 0.000000, 1: 0.131396, 2: 0.000000, 3: 0.991330}
+            - time: 4.625000
+              value: {0: 0.000000, 1: 0.509443, 2: 0.000000, 3: 0.860505}
+            - time: 4.658333
+              value: {0: 0.000000, 1: 0.805668, 2: 0.000000, 3: 0.592368}
+            - time: 4.691667
+              value: {0: 0.000000, 1: 0.973151, 2: 0.000000, 3: 0.230167}
+            - time: 4.725000
+              value: {0: 0.000000, 1: 0.985757, 2: 0.000000, 3: -0.168174}
+            - time: 4.758333
+              value: {0: -0.000000, 1: -0.842070, 2: -0.000000, 3: 0.539368}
+            - time: 4.791667
+              value: {0: 0.000000, 1: -0.565416, 2: 0.000000, 3: 0.824806}
+            - time: 4.825000
+              value: {0: 0.000000, 1: -0.199940, 2: 0.000000, 3: 0.979808}
+            - time: 4.858333
+              value: {0: 0.000000, 1: 0.196519, 2: 0.000000, 3: 0.980500}
+            - time: 4.891666
+              value: {0: 0.000000, 1: 0.561635, 2: 0.000000, 3: 0.827385}
+            - time: 4.925000
+              value: {0: 0.000000, 1: 0.838415, 2: 0.000000, 3: 0.545032}
+            - time: 4.958333
+              value: {0: 0.000000, 1: 0.984026, 2: 0.000000, 3: 0.178027}
+            - time: 4.991666
+              value: {0: 0.000000, 1: 0.976351, 2: 0.000000, 3: -0.216190}
+            - time: 5.025000
+              value: {0: -0.000000, 1: -0.817219, 2: -0.000000, 3: 0.576327}
+            - time: 5.058333
+              value: {0: 0.000000, 1: -0.531884, 2: 0.000000, 3: 0.846817}
+            - time: 5.083333
+              value: {0: 0.000000, 1: -0.261317, 2: 0.000000, 3: 0.965253}
+            - time: 5.116667
+              value: {0: 0.000000, 1: 0.129973, 2: 0.000000, 3: 0.991518}
+            - time: 5.150000
+              value: {0: 0.000000, 1: 0.500764, 2: 0.000000, 3: 0.865584}
+            - time: 5.183333
+              value: {0: 0.000000, 1: 0.794408, 2: 0.000000, 3: 0.607385}
+            - time: 5.216667
+              value: {0: 0.000000, 1: 0.966436, 2: 0.000000, 3: 0.256909}
+            - time: 5.250000
+              value: {0: 0.000000, 1: 0.991232, 2: 0.000000, 3: -0.132136}
+            - time: 5.283333
+              value: {0: -0.000000, 1: -0.865697, 2: -0.000000, 3: 0.500568}
+            - time: 5.316667
+              value: {0: 0.000000, 1: -0.609498, 2: 0.000000, 3: 0.792787}
+            - time: 5.350000
+              value: {0: 0.000000, 1: -0.261847, 2: 0.000000, 3: 0.965109}
+            - time: 5.383333
+              value: {0: 0.000000, 1: 0.124609, 2: 0.000000, 3: 0.992206}
+            - time: 5.416667
+              value: {0: 0.000000, 1: 0.491808, 2: 0.000000, 3: 0.870704}
+            - time: 5.450000
+              value: {0: 0.000000, 1: 0.785040, 2: 0.000000, 3: 0.619445}
+            - time: 5.483333
+              value: {0: 0.000000, 1: 0.961032, 2: 0.000000, 3: 0.276436}
+            - time: 5.500000
+              value: {0: 0.000000, 1: 0.996274, 2: 0.000000, 3: 0.086243}
+            - time: 5.533333
+              value: {0: 0.000000, 1: 0.955151, 2: 0.000000, 3: -0.296118}
+            - time: 5.566667
+              value: {0: -0.000000, 1: -0.773189, 2: -0.000000, 3: 0.634176}
+            - time: 5.600000
+              value: {0: 0.000000, 1: -0.477844, 2: 0.000000, 3: 0.878445}
+            - time: 5.633333
+              value: {0: 0.000000, 1: -0.112970, 2: 0.000000, 3: 0.993598}
+            - time: 5.666667
+              value: {0: 0.000000, 1: 0.267784, 2: 0.000000, 3: 0.963479}
+            - time: 5.700000
+              value: {0: 0.000000, 1: 0.608944, 2: 0.000000, 3: 0.793213}
+            - time: 5.733333
+              value: {0: 0.000000, 1: 0.861222, 2: 0.000000, 3: 0.508228}
+            - time: 5.766666
+              value: {0: 0.000000, 1: 0.988640, 2: 0.000000, 3: 0.150300}
+            - time: 5.800000
+              value: {0: 0.000000, 1: 0.973510, 2: 0.000000, 3: -0.228645}
+            - time: 5.833333
+              value: {0: -0.000000, 1: -0.818766, 2: -0.000000, 3: 0.574128}
+            - time: 5.866666
+              value: {0: 0.000000, 1: -0.547277, 2: 0.000000, 3: 0.836951}
+            - time: 5.883329
+              value: {0: 0.000000, 1: -0.379583, 2: 0.000000, 3: 0.925158}
+            - time: 5.916667
+              value: {0: 0.000000, 1: -0.010222, 2: 0.000000, 3: 0.999948}
+          scale:
+            []
+          vertexCache:
+            []
+          visibilityAnimation:
+            - time: 0.000000
+              value: 1
+            - time: 5.916667
+              value: 1
+          blendShapes:
+            - Muchkin1:
+                - time: 0.000000
+                  value: 0.000000
+                - time: 1.040000
+                  value: 0.000000
+                - time: 1.080000
+                  value: 0.981824
+                - time: 1.120000
+                  value: 1.000000
+                - time: 5.880000
+                  value: 1.000000
+                - time: 5.920000
+                  value: 0.981824
+    - !<FileMesh/e7f4ec35-7632-4cb0-be7b-7ced11e2cb52>
+      PackagePath: Meshes/Muchkin1.002
+      Info: !<MeshInfo>
+        Triangles: 15774
+        Vertices: 9259
+        Blendshapes:
+          - Muchkin1
+        Joints: 0
+        AabbSize: {x: 23.919455, y: 38.664246, z: 72.418076}
+    - !<Material/d1e1928b-4ced-49d3-ac99-071a0381c331>
+      PackagePath: Materials/Muchkin2
+      PassesInfo:
+        - !<own> 9015173a-25c8-4ac5-a692-0049074efe95
+    - !<ShaderGraphPass/c750afd7-2807-461f-b3f5-783daf734983>
+      PackagePath: .hidden/Muchkin2
+      DefaultDefines:
+        - NODE_13_DROPLIST_ITEM 0
+        - NODE_181_DROPLIST_ITEM 0
+        - NODE_184_DROPLIST_ITEM 0
+        - NODE_221_DROPLIST_ITEM 0
+        - NODE_228_DROPLIST_ITEM 0
+        - NODE_27_DROPLIST_ITEM 0
+        - NODE_315_DROPLIST_ITEM 0
+        - NODE_38_DROPLIST_ITEM 0
+        - NODE_49_DROPLIST_ITEM 0
+        - NODE_69_DROPLIST_ITEM 0
+        - NODE_76_DROPLIST_ITEM 0
+      DefaultProperties:
+        Port_Depth_N004:
+          typeIdx: 1
+          value: 1.000000
+        Port_FinalColor1_N004:
+          typeIdx: 5
+          value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+        Port_FinalColor2_N004:
+          typeIdx: 5
+          value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+        Port_FinalColor3_N004:
+          typeIdx: 5
+          value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+        Port_GSplatPointSize_N004:
+          typeIdx: 1
+          value: 0.000000
+        Port_RayDirection_N004:
+          typeIdx: 4
+          value: {x: 0.000000, y: 1.000000, z: 0.000000}
+        Port_RayOrigin_N004:
+          typeIdx: 4
+          value: {x: 0.000000, y: 0.000000, z: 0.000000}
+        Port_WorldNormal_N004:
+          typeIdx: 4
+          value: {x: 0.000000, y: 1.000000, z: 0.000000}
+        Port_WorldPosition_N004:
+          typeIdx: 4
+          value: {x: 0.000000, y: 0.000000, z: 0.000000}
+        Port_WorldTangent_N004:
+          typeIdx: 4
+          value: {x: 0.000000, y: 0.000000, z: 1.000000}
+      PassUiData: !<PassUiData>
+        ExtraDefines:
+          - SC_ENABLE_RT_CASTER
+          - SC_ENABLE_RT_RECEIVER
+        PassBindings:
+          - mLabel: Graph Parameters
+            mType: Invalid
+            mName: ""
+            mWidget: group_start
+            mHint: ""
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Vertex Color
+            mType: DefineSelect
+            mName: ""
+            mWidget: ""
+            mHint: Specifies the purpose for which vertex color will be used. Requires vertex color to be supplied by the mesh.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              - mLabel: None
+                mType: DefineSelectValue
+                mName: NODE_38_DROPLIST_ITEM 0
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Base Color
+                mType: DefineSelectValue
+                mName: NODE_38_DROPLIST_ITEM 1
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Emissive
+                mType: DefineSelectValue
+                mName: NODE_38_DROPLIST_ITEM 2
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: AO
+                mType: DefineSelectValue
+                mName: NODE_38_DROPLIST_ITEM 3
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+          - mLabel: Base Color
+            mType: Property
+            mName: baseColor
+            mWidget: color
+            mHint: |-
+              Property: baseColor
+              
+              Specifies the base color (albedo) of the material if the 'Base Textre' is disabled. 
+              Multiplied with the 'Base Texture' otherwise.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: Base Texture
+            mType: Define
+            mName: ENABLE_BASE_TEX
+            mWidget: group_start
+            mHint: |-
+              Define: ENABLE_BASE_TEX
+              
+              Most materials use a base texture (albedo), but disabling it means the base texture will be considered white, and 'Base Color' will solely control the color.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Texture
+            mType: Property
+            mName: baseTex
+            mWidget: texture_group
+            mHint: "Property: baseTex"
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Texture UV
+            mType: DefineSelect
+            mName: ""
+            mWidget: ""
+            mHint: Specifies the UV set used as the base on top of which the transform is applied.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              - mLabel: Mesh UV 0
+                mType: DefineSelectValue
+                mName: NODE_27_DROPLIST_ITEM 0
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Mesh UV 1
+                mType: DefineSelectValue
+                mName: NODE_27_DROPLIST_ITEM 1
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Transformed UV 2
+                mType: DefineSelectValue
+                mName: NODE_27_DROPLIST_ITEM 2
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Transformed UV 3
+                mType: DefineSelectValue
+                mName: NODE_27_DROPLIST_ITEM 3
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+          - mLabel: ""
+            mType: GroupEnd
+            mName: ENABLE_BASE_TEX
+            mWidget: group_end
+            mHint: ""
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Opacity Texture
+            mType: Define
+            mName: ENABLE_OPACITY_TEX
+            mWidget: group_start
+            mHint: |-
+              Define: ENABLE_OPACITY_TEX
+              
+              Normally, the Base Texture's alpha is taken as opacity. Enabling this allows you to define a separate greyscale opacity texture. 
+              The 'Opacity Texture' value will be multiplied with the Base Texture's alpha (which is 1 for textures without alpha) to get the final opacity. 
+              'Opacity Texture' is only available if 'Blend Mode' is not 'Disabled'.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Texture
+            mType: Property
+            mName: opacityTex
+            mWidget: texture_group
+            mHint: "Property: opacityTex"
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Texture UV
+            mType: DefineSelect
+            mName: ""
+            mWidget: ""
+            mHint: Specifies the UV set used as the base on top of which the transform is applied.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              - mLabel: Mesh UV 0
+                mType: DefineSelectValue
+                mName: NODE_69_DROPLIST_ITEM 0
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Mesh UV 1
+                mType: DefineSelectValue
+                mName: NODE_69_DROPLIST_ITEM 1
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Transformed UV 2
+                mType: DefineSelectValue
+                mName: NODE_69_DROPLIST_ITEM 2
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Transformed UV 3
+                mType: DefineSelectValue
+                mName: NODE_69_DROPLIST_ITEM 3
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+          - mLabel: ""
+            mType: GroupEnd
+            mName: ENABLE_OPACITY_TEX
+            mWidget: group_end
+            mHint: ""
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Recolor
+            mType: Define
+            mName: ENABLE_RECOLOR
+            mWidget: group_start
+            mHint: |-
+              Define: ENABLE_RECOLOR
+              
+              Recolor replaces colors in the base texture. 
+              This is useful for adding variety to assets, ex: recolor a red shirt with a green logo to a blue shirt with a black logo, or any other color combination. 
+              Where the base texture is red, you will get whatever color you set in Recolor Red, and same thing for the green and blue channels of the base texture. 
+              This also works in combination if the base color is not a pure red, green or blue color.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Recolor Red
+            mType: Property
+            mName: recolorRed
+            mWidget: color
+            mHint: "Property: recolorRed"
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: Recolor Green
+            mType: Property
+            mName: recolorGreen
+            mWidget: color
+            mHint: "Property: recolorGreen"
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: Recolor Blue
+            mType: Property
+            mName: recolorBlue
+            mWidget: color
+            mHint: "Property: recolorBlue"
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: ""
+            mType: GroupEnd
+            mName: ENABLE_RECOLOR
+            mWidget: group_end
+            mHint: ""
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Normal Map
+            mType: Define
+            mName: ENABLE_NORMALMAP
+            mWidget: group_start
+            mHint: |-
+              Define: ENABLE_NORMALMAP
+              
+              Enables the normal map texture and normal mapping. 
+              When this is disabled, the per pixel normal is solely determined by the interpolated vertex normals.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Texture
+            mType: Property
+            mName: normalTex
+            mWidget: texture_group
+            mHint: "Property: normalTex"
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Texture UV
+            mType: DefineSelect
+            mName: ""
+            mWidget: ""
+            mHint: Specifies the UV set used for sampling this texture.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              - mLabel: Mesh UV 0
+                mType: DefineSelectValue
+                mName: NODE_181_DROPLIST_ITEM 0
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Mesh UV 1
+                mType: DefineSelectValue
+                mName: NODE_181_DROPLIST_ITEM 1
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Transformed UV 2
+                mType: DefineSelectValue
+                mName: NODE_181_DROPLIST_ITEM 2
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Transformed UV 3
+                mType: DefineSelectValue
+                mName: NODE_181_DROPLIST_ITEM 3
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+          - mLabel: Detail Normal
+            mType: Define
+            mName: ENABLE_DETAIL_NORMAL
+            mWidget: group_start
+            mHint: |-
+              Define: ENABLE_DETAIL_NORMAL
+              
+              Detail normal mapping perturbs the base normal map by a detail normal map.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Texture
+            mType: Property
+            mName: detailNormalTex
+            mWidget: texture_group
+            mHint: "Property: detailNormalTex"
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Texture UV
+            mType: DefineSelect
+            mName: ""
+            mWidget: ""
+            mHint: Specifies the UV set used for sampling this texture.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              - mLabel: Mesh UV 0
+                mType: DefineSelectValue
+                mName: NODE_184_DROPLIST_ITEM 0
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Mesh UV 1
+                mType: DefineSelectValue
+                mName: NODE_184_DROPLIST_ITEM 1
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Transformed UV 2
+                mType: DefineSelectValue
+                mName: NODE_184_DROPLIST_ITEM 2
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Transformed UV 3
+                mType: DefineSelectValue
+                mName: NODE_184_DROPLIST_ITEM 3
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+          - mLabel: ""
+            mType: GroupEnd
+            mName: ENABLE_DETAIL_NORMAL
+            mWidget: group_end
+            mHint: ""
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: ""
+            mType: GroupEnd
+            mName: ENABLE_NORMALMAP
+            mWidget: group_end
+            mHint: ""
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Emissive
+            mType: Define
+            mName: ENABLE_EMISSIVE
+            mWidget: group_start
+            mHint: |-
+              Define: ENABLE_EMISSIVE
+              
+              Enables the emissive texture.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Texture
+            mType: Property
+            mName: emissiveTex
+            mWidget: texture_group
+            mHint: "Property: emissiveTex"
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Texture UV
+            mType: DefineSelect
+            mName: ""
+            mWidget: ""
+            mHint: Specifies the UV set used for sampling this texture.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              - mLabel: Mesh UV 0
+                mType: DefineSelectValue
+                mName: NODE_76_DROPLIST_ITEM 0
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Mesh UV 1
+                mType: DefineSelectValue
+                mName: NODE_76_DROPLIST_ITEM 1
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Transformed UV 2
+                mType: DefineSelectValue
+                mName: NODE_76_DROPLIST_ITEM 2
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Transformed UV 3
+                mType: DefineSelectValue
+                mName: NODE_76_DROPLIST_ITEM 3
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+          - mLabel: Color
+            mType: Property
+            mName: emissiveColor
+            mWidget: color
+            mHint: |-
+              Property: emissiveColor
+              
+              Multiplies the existing emissive color. 
+              Requires 'Enable Emissive' and/or 'Vertex Color' should be set to 'Emissive'.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: Intensity
+            mType: Property
+            mName: emissiveIntensity
+            mWidget: slider
+            mHint: |-
+              Property: emissiveIntensity
+              
+              Multiplies the existing emissive color. 
+              Requires 'Enable Emissive' and/or 'Vertex Color' should be set to 'Emissive'.
+            mMin: 0.000000
+            mMax: 10.000000
+            mStep: 0.010000
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: ""
+            mType: GroupEnd
+            mName: ENABLE_EMISSIVE
+            mWidget: group_end
+            mHint: ""
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Simple Reflection
+            mType: Define
+            mName: ENABLE_SIMPLE_REFLECTION
+            mWidget: group_start
+            mHint: |-
+              Define: ENABLE_SIMPLE_REFLECTION
+              
+              Replaces the default PBR environment mapping with a simple lookup from a regular texture (no hdr, no roughness, no fresnel, etc.). 
+              It can even be used with unlit materials. The reflection lookup technically assumes a spherical environment map, which is a circular 
+              shaped texture as obtained by photographing a mirror ball. However, as a shortcut, it is sometimes used with simple, flat photos, and 
+              manually bent mesh normals. Note: this spherical mapping is technically different from the 'angular' envmap format that looks similar.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Texture
+            mType: Property
+            mName: reflectionTex
+            mWidget: texture_group
+            mHint: "Property: reflectionTex"
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Intensity
+            mType: Property
+            mName: reflectionIntensity
+            mWidget: slider
+            mHint: "Property: reflectionIntensity"
+            mMin: 0.000000
+            mMax: 10.000000
+            mStep: 0.010000
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: Modulation Map
+            mType: Define
+            mName: Tweak_N177
+            mWidget: group_start
+            mHint: |-
+              Define: Tweak_N177
+              
+              This texture modulates the reflection color. It can be RGB or greyscale.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Texture
+            mType: Property
+            mName: reflectionModulationTex
+            mWidget: texture_group
+            mHint: "Property: reflectionModulationTex"
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Texture UV
+            mType: DefineSelect
+            mName: ""
+            mWidget: ""
+            mHint: Specifies the UV set used for sampling this texture.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              - mLabel: Mesh UV 0
+                mType: DefineSelectValue
+                mName: NODE_228_DROPLIST_ITEM 0
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Mesh UV 1
+                mType: DefineSelectValue
+                mName: NODE_228_DROPLIST_ITEM 1
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Transformed UV 2
+                mType: DefineSelectValue
+                mName: NODE_228_DROPLIST_ITEM 2
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Transformed UV 3
+                mType: DefineSelectValue
+                mName: NODE_228_DROPLIST_ITEM 3
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+          - mLabel: ""
+            mType: GroupEnd
+            mName: Tweak_N177
+            mWidget: group_end
+            mHint: ""
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: ""
+            mType: GroupEnd
+            mName: ENABLE_SIMPLE_REFLECTION
+            mWidget: group_end
+            mHint: ""
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Rim Highlight
+            mType: Define
+            mName: ENABLE_RIM_HIGHLIGHT
+            mWidget: group_start
+            mHint: |-
+              Define: ENABLE_RIM_HIGHLIGHT
+              
+              'Rim highlight', aka. 'fake Fresnel effect'.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Color
+            mType: Property
+            mName: rimColor
+            mWidget: color
+            mHint: |-
+              Property: rimColor
+              
+              Specifies the color of the rim highlight.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: Intensity
+            mType: Property
+            mName: rimIntensity
+            mWidget: slider
+            mHint: |-
+              Property: rimIntensity
+              
+              Multiplied with 'Rim Color'.
+            mMin: 0.000000
+            mMax: 10.000000
+            mStep: 0.010000
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: Exponent
+            mType: Property
+            mName: rimExponent
+            mWidget: slider
+            mHint: |-
+              Property: rimExponent
+              
+              Controls the tightness of the rim highlight.
+            mMin: 0.000000
+            mMax: 10.000000
+            mStep: 0.010000
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: Invert
+            mType: Define
+            mName: ENABLE_RIM_INVERT
+            mWidget: checkbox
+            mHint: |-
+              Define: ENABLE_RIM_INVERT
+              
+              Inverts the effect so it's brighter in the middle of the object and darker at the edge.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Rim Color Texture
+            mType: Define
+            mName: Tweak_N216
+            mWidget: group_start
+            mHint: |-
+              Define: Tweak_N216
+              
+              Allows the use of a texture to modulate the rim highlight color.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Texture
+            mType: Property
+            mName: rimColorTex
+            mWidget: texture_group
+            mHint: "Property: rimColorTex"
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Texture UV
+            mType: DefineSelect
+            mName: ""
+            mWidget: ""
+            mHint: Specifies the UV set used for sampling this texture.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              - mLabel: Mesh UV 0
+                mType: DefineSelectValue
+                mName: NODE_315_DROPLIST_ITEM 0
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Mesh UV 1
+                mType: DefineSelectValue
+                mName: NODE_315_DROPLIST_ITEM 1
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Transformed UV 2
+                mType: DefineSelectValue
+                mName: NODE_315_DROPLIST_ITEM 2
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Transformed UV 3
+                mType: DefineSelectValue
+                mName: NODE_315_DROPLIST_ITEM 3
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+          - mLabel: ""
+            mType: GroupEnd
+            mName: Tweak_N216
+            mWidget: group_end
+            mHint: ""
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: ""
+            mType: GroupEnd
+            mName: ENABLE_RIM_HIGHLIGHT
+            mWidget: group_end
+            mHint: ""
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Lighting
+            mType: Invalid
+            mName: ""
+            mWidget: group_start
+            mHint: ""
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Metallic
+            mType: Property
+            mName: metallic
+            mWidget: slider
+            mHint: |-
+              Property: metallic
+              
+              1 means metal, 0 means non-metal (dielectric). Multiplies the metallic channel of the Material Params texture if enabled.
+            mMin: 0.000000
+            mMax: 1.000000
+            mStep: 0.010000
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: Roughness
+            mType: Property
+            mName: roughness
+            mWidget: slider
+            mHint: |-
+              Property: roughness
+              
+              1 means completely rough (diffuse), 0 means perfectly smooth and shiny. 
+              Multiplies the roughness channel of the Material Params texture if enabled. 
+              If your roughness is 1 and your metallic is 0, it's more efficient to disable Specular alltogether.
+            mMin: 0.000000
+            mMax: 1.000000
+            mStep: 0.010000
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: Texture
+            mType: Property
+            mName: materialParamsTex
+            mWidget: texture_group
+            mHint: |-
+              Property: materialParamsTex
+              
+              Material params texture should have: R - metalness, G - roughness, B - ambient occlusion.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Texture UV
+            mType: DefineSelect
+            mName: ""
+            mWidget: ""
+            mHint: Specifies the UV set used for sampling this texture.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              - mLabel: Mesh UV 0
+                mType: DefineSelectValue
+                mName: NODE_221_DROPLIST_ITEM 0
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Mesh UV 1
+                mType: DefineSelectValue
+                mName: NODE_221_DROPLIST_ITEM 1
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Transformed UV 2
+                mType: DefineSelectValue
+                mName: NODE_221_DROPLIST_ITEM 2
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Transformed UV 3
+                mType: DefineSelectValue
+                mName: NODE_221_DROPLIST_ITEM 3
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+          - mLabel: Specular AO
+            mType: Define
+            mName: ENABLE_SPECULAR_AO
+            mWidget: group_start
+            mHint: |-
+              Define: ENABLE_SPECULAR_AO
+              
+              Allow AO to influence indirect specular lighting (reflections).
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Intensity
+            mType: Property
+            mName: specularAoIntensity
+            mWidget: slider
+            mHint: |-
+              Property: specularAoIntensity
+              
+              Specifies the amount of influence AO has on reflections. 
+              For metals the specular AO at its darkest approaches a saturated/darkened version of the metal color (ex: dark gold for gold). 
+              For non-metals, this is essentially the same as 'Darkeing'.
+            mMin: 0.000000
+            mMax: 1.000000
+            mStep: 0.010000
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: Darkening
+            mType: Property
+            mName: specularAoDarkening
+            mWidget: slider
+            mHint: |-
+              Property: specularAoDarkening
+              
+              For metals, this shifts the darkest AO color from a saturated version of the metal color towards pure black. 
+              For non-metals it's essentially equivalent to 'Intensity'.
+            mMin: 0.000000
+            mMax: 1.000000
+            mStep: 0.010000
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: ""
+            mType: GroupEnd
+            mName: ENABLE_SPECULAR_AO
+            mWidget: group_end
+            mHint: ""
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: ""
+            mType: GroupEnd
+            mName: ""
+            mWidget: group_end
+            mHint: ""
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Transformed UV 2
+            mType: Define
+            mName: ENABLE_UV2
+            mWidget: group_start
+            mHint: |-
+              Define: ENABLE_UV2
+              
+              Allows tiling and animation of texture coordinates.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Source
+            mType: DefineSelect
+            mName: ""
+            mWidget: ""
+            mHint: Specifies the UV set used as the base on top of which the transform is applied.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              - mLabel: Mesh UV 0
+                mType: DefineSelectValue
+                mName: NODE_13_DROPLIST_ITEM 0
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Mesh UV 1
+                mType: DefineSelectValue
+                mName: NODE_13_DROPLIST_ITEM 1
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Screen UV
+                mType: DefineSelectValue
+                mName: NODE_13_DROPLIST_ITEM 2
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+          - mLabel: Scale
+            mType: Property
+            mName: uv2Scale
+            mWidget: spinbox
+            mHint: |-
+              Property: uv2Scale
+              
+              Allows tiling of textures.
+            mMin: ~
+            mMax: ~
+            mStep: 0.010000
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: Offset
+            mType: Property
+            mName: uv2Offset
+            mWidget: spinbox
+            mHint: |-
+              Property: uv2Offset
+              
+              Allows shifting of textures, or controls the speed of scrolling if animation is enabled. 
+              If animation is enabled, the speed is 'Offset' UVs per second. So if 'Offset' is 2, the texture will scroll through two complete times per second.
+            mMin: ~
+            mMax: ~
+            mStep: 0.010000
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: Animation
+            mType: Define
+            mName: uv2EnableAnimation
+            mWidget: checkbox
+            mHint: |-
+              Define: uv2EnableAnimation
+              
+              If this is enabled, the UV's will scroll. In this case the Offset specifies the speed of scrolling. 
+              The speed is 'Offset' UVs per second. So if 'Offset' is 2, the texture will scroll through two complete times per second.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: ""
+            mType: GroupEnd
+            mName: ENABLE_UV2
+            mWidget: group_end
+            mHint: ""
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Transformed UV 3
+            mType: Define
+            mName: ENABLE_UV3
+            mWidget: group_start
+            mHint: |-
+              Define: ENABLE_UV3
+              
+              Allows tiling and animation of texture coordinates.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Source
+            mType: DefineSelect
+            mName: ""
+            mWidget: ""
+            mHint: Specifies the UV set used as the base on top of which the transform is applied.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              - mLabel: Mesh UV 0
+                mType: DefineSelectValue
+                mName: NODE_49_DROPLIST_ITEM 0
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Mesh UV 1
+                mType: DefineSelectValue
+                mName: NODE_49_DROPLIST_ITEM 1
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Screen UV
+                mType: DefineSelectValue
+                mName: NODE_49_DROPLIST_ITEM 2
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+              - mLabel: Transformed UV 2
+                mType: DefineSelectValue
+                mName: NODE_49_DROPLIST_ITEM 3
+                mWidget: ""
+                mHint: ""
+                mMin: ~
+                mMax: ~
+                mStep: ~
+                mDefaultVal: ~
+                mValues:
+                  []
+          - mLabel: Scale
+            mType: Property
+            mName: uv3Scale
+            mWidget: spinbox
+            mHint: |-
+              Property: uv3Scale
+              
+              Allows tiling of textures.
+            mMin: ~
+            mMax: ~
+            mStep: 0.010000
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: Offset
+            mType: Property
+            mName: uv3Offset
+            mWidget: spinbox
+            mHint: |-
+              Property: uv3Offset
+              
+              Allows shifting of textures, or controls the speed of scrolling if animation is enabled. 
+              If animation is enabled, the speed is 'Offset' UVs per second. So if 'Offset' is 2, the texture will scroll through two complete times per second.
+            mMin: ~
+            mMax: ~
+            mStep: 0.010000
+            mDefaultVal: 1.000000
+            mValues:
+              []
+          - mLabel: Animation
+            mType: Define
+            mName: uv3EnableAnimation
+            mWidget: checkbox
+            mHint: |-
+              Define: uv3EnableAnimation
+              
+              If this is enabled, the UV's will scroll. In this case the Offset specifies the speed of scrolling. 
+              The speed is 'Offset' UVs per second. So if 'Offset' is 2, the texture will scroll through two complete times per second.
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: ""
+            mType: GroupEnd
+            mName: ENABLE_UV3
+            mWidget: group_end
+            mHint: ""
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: ""
+            mType: GroupEnd
+            mName: ""
+            mWidget: group_end
+            mHint: ""
+            mMin: ~
+            mMax: ~
+            mStep: ~
+            mDefaultVal: ~
+            mValues:
+              []
+          - mLabel: Alpha Test Threshold
+            mType: Property
+            mName: alphaTestThreshold
+            mWidget: slider
+            mHint: |-
+              Property: alphaTestThreshold
+              
+              When the 'Alpha Test' blend mode is enabled, pixels with alpha values lower than this disappear.
+            mMin: 0.000000
+            mMax: 1.000000
+            mStep: 0.001000
+            mDefaultVal: 0.500000
+            mValues:
+              []
+      ShaderPath: ca1104e7-5e9c-48e4-ba40-e6eef489330f/27fe39add132aea536d284128337912e/Data/.hidden/cfd37fa/Muchkin2.glsl
+      Defines:
+        []
+      Properties:
+        {}
+    - !<FileTexture/9ee560d8-3b9f-40bc-a021-ecc282ad349f>
+      PackagePath: .hidden/white
+      FileInfo: !<FileTextureInfo>
+        Width: 10
+        Height: 10
+  SourceHash: 27fe39add132aea536d284128337912e
+  FileHash: 3b4e905823c9532d39d9ee0222b035ef
+  NativePackageItems:
+    []
+- !<AnimationPlayer/2cee1202-c691-46d9-a8a3-cfce8b9edc4d>
+  PrefabRemaps:
+    []
+  Name: component_1
+  Enabled: true
+  Autoplay: true
+  ClipRangeType: Frames
+  AnimationClips:
+    - !<AnimationClip>
+      AnimationAsset: !<reference> 108938b0-afb6-4eb4-94fd-e6a7974aa751
+      Name: BaseLayer
+      Weight: 1.000000
+      PlaybackSpeed: 1.000000
+      Begin: 0.000000
+      End: 177.600006
+      Reversed: false
+      Disabled: false
+      BlendMode: Default
+      ScaleMode: Multiply
+      PlaybackMode: Loop
+- !<RenderMeshVisual/6730ba80-8012-42a3-b536-989b2cb1f2c2>
+  PrefabRemaps:
+    []
+  Name: component_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> d1e1928b-4ced-49d3-ac99-071a0381c331
+  Mesh: !<reference> e7f4ec35-7632-4cb0-be7b-7ced11e2cb52
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    Muchkin1: 0.000000
+- !<SceneObject/8c52c36b-d34d-4bc7-ae2c-3e4891a3faaa>
+  PrefabRemaps:
+    []
+  Name: OiiaioooooiaiFin
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> f270a099-9b61-4c0d-9ca0-2ad06c072cde
+  Components:
+    - !<own> 2cee1202-c691-46d9-a8a3-cfce8b9edc4d
+- !<PassInfo/9015173a-25c8-4ac5-a692-0049074efe95>
+  CachedProperties:
+    - Port_Depth_N004:
+        typeIdx: 1
+        value: 1.000000
+    - Port_FinalColor1_N004:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - Port_FinalColor2_N004:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - Port_FinalColor3_N004:
+        typeIdx: 5
+        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    - Port_GSplatPointSize_N004:
+        typeIdx: 1
+        value: 0.000000
+    - Port_RayDirection_N004:
+        typeIdx: 4
+        value: {x: 0.000000, y: 1.000000, z: 0.000000}
+    - Port_RayOrigin_N004:
+        typeIdx: 4
+        value: {x: 0.000000, y: 0.000000, z: 0.000000}
+    - Port_WorldNormal_N004:
+        typeIdx: 4
+        value: {x: 0.000000, y: 1.000000, z: 0.000000}
+    - Port_WorldPosition_N004:
+        typeIdx: 4
+        value: {x: 0.000000, y: 0.000000, z: 0.000000}
+    - Port_WorldTangent_N004:
+        typeIdx: 4
+        value: {x: 0.000000, y: 0.000000, z: 1.000000}
+    - alpha:
+        typeIdx: 1
+        value: 0.000000
+    - selfIllum:
+        typeIdx: 1
+        value: 0.000000
+  DepthWrite: true
+  DepthTest: true
+  DepthFunction: LessEqual
+  TwoSided: false
+  ColorMask: {x: true, y: true, z: true, w: true}
+  CullMode: Back
+  PolygonOffset: {x: 0.000000, y: 0.000000}
+  FrustumCulling: Auto
+  FrustumCullPad: 0.000000
+  InstanceCount: 1
+  Defines:
+    - ENABLE_DIFFUSE_LIGHTING
+    - ENABLE_DIRECT_LIGHTS
+    - ENABLE_ENVIRONMENT_MAP
+    - ENABLE_LIGHTING
+    - ENABLE_SPECULAR_LIGHTING
+    - ENABLE_TONE_MAPPING
+    - ENABLE_VERTEX_COLOR_NONE
+    - baseTexUV 0
+    - emissiveTexUV 0
+    - materialParamsTexUV 0
+    - normalTexUV 0
+    - opacityTexUV 0
+    - rimColorTexUV 0
+  BlendMode: Disabled
+  Properties:
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    baseColor:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    materialParamsTex:
+      typeIdx: 9
+      value:
+        id: 9ee560d8-3b9f-40bc-a021-ecc282ad349f
+        sampler:
+          filteringMode: Bilinear
+          wrapModeU: ClampToEdge
+          wrapModeV: ClampToEdge
+          wrapModeW: ClampToEdge
+          borderColor: {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
+          mipmaps: false
+        type: Texture2D
+    metallic:
+      typeIdx: 1
+      value: 0.000000
+    roughness:
+      typeIdx: 1
+      value: 1.000000
+  Pass: !<reference> c750afd7-2807-461f-b3f5-783daf734983
+- !<SceneObject/f270a099-9b61-4c0d-9ca0-2ad06c072cde>
+  PrefabRemaps:
+    []
+  Name: Muchkin1.002
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 6730ba80-8012-42a3-b536-989b2cb1f2c2

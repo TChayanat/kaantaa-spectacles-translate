@@ -1,0 +1,34 @@
+- !<AssetImportMetadata/94ae8954-0757-4b27-8ce2-9515757aff04>
+  ImportedAssetIds:
+    VFXGraph: !<reference> 369c2a62-6e50-4931-9fc9-e61d28c0b0d5
+  ImporterName: VFXAssetImporter
+  PrimaryAsset: !<reference> 369c2a62-6e50-4931-9fc9-e61d28c0b0d5
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    VFXGraph: !<own> 6e027eae-8085-4dcd-aabe-ec07c8d26568
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<VFXAssetData/6e027eae-8085-4dcd-aabe-ec07c8d26568>
+  Mesh: !<reference> 4ffad41c-504b-4d43-8987-967c38a34862
+  SystemPassProperties:
+    39: !<VFXSystemPassProperties/dee1e364-81bc-4d89-bc1f-08b89cf61b8f>
+      FeedbackProperties:
+        {}
+      SimulateProperties:
+        {}
+      RenderProperties:
+        numberMeshes:
+          typeIdx: 1
+          value: 5.000000
+      FeedbackDefines:
+        []
+      SimulateDefines:
+        []
+      RenderDefines:
+        - NODE_46_DROPLIST_ITEM 1

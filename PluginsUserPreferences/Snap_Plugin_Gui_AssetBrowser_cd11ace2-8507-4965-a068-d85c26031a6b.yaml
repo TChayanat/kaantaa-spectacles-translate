@@ -1,0 +1,76 @@
+CollapsedEntities:
+  type: stringset
+  value:
+    size: 70
+    values:
+      - Cat
+      - Cat/ScreenTexture.screenTexture
+      - Cat/cat body.mat
+      - Cat/cat whiskey.mat
+      - Cat/explosion-green-screen.gif
+      - Cat/oiiaioooooiai-cat/TweenManager
+      - Cat/oiiaioooooiai-cat/TweenManager/.hidden
+      - Cat/oiiaioooooiai-cat/TweenManager/.hidden/Image Unlit.ss_graph
+      - Cat/oiiaioooooiai-cat/TweenManager/.hidden/TweenBoxDiffuse.ss_graph
+      - Cat/oiiaioooooiai-cat/TweenManager/Tween
+      - "Cat/oiiaioooooiai-cat/TweenManager/Tween/ExampleResources [REMOVE_ME]"
+      - "Cat/oiiaioooooiai-cat/TweenManager/Tween/ExampleResources [REMOVE_ME]/ExampleTweenValueScript.js"
+      - "Cat/oiiaioooooiai-cat/TweenManager/Tween/ExampleResources [REMOVE_ME]/Materials"
+      - "Cat/oiiaioooooiai-cat/TweenManager/Tween/ExampleResources [REMOVE_ME]/Materials/Image Unlit.mat"
+      - "Cat/oiiaioooooiai-cat/TweenManager/Tween/ExampleResources [REMOVE_ME]/Materials/TweenBoxDiffuse.mat"
+      - "Cat/oiiaioooooiai-cat/TweenManager/Tween/ExampleResources [REMOVE_ME]/Materials/TweenBoxDiffuse_Alt.mat"
+      - "Cat/oiiaioooooiai-cat/TweenManager/Tween/ExampleResources [REMOVE_ME]/Materials/TweenSphereDiffuse.mat"
+      - "Cat/oiiaioooooiai-cat/TweenManager/Tween/ExampleResources [REMOVE_ME]/Meshes"
+      - "Cat/oiiaioooooiai-cat/TweenManager/Tween/ExampleResources [REMOVE_ME]/Meshes/TweenBox.mesh"
+      - "Cat/oiiaioooooiai-cat/TweenManager/Tween/ExampleResources [REMOVE_ME]/Meshes/TweenSphere.mesh"
+      - "Cat/oiiaioooooiai-cat/TweenManager/Tween/ExampleResources [REMOVE_ME]/Textures"
+      - "Cat/oiiaioooooiai-cat/TweenManager/Tween/ExampleResources [REMOVE_ME]/Textures/TweenImageTextures"
+      - "Cat/oiiaioooooiai-cat/TweenManager/Tween/ExampleResources [REMOVE_ME]/Textures/TweenImageTextures/Image.png"
+      - Cat/oiiaioooooiai-cat/TweenManager/Tween/Tween.js
+      - Cat/oiiaioooooiai-cat/TweenManager/Tween/TweenManager.js
+      - Cat/oiiaioooooiai-cat/TweenManager/Tween/TweenTypes
+      - Cat/oiiaioooooiai-cat/TweenManager/Tween/TweenTypes/TweenAlpha.js
+      - Cat/oiiaioooooiai-cat/TweenManager/Tween/TweenTypes/TweenChain.js
+      - Cat/oiiaioooooiai-cat/TweenManager/Tween/TweenTypes/TweenColor.js
+      - Cat/oiiaioooooiai-cat/TweenManager/Tween/TweenTypes/TweenScreenTransform.js
+      - Cat/oiiaioooooiai-cat/TweenManager/Tween/TweenTypes/TweenTransform.js
+      - Cat/oiiaioooooiai-cat/TweenManager/Tween/TweenTypes/TweenValue.js
+      - Cat/oiiaioooooiai-cat/TweenManager/TweenManager.prefab
+      - Cat/oiiaioooooiai-cat/source/OiiaioooooiaiFin.fbx/.hidden
+      - Cat/oiiaioooooiai-cat/source/OiiaioooooiaiFin.fbx/.hidden/Muchkin2
+      - Cat/oiiaioooooiai-cat/source/OiiaioooooiaiFin.fbx/.hidden/white
+      - Cat/oiiaioooooiai-cat/source/OiiaioooooiaiFin.fbx/Animations
+      - Cat/oiiaioooooiai-cat/source/OiiaioooooiaiFin.fbx/Animations/BaseLayer
+      - Cat/oiiaioooooiai-cat/source/OiiaioooooiaiFin.fbx/Materials
+      - Cat/oiiaioooooiai-cat/source/OiiaioooooiaiFin.fbx/Materials/Muchkin2
+      - Cat/oiiaioooooiai-cat/source/OiiaioooooiaiFin.fbx/Meshes/Muchkin1.002
+      - Cat/oiiaioooooiai-cat/source/OiiaioooooiaiFin.fbx/OiiaioooooiaiFin
+      - Cat/oiiaioooooiai-cat/textures/Muchkin2_BaseColor.png
+      - Cat/oiiaioooooiai-cat/textures/base.mat
+      - Cat/scene.gltf
+      - Cat/scene.gltf/Animations/Take 001
+      - Cat/scene.gltf/Meshes
+      - Cat/scene.gltf/Meshes/choucat_body_0
+      - Cat/scene.gltf/Meshes/choucat_whiskers.002_0
+      - Cat/scene.gltf/Textures/body_baseColor
+      - Cat/scene.gltf/Textures/whiskers.002_baseColor
+      - Cat/scene.gltf/scene
+      - Cat/youtube_HeLDnCwIYw8_audio.mp3
+      - Confetti VFX/Confetti VFX Resources/VFX/Simple Emitter VFX.vfxgraph
+      - Confetti VFX/Confetti__PLACE_IN_OBJECTS_PANEL.prefab
+      - Image 2.mat
+      - Image 3.mat
+      - Image.mat
+      - Scripts
+      - Scripts/maxwell manager.ts
+      - Sphere.mesh
+      - image_unlit.ss_graph
+      - random/Echopark.hdr
+      - random/Image.mat
+      - random/Image.png
+      - random/ImageMaterial.mat
+      - random/explosao.gif
+      - random/flat.ss_graph
+      - random/oiia oiia.mp3
+      - random/omg-bruh-oh-hell-nah.mp3
+  options: 4

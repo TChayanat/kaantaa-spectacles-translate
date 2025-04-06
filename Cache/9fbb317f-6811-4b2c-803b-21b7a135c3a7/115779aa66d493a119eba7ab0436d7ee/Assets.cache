@@ -1,0 +1,17 @@
+- !<AssetCache>
+  AssetFiles:
+    4ffad41c-504b-4d43-8987-967c38a34862: 9fbb317f-6811-4b2c-803b-21b7a135c3a7/115779aa66d493a119eba7ab0436d7ee/Data/Platonic Solids.mesh
+  Assets:
+    - !<FileMesh/4ffad41c-504b-4d43-8987-967c38a34862>
+      PackagePath: ""
+      Info: !<MeshInfo>
+        Triangles: 80
+        Vertices: 180
+        Blendshapes:
+          []
+        Joints: 0
+        AabbSize: {x: 2.000000, y: 2.000000, z: 2.000000}
+  SourceHash: 115779aa66d493a119eba7ab0436d7ee
+  FileHash: ef011e6122841eba00f157c589bbe9e0
+  NativePackageItems:
+    []

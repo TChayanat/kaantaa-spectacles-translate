@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    378baf24-feaa-4bcd-a558-f805360da16c: 8a262c7e-b6dc-4663-8355-11e858f46386/3a912dadbfb3c2279bf777f6ee122f2c/Data/body_baseColor 2.png
+  Assets:
+    - !<FileTexture/378baf24-feaa-4bcd-a558-f805360da16c>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 1024
+        Height: 1024
+  SourceHash: 3a912dadbfb3c2279bf777f6ee122f2c
+  FileHash: efc24b514b6457f58684486746dd878c
+  NativePackageItems:
+    []

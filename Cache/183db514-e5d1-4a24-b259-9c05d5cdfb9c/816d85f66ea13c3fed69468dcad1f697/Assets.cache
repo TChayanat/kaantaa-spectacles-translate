@@ -1,0 +1,13 @@
+- !<AssetCache>
+  AssetFiles:
+    5fc59c76-5f4d-42b6-9237-db7ff2d2a17d: 183db514-e5d1-4a24-b259-9c05d5cdfb9c/816d85f66ea13c3fed69468dcad1f697/Data/whiskers.002_baseColor.png
+  Assets:
+    - !<FileTexture/5fc59c76-5f4d-42b6-9237-db7ff2d2a17d>
+      PackagePath: ""
+      FileInfo: !<FileTextureInfo>
+        Width: 256
+        Height: 128
+  SourceHash: 816d85f66ea13c3fed69468dcad1f697
+  FileHash: 5b675cdf6f7e696eb8d8b1f15413421a
+  NativePackageItems:
+    []

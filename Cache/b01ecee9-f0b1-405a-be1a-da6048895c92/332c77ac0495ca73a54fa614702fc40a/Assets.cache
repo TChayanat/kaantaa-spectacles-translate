@@ -1,0 +1,17 @@
+- !<AssetCache>
+  AssetFiles:
+    e7f20dfb-2532-48ec-9199-bccabd25ee45: b01ecee9-f0b1-405a-be1a-da6048895c92/332c77ac0495ca73a54fa614702fc40a/Data/choucat.mesh
+  Assets:
+    - !<FileMesh/e7f20dfb-2532-48ec-9199-bccabd25ee45>
+      PackagePath: ""
+      Info: !<MeshInfo>
+        Triangles: 2128
+        Vertices: 1160
+        Blendshapes:
+          []
+        Joints: 1
+        AabbSize: {x: 43.225067, y: 44.020035, z: 77.425430}
+  SourceHash: 332c77ac0495ca73a54fa614702fc40a
+  FileHash: e44dca044c9471f811a5f0da9a07696a
+  NativePackageItems:
+    []
