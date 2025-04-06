@@ -1,6 +1,7 @@
 export namespace GameSettings {
     export let isRecall = false
     export let currentNoun = ""
+    export let gameControls: GameControls
 }
 
 @component

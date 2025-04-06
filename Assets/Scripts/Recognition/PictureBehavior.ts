@@ -6,6 +6,10 @@ import { GameControls, GameSettings } from "../../GameControls";
 
 const BOX_MIN_SIZE = 8; //min size in cm for image capture
 
+export namespace GlobalJSON {
+  export let globalJson = "";
+  export let responsePending = false
+}
 @component
 export class PictureBehavior extends BaseScriptComponent {
   @input circleObjs: SceneObject[];
@@ -41,6 +45,8 @@ export class PictureBehavior extends BaseScriptComponent {
         this.captureRendMesh.mainPass.captureImage,
         (response) => {
           this.loadingObj.enabled = false;
+          GlobalJSON.globalJson = response;
+          GlobalJSON.responsePending = true;
           this.loadCaption(response);
         }
       );
