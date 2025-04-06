@@ -6,6 +6,7 @@
     - !<own> 0005641c-028d-459a-0000-000000014b4d
     - !<own> 46a5475d-2c8f-4dec-b86d-cdf7b338378a
     - !<own> 77e0933b-f28a-498a-909a-76f49b67f985
+    - !<own> d45ed69f-1e84-4d14-8db4-ee11b353bf14
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
@@ -719,7 +720,7 @@
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Text: Language Settings
+  Text: "app name "
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
@@ -3050,6 +3051,22 @@
     - !<own> 1d6b98ad-0211-4139-ad0b-d174ba38e855
   Components:
     []
+- !<ScriptComponent/656d9067-1c75-4a62-b8ef-467ba4f19373>
+  PrefabRemaps:
+    []
+  Name: ReadTheWord
+  Enabled: true
+  ScriptAsset: !<reference> 488481e4-507f-4dac-9eae-2e8370baccef
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/68092b09-3599-4455-a7f7-154cb7b4e1e1>
   PrefabRemaps:
     []
@@ -3792,6 +3809,82 @@
     - !<own> cc583ed7-3131-4edd-96ef-ebf45187596f
   Components:
     []
+- !<Text/8e5f3479-435d-41d2-a108-191e972c2c8f>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: Text
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 48
+  Font: !<reference> 00000000-0000-0000-0000-000000000000
+  LayoutRect:
+    left: -7.500000
+    bottom: -2.250000
+    right: 7.500000
+    top: 2.250000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Overflow
+  Fill: !<TextFill>
+    Mode: Solid
+    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    TileCount: 5.000000
+    TileZone: Rect
+    TextureStretch: FitWidth
+  Outline: !<OutlineSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Size: 0.250000
+  Dropshadow: !<DropshadowSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+  DepthTest: false
+  TwoSided: false
 - !<SceneObject/8e653ee7-ec49-409a-b005-794729ec3110>
   PrefabRemaps:
     []
@@ -7170,6 +7263,22 @@
     - !<own> 8f7b73d6-1628-4b5a-bbe7-47d2f143dbe6
   Components:
     []
+- !<SceneObject/d45ed69f-1e84-4d14-8db4-ee11b353bf14>
+  PrefabRemaps:
+    []
+  Name: Word
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.252634, y: -2.957165, z: -28.842318}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 8e5f3479-435d-41d2-a108-191e972c2c8f
+    - !<own> 656d9067-1c75-4a62-b8ef-467ba4f19373
 - !<SceneObject/d4b3a571-4b6d-4808-843e-2786db2d4c2f>
   PrefabRemaps:
     []
@@ -8930,7 +9039,7 @@
   PrefabRemaps:
     []
   Name: "[OPTIONAL] Visuals"
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
