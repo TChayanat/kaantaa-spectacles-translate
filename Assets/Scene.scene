@@ -8,6 +8,7 @@
     - !<own> c40411fe-69a7-45fa-88dd-61a4550224a0
     - !<own> 3f2b6956-2aad-451e-9555-fe237a9f8383
     - !<own> c9941b43-e521-4b7d-9c75-fd55a0885f31
+    - !<own> bd104ac5-61c0-4637-9f70-21e427596600
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
@@ -7912,6 +7913,21 @@
     hasSegmentScaleCompensation: false
   Children:
     - !<own> a62941bc-4cf3-477c-9306-95477609aaa5
+  Components:
+    []
+- !<SceneObject/bd104ac5-61c0-4637-9f70-21e427596600>
+  PrefabRemaps:
+    []
+  Name: Object 0
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
   Components:
     []
 - !<SceneObject/be8a89fb-bc52-4996-8616-7566a9c8dfc4>
