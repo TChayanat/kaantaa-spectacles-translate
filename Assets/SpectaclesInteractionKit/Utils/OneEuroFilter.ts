@@ -283,11 +283,7 @@ export class OneEuroFilterVec2 extends OneEuroFilterBase {
     const edValueY = this.dy.filterWithAlpha(dValueY, this.alpha(this.dcutoff))
 
     const edValueXyNorm = Math.sqrt(
-<<<<<<< HEAD
       Math.pow(edValueX, 2) + Math.pow(edValueY, 2),
-=======
-      Math.pow(edValueX, 2) + Math.pow(edValueY, 2)
->>>>>>> crop
     )
 
     // Use it to update the cutoff frequency
@@ -358,19 +354,11 @@ export class OneEuroFilterVec3 extends OneEuroFilterBase {
       : 0.0
 
     const edValueXyzNorm = Math.sqrt(
-<<<<<<< HEAD
       Math.pow(dValueX, 2) + Math.pow(dValueY, 2) + Math.pow(dValueZ, 2),
     )
     const newSpeed = this.speed.filterWithAlpha(
       edValueXyzNorm,
       this.alpha(this.dcutoff),
-=======
-      Math.pow(dValueX, 2) + Math.pow(dValueY, 2) + Math.pow(dValueZ, 2)
-    )
-    const newSpeed = this.speed.filterWithAlpha(
-      edValueXyzNorm,
-      this.alpha(this.dcutoff)
->>>>>>> crop
     )
 
     // Use it to update the cutoff frequency
@@ -432,11 +420,7 @@ export class OneEuroFilterQuat extends OneEuroFilterBase {
 
     const filteredSpeed = this.speed.filterWithAlpha(
       newSpeed,
-<<<<<<< HEAD
       this.alpha(this.dcutoff),
-=======
-      this.alpha(this.dcutoff)
->>>>>>> crop
     )
     // Use it to update the cutoff frequency
     const cutoff = this.minCutoff + this.beta * Math.abs(filteredSpeed)
@@ -476,14 +460,10 @@ class LowPassFilter_v2<T> implements Filter<T> {
   private previousValue: T | null = null
   private previousRawValue: T | null = null
 
-<<<<<<< HEAD
   constructor(
     public alpha: number,
     private sampleOps: SampleOps<T>,
   ) {}
-=======
-  constructor(public alpha: number, private sampleOps: SampleOps<T>) {}
->>>>>>> crop
 
   /**
    * Set alpha
@@ -518,11 +498,7 @@ class LowPassFilter_v2<T> implements Filter<T> {
     const scaledValue = this.sampleOps.uniformScale(sample, this.alpha)
     const scaledPrevValue = this.sampleOps.uniformScale(
       this.previousValue,
-<<<<<<< HEAD
       1 - this.alpha,
-=======
-      1 - this.alpha
->>>>>>> crop
     )
     const smoothedValue = this.sampleOps.add(scaledValue, scaledPrevValue)
 

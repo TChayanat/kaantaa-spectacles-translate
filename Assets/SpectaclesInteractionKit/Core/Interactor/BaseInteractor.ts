@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-=======
-import {Interactable} from "../../Components/Interaction/Interactable/Interactable"
-import {InteractableHitInfo} from "../../Providers/TargetProvider/TargetProvider"
-import Event from "../../Utils/Event"
-import {validate} from "../../Utils/validate"
-import {InteractionManager} from "../InteractionManager/InteractionManager"
-import {DragProvider} from "./DragProvider"
->>>>>>> crop
 import {
   DragType,
   Interactor,
@@ -15,7 +6,6 @@ import {
   TargetingMode,
 } from "./Interactor"
 
-<<<<<<< HEAD
 import {Interactable} from "../../Components/Interaction/Interactable/Interactable"
 import {InteractableHitInfo} from "../../Providers/TargetProvider/TargetProvider"
 import Event from "../../Utils/Event"
@@ -23,8 +13,6 @@ import {validate} from "../../Utils/validate"
 import {InteractionManager} from "../InteractionManager/InteractionManager"
 import {DragProvider} from "./DragProvider"
 
-=======
->>>>>>> crop
 const TAG = "BaseInteractor"
 
 /**
@@ -100,7 +88,6 @@ export default abstract class BaseInteractor
   onCurrentInteractableChanged =
     this.onCurrentInteractableChangedEvent.publicApi()
 
-<<<<<<< HEAD
   private onTriggerStartEvent = new Event<Interactable | null>()
   private onTriggerUpdateEvent = new Event<Interactable | null>()
   private onTriggerEndEvent = new Event<Interactable | null>()
@@ -126,8 +113,6 @@ export default abstract class BaseInteractor
    */
   onTriggerCanceled = this.onTriggerCanceledEvent.publicApi()
 
-=======
->>>>>>> crop
   /**
    * Returns the previous trigger value
    */
@@ -152,16 +137,10 @@ export default abstract class BaseInteractor
     super()
 
     this.interactionManager.registerInteractor(this)
-<<<<<<< HEAD
     this.createEvent("OnDestroyEvent").bind(() => this.release())
   }
 
   private release(): void {
-=======
-  }
-
-  release(): void {
->>>>>>> crop
     this.interactionManager.deregisterInteractor(this)
   }
 
@@ -309,20 +288,12 @@ export default abstract class BaseInteractor
     if ((this.currentTrigger & InteractorTriggerType.Select) !== 0) {
       this.currentDragVector = this.dragProvider.getDragVector(
         this.getDragPoint(),
-<<<<<<< HEAD
         this.currentInteractable?.enableInstantDrag ?? null,
-=======
-        this.currentInteractable?.enableInstantDrag ?? null
->>>>>>> crop
       )
 
       this.planecastDragProvider.getDragVector(
         this.planecastPoint,
-<<<<<<< HEAD
         this.currentInteractable?.enableInstantDrag ?? null,
-=======
-        this.currentInteractable?.enableInstantDrag ?? null
->>>>>>> crop
       )
     } else {
       this.currentDragVector = null
@@ -366,11 +337,7 @@ export default abstract class BaseInteractor
    * @returns the intersection point of the indirect raycast and plane
    */
   public raycastPlaneIntersection(
-<<<<<<< HEAD
     interactable: Interactable | null,
-=======
-    interactable: Interactable | null
->>>>>>> crop
   ): vec3 | null {
     const origin = this.startPoint
     const direction = this.direction
@@ -392,15 +359,7 @@ export default abstract class BaseInteractor
 
     const parametricValue = originDotProduct / directionDotProduct
 
-<<<<<<< HEAD
     return origin.add(direction.uniformScale(parametricValue))
-=======
-    if (parametricValue >= 0) {
-      return origin.add(direction.uniformScale(parametricValue))
-    } else {
-      return null
-    }
->>>>>>> crop
   }
 
   /**
@@ -409,11 +368,7 @@ export default abstract class BaseInteractor
    * @returns the direct collider's position projected onto the plane
    */
   public colliderPlaneIntersection(
-<<<<<<< HEAD
     interactable: Interactable | null,
-=======
-    interactable: Interactable | null
->>>>>>> crop
   ): vec3 | null {
     const origin = this.startPoint
 
@@ -445,7 +400,6 @@ export default abstract class BaseInteractor
       this.onCurrentInteractableChangedEvent.invoke(this.currentInteractable)
     }
   }
-<<<<<<< HEAD
 
   /**
    * Process the new currentTrigger and compare to previousTrigger to see what event to propagate.
@@ -471,6 +425,4 @@ export default abstract class BaseInteractor
       }
     }
   }
-=======
->>>>>>> crop
 }

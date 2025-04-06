@@ -1,11 +1,7 @@
 import WorldCameraFinderProvider from "../../../Providers/CameraProvider/WorldCameraFinderProvider"
-<<<<<<< HEAD
 import BillboardRotationCalculator, {
   ALMOST_ONE,
 } from "./BillboardRotationCalculator"
-=======
-import BillboardRotationCalculator from "./BillboardRotationCalculator"
->>>>>>> crop
 
 export type BillboardConfig = {
   script: ScriptComponent
@@ -29,10 +25,7 @@ export enum RotationAxis {
 }
 const rotationAxes = [RotationAxis.X, RotationAxis.Y, RotationAxis.Z]
 const VEC_UP = vec3.up()
-<<<<<<< HEAD
 const VEC_DOWN = vec3.down()
-=======
->>>>>>> crop
 
 const TAG = "BillboardController"
 
@@ -108,11 +101,7 @@ export default class BillboardController {
     return new vec3(
       this.xAxisCalculator.axisEasing,
       this.yAxisCalculator.axisEasing,
-<<<<<<< HEAD
       this.zAxisCalculator.axisEasing,
-=======
-      this.zAxisCalculator.axisEasing
->>>>>>> crop
     )
   }
   public set axisEasing(easing: vec3) {
@@ -125,11 +114,7 @@ export default class BillboardController {
     return new vec3(
       MathUtils.RadToDeg * this.xAxisCalculator.axisBufferRadians,
       MathUtils.RadToDeg * this.yAxisCalculator.axisBufferRadians,
-<<<<<<< HEAD
       MathUtils.RadToDeg * this.zAxisCalculator.axisBufferRadians,
-=======
-      MathUtils.RadToDeg * this.zAxisCalculator.axisBufferRadians
->>>>>>> crop
     )
   }
   public set axisBufferDegrees(bufferDegrees: vec3) {
@@ -184,7 +169,6 @@ export default class BillboardController {
             this.getRightVector(),
             this.getForwardVector(),
             this.getTargetToCameraVector(),
-<<<<<<< HEAD
             this.getUpVector(),
           )
           break
@@ -203,29 +187,13 @@ export default class BillboardController {
               this.getRightVector().uniformScale(-1),
             )
           }
-=======
-            this.getUpVector()
-          )
-          break
-        case RotationAxis.Y:
-          rotationQuaternion = this.yAxisCalculator.getRotation(
-            VEC_UP,
-            this.getForwardVector(),
-            this.getTargetToCameraVector(),
-            this.getRightVector().uniformScale(-1)
-          )
->>>>>>> crop
           break
         case RotationAxis.Z:
           rotationQuaternion = this.zAxisCalculator.getRotation(
             this.getForwardVector(),
             this.getUpVector(),
             this.getCameraUpVector(),
-<<<<<<< HEAD
             this.getRightVector(),
-=======
-            this.getRightVector()
->>>>>>> crop
           )
           break
         default:
@@ -233,11 +201,7 @@ export default class BillboardController {
       }
 
       this.targetTransform.setWorldRotation(
-<<<<<<< HEAD
         rotationQuaternion.multiply(this.targetTransform.getWorldRotation()),
-=======
-        rotationQuaternion.multiply(this.targetTransform.getWorldRotation())
->>>>>>> crop
       )
     }
   }
@@ -251,7 +215,6 @@ export default class BillboardController {
             this.getRightVector(),
             this.getForwardVector(),
             this.getTargetToCameraVector(),
-<<<<<<< HEAD
             this.getUpVector(),
           )
           break
@@ -270,29 +233,13 @@ export default class BillboardController {
               this.getRightVector().uniformScale(-1),
             )
           }
-=======
-            this.getUpVector()
-          )
-          break
-        case RotationAxis.Y:
-          rotationQuaternion = this.yAxisCalculator.resetRotation(
-            VEC_UP,
-            this.getForwardVector(),
-            this.getTargetToCameraVector(),
-            this.getRightVector().uniformScale(-1)
-          )
->>>>>>> crop
           break
         case RotationAxis.Z:
           rotationQuaternion = this.zAxisCalculator.resetRotation(
             this.getForwardVector(),
             this.getUpVector(),
             this.getCameraUpVector(),
-<<<<<<< HEAD
             this.getRightVector(),
-=======
-            this.getRightVector()
->>>>>>> crop
           )
           break
         default:
@@ -300,11 +247,7 @@ export default class BillboardController {
       }
 
       this.targetTransform.setWorldRotation(
-<<<<<<< HEAD
         rotationQuaternion.multiply(this.targetTransform.getWorldRotation()),
-=======
-        rotationQuaternion.multiply(this.targetTransform.getWorldRotation())
->>>>>>> crop
       )
     }
   }

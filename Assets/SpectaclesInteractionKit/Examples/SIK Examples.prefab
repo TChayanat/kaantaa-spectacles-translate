@@ -63,23 +63,13 @@
   Enabled: true
   ScriptAsset: !<reference> f5721a67-0d8c-4dcb-bc1e-2ce327397845
   ScriptInputsDefault:
-<<<<<<< HEAD
     {}
-=======
-    renderMeshVisual: true
-    knobObject: true
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       renderMeshVisual: !<reference.RenderMeshVisual> bee10be0-c79f-4465-b038-3dabfce07fe0
       knobObject: !<reference.SceneObject> 3d5bbf0a-915b-4595-9446-09a78de767bc
-=======
-      renderMeshVisual: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
-      knobObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -114,11 +104,7 @@
   Layers: 1
   LocalTransform:
     position: {x: 25.000000, y: -18.000000, z: -100.000000}
-<<<<<<< HEAD
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-=======
-    rotation: {x: -118.520844, y: -7.233747, z: -22.973654}
->>>>>>> crop
     scale: {x: 4.500000, y: 4.500000, z: 4.500000}
     hasSegmentScaleCompensation: false
   Children:
@@ -878,10 +864,7 @@
       useFOVFollow: true
       isFollowing: true
       showCloseButton: false
-<<<<<<< HEAD
       _enableInteractionPlane: true
-=======
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -912,23 +895,13 @@
   Enabled: true
   ScriptAsset: !<reference> f5721a67-0d8c-4dcb-bc1e-2ce327397845
   ScriptInputsDefault:
-<<<<<<< HEAD
     {}
-=======
-    renderMeshVisual: true
-    knobObject: true
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       renderMeshVisual: !<reference.RenderMeshVisual> f25ab795-0588-41df-a65c-750aad76b41d
       knobObject: !<reference.SceneObject> 0021bea9-0680-4e73-a1ca-690d879b9c62
-=======
-      renderMeshVisual: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
-      knobObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -972,32 +945,22 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _playAudioOnHover: true
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    hoverAudioTrack: true
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: false
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -1008,23 +971,16 @@
   Enabled: true
   ScriptAsset: !<reference> 652e631a-22d0-4941-9f74-2943df59f34c
   ScriptInputsDefault:
-<<<<<<< HEAD
     enableInstantDrag: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
-    targetingMode: true
-    enableInstantDrag: true
-    allowMultipleInteractors: true
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       targetingMode: !<float> 7.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
@@ -1032,11 +988,6 @@
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
-      targetingMode: !<float> 3.000000
-      enableInstantDrag: false
-      allowMultipleInteractors: true
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -1089,13 +1040,10 @@
     targetingMode: true
     enableInstantDrag: true
     allowMultipleInteractors: true
-<<<<<<< HEAD
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -1103,13 +1051,10 @@
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
-<<<<<<< HEAD
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -1229,32 +1174,22 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _playAudioOnHover: true
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    {}
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: false
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -1517,13 +1452,10 @@
     targetingMode: true
     enableInstantDrag: true
     allowMultipleInteractors: true
-<<<<<<< HEAD
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -1531,13 +1463,10 @@
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
-<<<<<<< HEAD
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -2198,32 +2127,22 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _playAudioOnHover: true
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    hoverAudioTrack: true
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: false
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -2744,32 +2663,22 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _playAudioOnHover: true
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    hoverAudioTrack: true
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: false
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -2975,32 +2884,22 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _playAudioOnHover: true
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    hoverAudioTrack: true
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: false
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -3047,13 +2946,10 @@
     targetingMode: true
     enableInstantDrag: true
     allowMultipleInteractors: true
-<<<<<<< HEAD
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -3061,13 +2957,10 @@
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
-<<<<<<< HEAD
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -3087,10 +2980,7 @@
   Components:
     - !<own> 8570cc97-5f6c-45eb-bde6-4bd9d142bd97
     - !<own> daa5b5bc-4d7e-4a0e-9811-29e82c244130
-<<<<<<< HEAD
     - !<own> c4b1e0dc-e01f-47be-98a6-c34aa0d4b9ca
-=======
->>>>>>> crop
 - !<Canvas/3e511368-f7e6-4909-999c-ca0c8b3cf71e>
   PrefabRemaps:
     []
@@ -3245,13 +3135,10 @@
     targetingMode: true
     enableInstantDrag: true
     allowMultipleInteractors: true
-<<<<<<< HEAD
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -3259,13 +3146,10 @@
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
-<<<<<<< HEAD
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -3686,32 +3570,22 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _playAudioOnHover: true
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    hoverAudioTrack: true
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: false
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -3853,13 +3727,10 @@
     targetingMode: true
     enableInstantDrag: true
     allowMultipleInteractors: true
-<<<<<<< HEAD
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -3867,13 +3738,10 @@
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
-<<<<<<< HEAD
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -3999,32 +3867,22 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _playAudioOnHover: true
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    {}
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: false
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -4038,13 +3896,10 @@
     targetingMode: true
     enableInstantDrag: true
     allowMultipleInteractors: true
-<<<<<<< HEAD
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -4052,13 +3907,10 @@
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
-<<<<<<< HEAD
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -4181,13 +4033,10 @@
     targetingMode: true
     enableInstantDrag: true
     allowMultipleInteractors: true
-<<<<<<< HEAD
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -4195,13 +4044,10 @@
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
-<<<<<<< HEAD
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -4289,13 +4135,10 @@
     targetingMode: true
     enableInstantDrag: true
     allowMultipleInteractors: true
-<<<<<<< HEAD
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -4303,13 +4146,10 @@
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
-<<<<<<< HEAD
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -4419,23 +4259,16 @@
   Enabled: true
   ScriptAsset: !<reference> 652e631a-22d0-4941-9f74-2943df59f34c
   ScriptInputsDefault:
-<<<<<<< HEAD
     enableInstantDrag: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
-    targetingMode: true
-    enableInstantDrag: true
-    allowMultipleInteractors: true
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       targetingMode: !<float> 7.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
@@ -4443,11 +4276,6 @@
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
-      targetingMode: !<float> 3.000000
-      enableInstantDrag: false
-      allowMultipleInteractors: true
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -4777,13 +4605,10 @@
     targetingMode: true
     enableInstantDrag: true
     allowMultipleInteractors: true
-<<<<<<< HEAD
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -4791,13 +4616,10 @@
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
-<<<<<<< HEAD
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -4901,13 +4723,10 @@
     targetingMode: true
     enableInstantDrag: true
     allowMultipleInteractors: true
-<<<<<<< HEAD
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -4915,13 +4734,10 @@
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
-<<<<<<< HEAD
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -5091,12 +4907,9 @@
       rocketConf: !<MappingBased.RocketConfigurator> dce8ac2d-1cca-4db4-9d7e-3a2d77598a8f
       launchSparks: !<reference.SceneObject> f4e93009-89a3-47e4-902b-8a73bfb94db2
       rocketAnimationPlayer: !<reference.AnimationPlayer> daa5b5bc-4d7e-4a0e-9811-29e82c244130
-<<<<<<< HEAD
       rocketAudioComponent: !<reference.AudioComponent> c4b1e0dc-e01f-47be-98a6-c34aa0d4b9ca
       rocketLaunchSFX: !<reference.AudioTrackAsset> fa9421aa-0b52-43f6-aa63-9290ce06106d
       rocketLandSFX: !<reference.AudioTrackAsset> 516fb026-81f3-418b-9f1a-708a8605efb6
-=======
->>>>>>> crop
       flightPathText: !<reference.Text> e6ac815d-2b69-45b5-8f53-bbe1df64a9f7
       launchPlatformToggleButton: !<MappingBased.ToggleButton> 3c64332c-490d-4b34-b94b-4f90350cf5db
       launchPlatform: !<reference.SceneObject> 3bff419b-5ccf-447c-9c52-8f6f131f64f2
@@ -5220,32 +5033,22 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _playAudioOnHover: true
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    {}
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: false
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -5259,13 +5062,10 @@
     targetingMode: true
     enableInstantDrag: true
     allowMultipleInteractors: true
-<<<<<<< HEAD
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -5273,13 +5073,10 @@
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
-<<<<<<< HEAD
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -5750,13 +5547,10 @@
     targetingMode: true
     enableInstantDrag: true
     allowMultipleInteractors: true
-<<<<<<< HEAD
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -5764,13 +5558,10 @@
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
-<<<<<<< HEAD
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -6375,23 +6166,13 @@
   Enabled: true
   ScriptAsset: !<reference> f5721a67-0d8c-4dcb-bc1e-2ce327397845
   ScriptInputsDefault:
-<<<<<<< HEAD
     {}
-=======
-    renderMeshVisual: true
-    knobObject: true
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       renderMeshVisual: !<reference.RenderMeshVisual> f02e77ec-819b-45eb-a92d-a142b6f6c5cc
       knobObject: !<reference.SceneObject> 40f8e1e3-c471-4bba-86ef-9a415f8bd055
-=======
-      renderMeshVisual: !<reference.RenderMeshVisual> 00000000-0000-0000-0000-000000000000
-      knobObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -6530,32 +6311,22 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _playAudioOnHover: true
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    {}
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: false
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -6584,31 +6355,21 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    {}
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: true
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -6700,32 +6461,22 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _playAudioOnHover: true
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    hoverAudioTrack: true
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: false
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -6800,23 +6551,16 @@
   Enabled: true
   ScriptAsset: !<reference> 652e631a-22d0-4941-9f74-2943df59f34c
   ScriptInputsDefault:
-<<<<<<< HEAD
     enableInstantDrag: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
-    targetingMode: true
-    enableInstantDrag: true
-    allowMultipleInteractors: true
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       targetingMode: !<float> 7.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
@@ -6824,11 +6568,6 @@
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
-      targetingMode: !<float> 3.000000
-      enableInstantDrag: false
-      allowMultipleInteractors: true
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -6971,32 +6710,22 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _playAudioOnHover: true
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    hoverAudioTrack: true
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: false
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -7007,32 +6736,22 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _playAudioOnHover: true
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    {}
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: false
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -7093,13 +6812,10 @@
     targetingMode: true
     enableInstantDrag: true
     allowMultipleInteractors: true
-<<<<<<< HEAD
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -7107,13 +6823,10 @@
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
-<<<<<<< HEAD
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -7260,23 +6973,16 @@
   Enabled: true
   ScriptAsset: !<reference> 652e631a-22d0-4941-9f74-2943df59f34c
   ScriptInputsDefault:
-<<<<<<< HEAD
     enableInstantDrag: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
-    targetingMode: true
-    enableInstantDrag: true
-    allowMultipleInteractors: true
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       targetingMode: !<float> 7.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
@@ -7284,11 +6990,6 @@
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
-      targetingMode: !<float> 3.000000
-      enableInstantDrag: false
-      allowMultipleInteractors: true
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -7360,31 +7061,21 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    {}
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: true
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -7488,13 +7179,10 @@
     targetingMode: true
     enableInstantDrag: true
     allowMultipleInteractors: true
-<<<<<<< HEAD
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -7502,13 +7190,10 @@
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
-<<<<<<< HEAD
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -7537,32 +7222,22 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _playAudioOnHover: true
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    hoverAudioTrack: true
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: false
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -8155,10 +7830,7 @@
       useFOVFollow: true
       isFollowing: false
       showCloseButton: false
-<<<<<<< HEAD
       _enableInteractionPlane: true
-=======
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -8596,32 +8268,22 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _playAudioOnHover: true
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    {}
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: false
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -8812,13 +8474,10 @@
     targetingMode: true
     enableInstantDrag: true
     allowMultipleInteractors: true
-<<<<<<< HEAD
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -8826,13 +8485,10 @@
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
-<<<<<<< HEAD
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -8843,20 +8499,15 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    {}
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: true
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
@@ -8883,14 +8534,6 @@
   MaxDistance: 100.000000
   EnableDirectivityEffect: true
   EnablePositionEffect: true
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-  ScriptTypes:
-    "":
-      {}
->>>>>>> crop
 - !<ScriptComponent/c523f342-58fb-482f-b0ef-d95797896406>
   PrefabRemaps:
     []
@@ -8898,32 +8541,22 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _playAudioOnHover: true
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    hoverAudioTrack: true
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: false
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -8954,32 +8587,22 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _playAudioOnHover: true
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    hoverAudioTrack: true
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: false
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -9160,10 +8783,6 @@
     allowTranslation: true
     xAlways: true
     yAlways: true
-<<<<<<< HEAD
-=======
-    itemSnapping: true
->>>>>>> crop
     worldSnapping: true
     isFollowing: true
   ScriptTypesDefault:
@@ -9186,20 +8805,13 @@
       yOnTranslate: true
       yAlways: false
       useSnapping: true
-<<<<<<< HEAD
       itemSnapping: true
-=======
-      itemSnapping: false
->>>>>>> crop
       worldSnapping: false
       showFollowButton: true
       useFOVFollow: true
       isFollowing: false
       showCloseButton: false
-<<<<<<< HEAD
       _enableInteractionPlane: true
-=======
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -9602,32 +9214,22 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _playAudioOnHover: true
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    hoverAudioTrack: true
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: false
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -9893,32 +9495,22 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _playAudioOnHover: true
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    hoverAudioTrack: true
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: false
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -9966,31 +9558,21 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    {}
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: true
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -10054,32 +9636,22 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _playAudioOnHover: true
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    hoverAudioTrack: true
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: false
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -10222,13 +9794,10 @@
     targetingMode: true
     enableInstantDrag: true
     allowMultipleInteractors: true
-<<<<<<< HEAD
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -10236,13 +9805,10 @@
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
-<<<<<<< HEAD
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -10407,23 +9973,16 @@
   Enabled: true
   ScriptAsset: !<reference> 652e631a-22d0-4941-9f74-2943df59f34c
   ScriptInputsDefault:
-<<<<<<< HEAD
     enableInstantDrag: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
-    targetingMode: true
-    enableInstantDrag: true
-    allowMultipleInteractors: true
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       targetingMode: !<float> 7.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
@@ -10431,11 +9990,6 @@
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
-      targetingMode: !<float> 3.000000
-      enableInstantDrag: false
-      allowMultipleInteractors: true
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -10446,31 +10000,21 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-<<<<<<< HEAD
     _hoverAudioTrack: true
     _playAudioOnTriggerStart: true
     _triggerStartAudioTrack: true
     _playAudioOnTriggerEnd: true
     _triggerEndAudioTrack: true
-=======
-    {}
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       _playAudioOnHover: true
       _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
       _playAudioOnTriggerStart: true
       _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       _playAudioOnTriggerEnd: true
       _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
-=======
-      hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
-      triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
-      triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -10553,23 +10097,16 @@
   Enabled: true
   ScriptAsset: !<reference> 652e631a-22d0-4941-9f74-2943df59f34c
   ScriptInputsDefault:
-<<<<<<< HEAD
     enableInstantDrag: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
-    targetingMode: true
-    enableInstantDrag: true
-    allowMultipleInteractors: true
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-<<<<<<< HEAD
       targetingMode: !<float> 7.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
@@ -10577,11 +10114,6 @@
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
-      targetingMode: !<float> 3.000000
-      enableInstantDrag: false
-      allowMultipleInteractors: true
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -11066,13 +10598,10 @@
     targetingMode: true
     enableInstantDrag: true
     allowMultipleInteractors: true
-<<<<<<< HEAD
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -11080,13 +10609,10 @@
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
-<<<<<<< HEAD
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
->>>>>>> crop
   ScriptTypes:
     "":
       {}
@@ -11379,13 +10905,10 @@
     targetingMode: true
     enableInstantDrag: true
     allowMultipleInteractors: true
-<<<<<<< HEAD
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
     acceptableZDirections: true
-=======
->>>>>>> crop
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -11393,13 +10916,10 @@
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
       allowMultipleInteractors: true
-<<<<<<< HEAD
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 3.000000
       acceptableYDirections: !<float> 3.000000
       acceptableZDirections: !<float> 3.000000
-=======
->>>>>>> crop
   ScriptTypes:
     "":
       {}

@@ -1,16 +1,8 @@
-<<<<<<< HEAD
 import {InteractorEvent} from "../../../Core/Interactor/InteractorEvent"
 import Event from "../../../Utils/Event"
 import {createCallback} from "../../../Utils/InspectorCallbacks"
 import NativeLogger from "../../../Utils/NativeLogger"
 import {Interactable} from "../../Interaction/Interactable/Interactable"
-=======
-import Event from "../../../Utils/Event"
-import {Interactable} from "../../Interaction/Interactable/Interactable"
-import {InteractorEvent} from "../../../Core/Interactor/InteractorEvent"
-import NativeLogger from "../../../Utils/NativeLogger"
-import {createCallback} from "../../../Utils/InspectorCallbacks"
->>>>>>> crop
 
 const TAG = "PinchButton"
 
@@ -57,17 +49,8 @@ export class PinchButton extends BaseScriptComponent {
         )
       }
       this.interactable.onTriggerEnd.add((interactorEvent: InteractorEvent) => {
-<<<<<<< HEAD
         if (this.enabled) {
           this.onButtonPinchedEvent.invoke(interactorEvent)
-=======
-        try {
-          if (this.enabled) {
-            this.onButtonPinchedEvent.invoke(interactorEvent)
-          }
-        } catch (e) {
-          this.log.e("Error invoking onButtonPinchedEvent!")
->>>>>>> crop
         }
       })
     })

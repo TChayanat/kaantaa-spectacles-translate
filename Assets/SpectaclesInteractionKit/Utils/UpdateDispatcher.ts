@@ -5,11 +5,7 @@ export interface IUpdateDispatcher {
 
   setUpdateEventPriority(
     updateEvent: DispatchedUpdateEvent,
-<<<<<<< HEAD
     priority: number,
-=======
-    priority: number
->>>>>>> crop
   ): void
 
   removeUpdateEvent(event: DispatchedUpdateEvent): void
@@ -93,11 +89,7 @@ export class UpdateDispatcher implements IUpdateDispatcher {
     this.dispatchUpdateEvents(
       this.lateUpdateEvents,
       this.timesLateUpdate,
-<<<<<<< HEAD
       "LateUpdate",
-=======
-      "LateUpdate"
->>>>>>> crop
     )
   }
 
@@ -107,11 +99,7 @@ export class UpdateDispatcher implements IUpdateDispatcher {
   protected dispatchUpdateEvents: (
     pool: DispatchedUpdateEvent[],
     times: {[name: string]: {updCnt: number; time: number}},
-<<<<<<< HEAD
     eventName: string,
-=======
-    eventName: string
->>>>>>> crop
   ) => void
   protected dispatchedEvents = 0
 
@@ -125,11 +113,7 @@ export class UpdateDispatcher implements IUpdateDispatcher {
 
   private removeEventFromPool(
     event: BaseDispatchedEvent,
-<<<<<<< HEAD
     pool: BaseDispatchedEvent[],
-=======
-    pool: BaseDispatchedEvent[]
->>>>>>> crop
   ) {
     let n = pool.length
     for (let i = 0; i < n; i++) {

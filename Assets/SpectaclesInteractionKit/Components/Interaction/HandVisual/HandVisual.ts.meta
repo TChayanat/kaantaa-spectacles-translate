@@ -18,11 +18,8 @@
   InputLines:
     - '// @ui {"widget":"group_start", "label":"Hand Visual"}'
     - '// @input string handType {"widget":"combobox", "values":[{"label":"Left", "value":"left"}, {"label":"Right", "value":"right"}]}'
-<<<<<<< HEAD
     - '// @input string selectVisual = "Default" {"widget":"combobox", "values":[{"label":"Default", "value":"Default"}, {"label":"Occluder", "value":"Occluder"}]}'
     - // @input HandInteractor handInteractor
-=======
->>>>>>> crop
     - // @input Component.RenderMeshVisual handMesh
     - '// @input float handMeshRenderOrder = 9999 {"hint":"The desired render order of the handMesh"}'
     - '// @input SceneObject root {"hint":"Parent of both the rig and the mesh"}'
@@ -56,20 +53,12 @@
     - // @input SceneObject pinkyTip
     - '// @ui {"widget":"group_end"}'
     - '// @ui {"widget":"group_start", "label":"Glow Effect"}'
-<<<<<<< HEAD
     - '// @input bool shouldThumbPokeGlow {"hint":"Whether or not the thumb should glow when poking"}'
     - '// @input Asset.RenderMesh unitPlaneMesh {"hint":"The plane mesh on which the glow texture/material will be rendered"}'
     - '// @input Asset.Material tipGlowMaterial {"hint":"The material which will be manipulated to create the glow effect"}'
     - '// @input vec4 hoverColor {"hint":"The color the glow will be when you are not pinching/poking", "widget":"color"}'
     - '// @input vec4 triggerColor {"hint":"The color the glow will be when you are pinching/poking", "widget":"color"}'
     - '// @input vec4 behindColor {"hint":"The color the glow will be when you are pinching/poking too far", "widget":"color"}'
-=======
-    - '// @input bool glowEnabled = true {"hint":"Whether or not the glow effect is enabled"}'
-    - '// @input Asset.RenderMesh unitPlaneMesh {"hint":"The plane mesh on which the glow texture/material will be rendered"}'
-    - '// @input Asset.Material tipGlowMaterial {"hint":"The material which will be manipulated to create the glow effect"}'
-    - '// @input vec4 idleColor {"hint":"The color the glow will be when you are not pinching", "widget":"color"}'
-    - '// @input vec4 pinchDownColor {"hint":"The color the glow will be when you are pinching", "widget":"color"}'
->>>>>>> crop
     - '// @input float tapProximityThreshold {"hint":"How close index finger of tapping hand has to be to tapped hand to initiate tap glow"}'
     - '// @input Asset.Texture pinchTexture {"hint":"The texture applied to the hand when creating pinch glow effect"}'
     - '// @input Asset.Texture tapTexture {"hint":"The texture applied to the hand when creating tap glow effect"}'
@@ -82,30 +71,22 @@
     - '// @input float gradientQuadRenderOrder = 9997 {"hint":"The render order of the gradient quad tracked to the hand"}'
     - '// @ui {"widget":"group_end"}'
     - '// @ui {"widget":"group_end"}'
-<<<<<<< HEAD
     - '// @ui {"widget":"group_start", "label":"Hand Mesh Materials"}'
     - '// @input Asset.Material handOutlineMaterial {"hint":"The material which will be create the default visual effect on the hand mesh"}'
     - '// @input Asset.Material handOccluderMaterial {"hint":"The material which will be create the occluder visual effect on the hand mesh"}'
     - '// @ui {"widget":"group_end"}'
-=======
->>>>>>> crop
   Icon: ""
   Description: ""
   InternalVersion: 0
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-<<<<<<< HEAD
   ComponentUid: 20dda59e-9729-4015-b995-3d9999fbdf2e
-=======
-  ComponentUid: 38e0bee0-8bb0-4c0d-8470-16f3f6ed7b1e
->>>>>>> crop
   ExportUid: 00000000-0000-0000-0000-000000000000
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
     autoJointMapping: false
-<<<<<<< HEAD
     behindColor: false
     gradientQuadRenderOrder: true
     handInteractor: false
@@ -115,14 +96,6 @@
     handOutlineMaterial: false
     handType: false
     hoverColor: false
-=======
-    glowEnabled: false
-    gradientQuadRenderOrder: true
-    handMesh: false
-    handMeshRenderOrder: true
-    handType: false
-    idleColor: false
->>>>>>> crop
     indexKnuckle: false
     indexMidJoint: false
     indexTip: false
@@ -135,10 +108,6 @@
     middleUpperJoint: false
     occluderEnabled: false
     occluderUnitPlaneMesh: false
-<<<<<<< HEAD
-=======
-    pinchDownColor: false
->>>>>>> crop
     pinchTexture: false
     pinkyKnuckle: false
     pinkyMidJoint: false
@@ -152,11 +121,8 @@
     ringToWrist: false
     ringUpperJoint: false
     root: false
-<<<<<<< HEAD
     selectVisual: false
     shouldThumbPokeGlow: false
-=======
->>>>>>> crop
     tapProximityThreshold: false
     tapTexture: false
     thumbBaseJoint: false
@@ -166,10 +132,7 @@
     thumbToWrist: false
     tipGlowMaterial: false
     tipGlowRenderOrder: true
-<<<<<<< HEAD
     triggerColor: false
-=======
->>>>>>> crop
     unitPlaneMesh: false
     wrist: false
   ScriptTypesHidden:
@@ -209,11 +172,6 @@
       radialGradientOcclusionMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
       unitPlaneMesh: !<reference.RenderMesh> 00000000-0000-0000-0000-000000000000
       tipGlowMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
-<<<<<<< HEAD
-=======
-      idleColor: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-      pinchDownColor: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
->>>>>>> crop
       tapProximityThreshold: !<float> 0.000000
       pinchTexture: !<reference.Texture> 00000000-0000-0000-0000-000000000000
       tapTexture: !<reference.Texture> 00000000-0000-0000-0000-000000000000
@@ -221,7 +179,6 @@
       tipGlowRenderOrder: !<float> 10000.000000
       gradientQuadRenderOrder: !<float> 9997.000000
       occluderEnabled: false
-<<<<<<< HEAD
       selectVisual: Default
       handInteractor: !<MappingBased.HandInteractor> 00000000-0000-0000-0000-000000000000
       shouldThumbPokeGlow: false
@@ -230,9 +187,6 @@
       hoverColor: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
       triggerColor: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
       behindColor: !<Vec4> {x: 0.000000, y: 0.000000, z: 0.000000, w: 0.000000}
-=======
-      glowEnabled: false
->>>>>>> crop
   ScriptTypes:
     -
       {}

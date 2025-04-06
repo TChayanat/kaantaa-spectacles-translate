@@ -7,11 +7,7 @@
  */
 export function validate<T>(
   object: T | undefined | null,
-<<<<<<< HEAD
   message: string | undefined = undefined,
-=======
-  message: string | undefined = undefined
->>>>>>> crop
 ): asserts object is T {
   if (object === undefined) {
     throw new Error(message ?? "Attempted operation on undefined object.")

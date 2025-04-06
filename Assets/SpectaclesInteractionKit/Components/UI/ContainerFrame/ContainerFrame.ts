@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import animate, {AnimationManager, CancelSet} from "../../../Utils/animate"
 import Event, {PublicApi, unsubscribe} from "../../../Utils/Event"
 import {FrameInputHandler, FrameInputOptions} from "./modules/FrameInputHandler"
@@ -24,27 +23,6 @@ import {HoverBehavior} from "./modules/HoverBehavior"
 import {LabeledPinchButton} from "./modules/LabeledPinchButton"
 import {SmoothFollow} from "./modules/SmoothFollow"
 import {SnappableBehavior} from "./modules/SnappableBehavior"
-=======
-import Event, {PublicApi, unsubscribe} from "../../../Utils/Event"
-import {FrameInputHandler, FrameInputOptions} from "./modules/FrameInputHandler"
-import animate, {AnimationManager, CancelSet} from "../../../Utils/animate"
-
-import {Billboard} from "../../../Components/Interaction/Billboard/Billboard"
-import {CursorControllerProvider} from "../../../Providers/CursorControllerProvider/CursorControllerProvider"
-import {CursorHandler} from "./modules/CursorHandler"
-import {HoverBehavior} from "./modules/HoverBehavior"
-import {Interactable} from "../../../Components/Interaction/Interactable/Interactable"
-import {InteractableManipulation} from "../../../Components/Interaction/InteractableManipulation/InteractableManipulation"
-import {Interactor} from "../../../Core/Interactor/Interactor"
-import {InteractorEvent} from "../../../Core/Interactor/InteractorEvent"
-import {LabeledPinchButton} from "./modules/LabeledPinchButton"
-import NativeLogger from "../../../Utils/NativeLogger"
-import {SmoothFollow} from "./modules/SmoothFollow"
-import {SnappableBehavior} from "./modules/SnappableBehavior"
-import WorldCameraFinderProvider from "../../../Providers/CameraProvider/WorldCameraFinderProvider"
-import {lerp} from "../../../Utils/mathUtils"
-import {validate} from "../../../Utils/validate"
->>>>>>> crop
 
 const log = new NativeLogger("ContainerFrame")
 
@@ -119,11 +97,8 @@ const defaultButtonSize = 3 * buttonMagicNumber
 
 const BUTTON_CORNER_OFFSET = 1 / scaleFactor
 
-<<<<<<< HEAD
 const NEAR_FIELD_INTERACTION_ZONE_DISTANCE_CM = 30
 
-=======
->>>>>>> crop
 /**
  * This class represents a container frame that can hold and manage UI elements. It provides settings for auto show/hide, inner size, border, constant padding, and scaling. The class uses prefabs for the frame and labeled buttons, and textures for icons.
  */
@@ -207,11 +182,7 @@ export class ContainerFrame extends BaseScriptComponent {
   @ui.label("")
   @ui.group_start("Follow Behavior")
   @input
-<<<<<<< HEAD
   showFollowButton: boolean = false
-=======
-  private showFollowButton: boolean = false
->>>>>>> crop
   @input
   @label("Front Follow Behavior")
   @showIf("showFollowButton")
@@ -223,15 +194,11 @@ export class ContainerFrame extends BaseScriptComponent {
   @ui.label("")
   @ui.group_start("Close Button")
   @input
-<<<<<<< HEAD
   showCloseButton: boolean = true
   @ui.group_end
   @ui.group_start("Interaction Plane")
   @input
   private _enableInteractionPlane: boolean = false
-=======
-  private showCloseButton: boolean = true
->>>>>>> crop
   @ui.group_end
   @ui.separator
   private squeezeAmount = this.border * 0.15
@@ -416,11 +383,8 @@ export class ContainerFrame extends BaseScriptComponent {
 
   private unSubscribeList: unsubscribe[] = []
 
-<<<<<<< HEAD
   private interactionPlane: InteractionPlane
 
-=======
->>>>>>> crop
   onAwake() {
     // frame
     this.frame = this.framePrefab.instantiate(null)
@@ -482,11 +446,7 @@ export class ContainerFrame extends BaseScriptComponent {
      * indirect targeting only with one interactor
      * prevents direct manipulation controls which are undesired for frame
      */
-<<<<<<< HEAD
     this.interactable.targetingMode = TargetingMode.Indirect
-=======
-    this.interactable.targetingMode = 2
->>>>>>> crop
     this.interactable.allowMultipleInteractors = false
 
     this.manipulate = this.frame.createComponent(
@@ -614,17 +574,12 @@ export class ContainerFrame extends BaseScriptComponent {
           targetParent = isNull(targetParent) ? null : targetParent.getParent()
         }
 
-<<<<<<< HEAD
         const isNearFieldMode =
           (e.interactor.inputType & InteractorInputType.BothHands) !== 0 &&
           !(e.interactor as HandInteractor).isFarField()
 
         // hovering over interactable container content ONLY
         if (hoveringInteractable && !isNearFieldMode) {
-=======
-        // hovering over interactable container content ONLY
-        if (hoveringInteractable) {
->>>>>>> crop
           if (!this.hoveringContentInteractableLast) {
             this.hideCursorHighlight()
           }
@@ -709,7 +664,6 @@ export class ContainerFrame extends BaseScriptComponent {
           const dragPos = this.parentTransform
             .getInvertedWorldTransform()
             .multiplyPoint(event.interactor.planecastPoint)
-<<<<<<< HEAD
           const dragDelta = dragPos.sub(dragStart)
           const sizeDelta = new vec2(
             dragDelta.x * Math.sign(dragStart.x) * 2,
@@ -735,29 +689,6 @@ export class ContainerFrame extends BaseScriptComponent {
           this.interactionPlane.planeSize = this.totalInnerSize.add(
             vec2.one().uniformScale(this.border * 2),
           )
-=======
-          const dragSign = new vec3(
-            Math.sign(dragStart.x),
-            Math.sign(dragStart.y),
-            Math.sign(dragStart.z),
-          )
-          const dragDeltaTemp = dragPos.sub(dragStart).mult(dragSign)
-          const dragDelta = new vec2(dragDeltaTemp.x, dragDeltaTemp.y)
-          const dragScaleVec = dragDelta.div(
-            this.scalingSizeStart.uniformScale(0.5),
-          )
-          const dragScale = Math.max(dragScaleVec.x, dragScaleVec.y)
-          const newInnerSize = this.scalingSizeStart.uniformScale(1 + dragScale)
-
-          if (
-            newInnerSize.x > this.minimumSize.x &&
-            newInnerSize.y > this.minimumSize.y &&
-            newInnerSize.x < this.maximumSize.x &&
-            newInnerSize.y < this.maximumSize.y
-          ) {
-            this.innerSize = newInnerSize
-          }
->>>>>>> crop
         }
       }),
     )
@@ -812,7 +743,6 @@ export class ContainerFrame extends BaseScriptComponent {
     this.material.mainPass.isHovered = 0
     this.backingAlpha = this.material.mainPass.backingAlpha
 
-<<<<<<< HEAD
     this.interactionPlane = this.sceneObject.createComponent(
       InteractionPlane.getTypeName(),
     )
@@ -824,14 +754,11 @@ export class ContainerFrame extends BaseScriptComponent {
 
     this.interactionPlane.enabled = this.enableInteractionPlane
 
-=======
->>>>>>> crop
     this.createEvent("LateUpdateEvent").bind(this.lateUpdate)
 
     this.update()
   }
 
-<<<<<<< HEAD
   set enableInteractionPlane(enabled: boolean) {
     this.interactionPlane.enabled = enabled
     this._enableInteractionPlane = enabled
@@ -845,8 +772,6 @@ export class ContainerFrame extends BaseScriptComponent {
     this.material.mainPass.cutOutCenter = isEnabled ? 1 : 0
   }
 
-=======
->>>>>>> crop
   private updateCursorHighlightPosition = (e: InteractorEvent) => {
     validate(this.colliderShape)
     validate(this.colliderTransform)
@@ -1354,13 +1279,10 @@ export class ContainerFrame extends BaseScriptComponent {
   setInnerSizePreserveScale = (newSize: vec2) => {
     this.forcePreserveScale = true
     this.innerSize = newSize
-<<<<<<< HEAD
 
     this.interactionPlane.planeSize = this.totalInnerSize.add(
       vec2.one().uniformScale(this.border * 2),
     )
-=======
->>>>>>> crop
   }
 
   /**
@@ -1676,10 +1598,6 @@ export class ContainerFrame extends BaseScriptComponent {
    */
   getParentTransform = () => this.parentTransform
 
-<<<<<<< HEAD
-=======
-
->>>>>>> crop
   /**
    * tween to show visuals of frame and elements
    */
@@ -1794,10 +1712,7 @@ export class ContainerFrame extends BaseScriptComponent {
    * @param enabled set close button enabled or disabled
    */
   enableCloseButton = (enabled: boolean) => {
-<<<<<<< HEAD
     this.showCloseButton = enabled
-=======
->>>>>>> crop
     this.closeButton.object.enabled = enabled
     const scaleHandles = this.material.mainPass.scaleHandles
     scaleHandles.w = enabled && this.allowScaling ? 1 : 0
@@ -1808,10 +1723,7 @@ export class ContainerFrame extends BaseScriptComponent {
    * @param enabled set follow button enabled or disabled
    */
   enableFollowButton = (enabled: boolean) => {
-<<<<<<< HEAD
     this.showFollowButton = enabled
-=======
->>>>>>> crop
     this.followButton.object.enabled = enabled
     const scaleHandles = this.material.mainPass.scaleHandles
     scaleHandles.y = enabled && this.allowScaling ? 1 : 0

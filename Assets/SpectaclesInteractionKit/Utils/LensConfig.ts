@@ -11,13 +11,9 @@ export class LensConfig {
   readonly updateDispatcher: UpdateDispatcher
 
   public constructor() {
-<<<<<<< HEAD
     this.sceneObject = global.scene.createSceneObject(
       "LensConfig-EventDispatcher",
     )
-=======
-    this.sceneObject = global.scene.createSceneObject("LensConfig-EventDispatcher")
->>>>>>> crop
     this.script = this.sceneObject.createComponent("ScriptComponent")
 
     this.updateDispatcher = new UpdateDispatcher(this.script)

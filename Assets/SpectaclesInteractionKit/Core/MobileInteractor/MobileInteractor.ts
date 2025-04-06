@@ -32,11 +32,7 @@ export class MobileInteractor extends BaseInteractor {
   @ui.group_start("Mobile Interactor")
   @input
   @hint(
-<<<<<<< HEAD
     "Initialize Mobile Input Data Provider with Position and Rotation Filtering",
-=======
-    "Initialize Mobile Input Data Provider with Position and Rotation Filtering"
->>>>>>> crop
   )
   initializePositionAndRotationFilter: boolean = true
   @input
@@ -67,10 +63,6 @@ export class MobileInteractor extends BaseInteractor {
     this.mobileInputData.filterPositionAndRotation =
       this.initializePositionAndRotationFilter
 
-<<<<<<< HEAD
-=======
-    this.defineSceneEvents()
->>>>>>> crop
     this.defineTouchEvents()
 
     this.rayProvider = new MobileRayProvider()
@@ -86,11 +78,7 @@ export class MobileInteractor extends BaseInteractor {
         },
         spherecastRadii: this.spherecastRadii,
         spherecastDistanceThresholds: this.spherecastDistanceThresholds,
-<<<<<<< HEAD
       },
-=======
-      }
->>>>>>> crop
     )
   }
 
@@ -204,11 +192,8 @@ export class MobileInteractor extends BaseInteractor {
 
     this.updateDragType()
     this.updateDragVector()
-<<<<<<< HEAD
 
     this.processTriggerEvents()
-=======
->>>>>>> crop
   }
 
   /** @inheritdoc */
@@ -226,7 +211,6 @@ export class MobileInteractor extends BaseInteractor {
     this.indirectTargetProvider.clearCurrentInteractableHitInfo()
   }
 
-<<<<<<< HEAD
   private defineTouchEvents(): void {
     this.createEvent("TouchStartEvent").bind((...args) =>
       this.onTouchStartEvent(...args),
@@ -234,21 +218,6 @@ export class MobileInteractor extends BaseInteractor {
 
     this.createEvent("TouchMoveEvent").bind((...args) =>
       this.onTouchMoveEvent(...args),
-=======
-  private defineSceneEvents(): void {
-    this.createEvent("OnDestroyEvent").bind(() => {
-      this.release()
-    })
-  }
-
-  private defineTouchEvents(): void {
-    this.createEvent("TouchStartEvent").bind((...args) =>
-      this.onTouchStartEvent(...args)
-    )
-
-    this.createEvent("TouchMoveEvent").bind((...args) =>
-      this.onTouchMoveEvent(...args)
->>>>>>> crop
     )
 
     this.createEvent("TouchEndEvent").bind((...args) => this.onTouchEndEvent())
@@ -260,11 +229,7 @@ export class MobileInteractor extends BaseInteractor {
     if (this.currentInteractable !== null) {
       this.isManipulating =
         this.currentInteractable.sceneObject.getComponent(
-<<<<<<< HEAD
           InteractableManipulation.getTypeName(),
-=======
-          InteractableManipulation.getTypeName()
->>>>>>> crop
         ) !== null
     }
     if (!global.deviceInfoSystem.isEditor) {
@@ -333,30 +298,18 @@ export class MobileInteractor extends BaseInteractor {
     if ((this.currentTrigger & InteractorTriggerType.Select) !== 0) {
       const touchpadDragVector = this.touchpadDragProvider.getDragVector(
         this.getTouchpadDragPoint(),
-<<<<<<< HEAD
         this.currentInteractable?.enableInstantDrag ?? null,
       )
       const sixDofDragVector = this.sixDofDragProvider.getDragVector(
         this.getSixDofDragPoint(),
         this.currentInteractable?.enableInstantDrag ?? null,
-=======
-        this.currentInteractable?.enableInstantDrag ?? null
-      )
-      const sixDofDragVector = this.sixDofDragProvider.getDragVector(
-        this.getSixDofDragPoint(),
-        this.currentInteractable?.enableInstantDrag ?? null
->>>>>>> crop
       )
 
       this.currentDragVector = this.dragProvider.currentDragVector
 
       this.planecastDragProvider.getDragVector(
         this.planecastPoint,
-<<<<<<< HEAD
         this.currentInteractable?.enableInstantDrag ?? null,
-=======
-        this.currentInteractable?.enableInstantDrag ?? null
->>>>>>> crop
       )
     } else {
       this.currentDragVector = null
@@ -383,11 +336,7 @@ export class MobileInteractor extends BaseInteractor {
         // Remap the touchpad space such that the bottom-left corner is [0,0] rather than the top-left corner.
         this.touchpadCurrentPosition.x,
         1 - this.touchpadCurrentPosition.y,
-<<<<<<< HEAD
         0,
-=======
-        0
->>>>>>> crop
       ).uniformScale(this.touchpadScrollSpeed)
     }
     return null

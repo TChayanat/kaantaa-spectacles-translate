@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 import {
   FieldTargetingMode,
   HandInteractor,
 } from "../../../Core/HandInteractor/HandInteractor"
 import {InteractorTriggerType} from "../../../Core/Interactor/Interactor"
-=======
->>>>>>> crop
 import WorldCameraFinderProvider from "../../../Providers/CameraProvider/WorldCameraFinderProvider"
 import {BaseHand} from "../../../Providers/HandInputData/BaseHand"
 import {HandInputData} from "../../../Providers/HandInputData/HandInputData"
@@ -17,7 +14,6 @@ import animate, {CancelSet} from "../../../Utils/animate"
 import {LensConfig} from "../../../Utils/LensConfig"
 import {validate} from "../../../Utils/validate"
 import {GlowEffectViewModel} from "./GlowEffectViewModel"
-<<<<<<< HEAD
 import {HandVisualSelection} from "./HandVisual"
 
 const TAG = "GlowEffectView"
@@ -27,22 +23,10 @@ const PINCH_BASE_BONUS_RATIO = 0.7
 const PINCH_ANIMATION_DURATION = 0.3
 const WAIT_BETWEEN_FIELD_TRANSITIONS = 0.5
 const FIELD_TRANSITION_BRIGHTNESS_LOWERING = 0.5
-=======
-
-const TAG = "GlowEffectView"
-
-const BILLBOARD_ANIMATION_DURATION_SECS = 0.033
-
-const GLOW_QUAD_WORLD_SCALE = new vec3(0.3, 0.3, 0.3)
-const PINCH_BASE_BONUS_RATIO = 0.8
-const MAX_HAND_MESH_MATERIAL_BRIGHTNESS = 0.35
-const PINCH_ANIMATION_DURATION = 0.3
->>>>>>> crop
 
 const PINCH_STRENGTH_NEAR_PINCH_EXIT_THRESHOLD = 0.2
 const PINCH_STRENGTH_NEAR_PINCH_ENTER_THRESHOLD = 0.5
 
-<<<<<<< HEAD
 const HAND_MESH_MATERIAL_BRIGHTNESS_FARFIELD = 1.0
 const HAND_MESH_MATERIAL_BRIGHTNESS_NEARFIELD = 2.0
 const HAND_MESH_MATERIAL_BRIGHTNESS_INCREASE = 2.0
@@ -61,8 +45,6 @@ const GLOW_MATERIAL_DISTANCE_BEHIND_MIN = 0.9
 const GLOW_MATERIAL_DISTANCE_BEHIND_MAX = 1.0
 const GLOW_MATERIAL_DEFAULT_BRIGHTNESS = 0.5
 
-=======
->>>>>>> crop
 /*
  * This determines what we consider to be "palm facing the camera", so a smaller value
  * means that your palm would need to be to be looking more "directly" at the camera
@@ -76,26 +58,18 @@ export type GlowEffectViewConfig = {
   handType: HandType
   unitPlaneMesh: RenderMesh
   tipGlowMaterial: Material
-<<<<<<< HEAD
   hoverColor: vec4
   triggerColor: vec4
   behindColor: vec4
-=======
-  idleColor: vec4
-  pinchDownColor: vec4
->>>>>>> crop
   tapProximityThreshold: number
   pinchTexture: Texture
   tapTexture: Texture
   tipGlowRenderOrder: number
-<<<<<<< HEAD
   handInteractor: HandInteractor
   visualSelection: HandVisualSelection
   handOutlineMaterial: Material
   handOccluderMaterial: Material
   shouldThumbPokeGlow: boolean
-=======
->>>>>>> crop
 }
 
 /**
@@ -114,18 +88,13 @@ export class GlowEffectView {
   private tapGlowEnabled: boolean =
     this.handProvider.getDominantHand().handType === this.config.handType
   private hand: TrackedHand = this.handProvider.getHand(
-<<<<<<< HEAD
     this.config.handType as HandType,
-=======
-    this.config.handType as HandType
->>>>>>> crop
   )
   private handVisuals: HandVisuals | null = this.hand.getHandVisuals()
   private indexTipSceneObject: SceneObject | undefined =
     this.handVisuals?.indexTip
   private thumbTipSceneObject: SceneObject | undefined =
     this.handVisuals?.thumbTip
-<<<<<<< HEAD
   private hoverColor = this.config.hoverColor
   private triggerColor = this.config.triggerColor
   private behindColor = this.config.behindColor
@@ -133,12 +102,6 @@ export class GlowEffectView {
   // handToTap is the hand NOT passed to this class
   private handToTap: TrackedHand = this.handProvider.getHand(
     this.config.handType === "left" ? "right" : "left",
-=======
-
-  // handToTap is the hand NOT passed to this class
-  private handToTap: TrackedHand = this.handProvider.getHand(
-    this.config.handType === "left" ? "right" : "left"
->>>>>>> crop
   )
 
   private camera = WorldCameraFinderProvider.getInstance()
@@ -149,21 +112,13 @@ export class GlowEffectView {
    */
   private indexQuadSceneObject: SceneObject = this.setupTipQuadSceneObject(
     this.indexTipSceneObject,
-<<<<<<< HEAD
     "indexTipQuadSceneObject",
-=======
-    "indexTipQuadSceneObject"
->>>>>>> crop
   )
   private indexQuadTransform: Transform =
     this.indexQuadSceneObject.getTransform()
   private thumbQuadSceneObject: SceneObject = this.setupTipQuadSceneObject(
     this.thumbTipSceneObject,
-<<<<<<< HEAD
     "thumbTipQuadSceneObject",
-=======
-    "thumbTipQuadSceneObject"
->>>>>>> crop
   )
   private thumbQuadTransform: Transform =
     this.thumbQuadSceneObject.getTransform()
@@ -177,10 +132,7 @@ export class GlowEffectView {
   private tipGlowMaterialThumbTip: Material =
     this.thumbQuadSceneObject.getComponent("Component.RenderMeshVisual")
       .mainMaterial
-<<<<<<< HEAD
   private handInteractor: HandInteractor = this.config.handInteractor
-=======
->>>>>>> crop
 
   private indexGlowBonusCancelSet = new CancelSet()
   private indexGlowStrengthCancelSet = new CancelSet()
@@ -197,7 +149,6 @@ export class GlowEffectView {
   private isInTargetingMode = false
   private isInNearPinchMode = false
 
-<<<<<<< HEAD
   private pinchTransitionColor = vec4.one()
   private visualSelection: HandVisualSelection = this.config.visualSelection
   private handOutlineMaterial: Material = this.config.handOutlineMaterial
@@ -217,18 +168,13 @@ export class GlowEffectView {
   private lastGlowBrightness = 0
   private fieldTransitionLerp = 0
 
-=======
->>>>>>> crop
   private glowEffectViewModel: GlowEffectViewModel = new GlowEffectViewModel({
     handType: this.config.handType as HandType,
     logLevel: this.sikLogLevelProvider.logLevel,
   })
 
   // Cached value from API .enabled calls
-<<<<<<< HEAD
   // eslint-disable-next-line @typescript-eslint/no-inferrable-types
-=======
->>>>>>> crop
   private _enabled: boolean = true
 
   constructor(private config: GlowEffectViewConfig) {
@@ -236,44 +182,27 @@ export class GlowEffectView {
     this.glowEffectViewModel.animateIndexGlowBase.add(
       (animateGlowBaseUp: boolean) => {
         this.animateIndexGlowBase(animateGlowBaseUp)
-<<<<<<< HEAD
       },
-=======
-      }
->>>>>>> crop
     )
     this.glowEffectViewModel.animateIndexGlowBonus.add(
       (animateGlowBonusUp: boolean) => {
         this.animateIndexGlowBonus(animateGlowBonusUp)
-<<<<<<< HEAD
       },
-=======
-      }
->>>>>>> crop
     )
     this.glowEffectViewModel.animateThumbGlowBase.add(
       (animateGlowBaseUp: boolean) => {
         this.animateThumbGlowBase(animateGlowBaseUp)
-<<<<<<< HEAD
       },
-=======
-      }
->>>>>>> crop
     )
     this.glowEffectViewModel.animateThumbGlowBonus.add(
       (animateGlowBonusUp: boolean) => {
         this.animateThumbGlowBonus(animateGlowBonusUp)
-<<<<<<< HEAD
       },
-=======
-      }
->>>>>>> crop
     )
     this.glowEffectViewModel.tapModeChanged((tapModeEntered: boolean) => {
       validate(this.handVisuals?.handMesh)
 
       if (tapModeEntered === true) {
-<<<<<<< HEAD
         this.handVisuals.handMesh.mainPass["indexBrightness"] =
           HAND_MESH_MATERIAL_BRIGHTNESS_TRIGGERED
         this.handVisuals.handMesh.mainPass["thumbBrightness"] = 0
@@ -304,16 +233,6 @@ export class GlowEffectView {
       this.handVisuals.handMesh.mainMaterial = this.handOccluderMaterial
     }
 
-=======
-        this.handVisuals.handMesh.mainPass["handGlowTex"] =
-          this.config.tapTexture
-      } else {
-        this.handVisuals.handMesh.mainPass["handGlowTex"] =
-          this.config.pinchTexture
-      }
-    })
-
->>>>>>> crop
     // Set up initial conditions
     this.setIsInPalmUiMode(this.calculateIsInPalmUIMode())
     this.setIsInTargetingMode(this.calculateIsInTargetingMode())
@@ -323,7 +242,6 @@ export class GlowEffectView {
       .createUpdateEvent("GlowEffectViewUpdateEvent")
       .bind(() => {
         // If disabled via API, do not update the glow.
-<<<<<<< HEAD
         if (
           !this._enabled ||
           this.visualSelection === HandVisualSelection.Occluder
@@ -345,35 +263,6 @@ export class GlowEffectView {
           ),
         )
 
-=======
-        if (!this._enabled) {
-          return
-        }
-        if (this.hand.getPinchStrength() === 0) {
-          if (this.indexQuadSceneObject.enabled) {
-            this.indexQuadSceneObject.enabled = false
-            this.thumbQuadSceneObject.enabled = false
-          }
-        } else {
-          const cameraPosition = this.camera.getWorldPosition()
-          this.indexQuadTransform.setWorldRotation(
-            quat.lookAt(
-              cameraPosition.sub(this.indexQuadTransform.getWorldPosition()),
-              VEC3_UP
-            )
-          )
-          this.thumbQuadTransform.setWorldRotation(
-            quat.lookAt(
-              cameraPosition.sub(this.thumbQuadTransform.getWorldPosition()),
-              VEC3_UP
-            )
-          )
-          if (!this.indexQuadSceneObject.enabled) {
-            this.indexQuadSceneObject.enabled = true
-            this.thumbQuadSceneObject.enabled = true
-          }
-        }
->>>>>>> crop
         this.setIsInPalmUiMode(this.calculateIsInPalmUIMode())
         this.setIsInTargetingMode(this.calculateIsInTargetingMode())
         this.setIsInNearPinchMode(this.calculateIsInNearPinchMode())
@@ -382,14 +271,10 @@ export class GlowEffectView {
       .createLateUpdateEvent("GlowEffectViewLateUpdateEvent")
       .bind(() => {
         // If disabled via API, do not update the glow.
-<<<<<<< HEAD
         if (
           !this._enabled ||
           this.visualSelection === HandVisualSelection.Occluder
         ) {
-=======
-        if (!this._enabled) {
->>>>>>> crop
           return
         }
         this.updateMaterial()
@@ -406,7 +291,6 @@ export class GlowEffectView {
     this.thumbQuadSceneObject.enabled = isEnabled
   }
 
-<<<<<<< HEAD
   public setVisualSelection(visualSelection: HandVisualSelection): void {
     this.visualSelection = visualSelection
     if (this.visualSelection === HandVisualSelection.Occluder) {
@@ -426,8 +310,6 @@ export class GlowEffectView {
     }
   }
 
-=======
->>>>>>> crop
   /**
    * Clean up the SceneObject's created by PinchGlow
    */
@@ -438,11 +320,7 @@ export class GlowEffectView {
 
   private setupTipQuadSceneObject(
     parentSceneObject: SceneObject | undefined,
-<<<<<<< HEAD
     sceneObjectName: string,
-=======
-    sceneObjectName: string
->>>>>>> crop
   ): SceneObject {
     validate(parentSceneObject)
 
@@ -452,27 +330,17 @@ export class GlowEffectView {
     quadSceneObject.getTransform().setWorldScale(GLOW_QUAD_WORLD_SCALE)
 
     const quadComponent = quadSceneObject.createComponent(
-<<<<<<< HEAD
       "Component.RenderMeshVisual",
-=======
-      "Component.RenderMeshVisual"
->>>>>>> crop
     )
     quadComponent.mesh = this.config.unitPlaneMesh
     quadComponent.setRenderOrder(this.config.tipGlowRenderOrder)
 
     // Initialize the quad RenderMeshVisual with the glow material
     const tipGlowMaterial = this.config.tipGlowMaterial.clone()
-<<<<<<< HEAD
     tipGlowMaterial.mainPass.depthTest = false
     tipGlowMaterial.mainPass.depthWrite = false
     tipGlowMaterial.mainPass.glowColor = this.hoverColor
     tipGlowMaterial.mainPass.brightness = GLOW_MATERIAL_DEFAULT_BRIGHTNESS
-=======
-    tipGlowMaterial.mainPass.depthTest = true
-    tipGlowMaterial.mainPass.depthWrite = false
-    tipGlowMaterial.mainPass.tintColor = this.config.idleColor
->>>>>>> crop
 
     quadComponent.mainMaterial = tipGlowMaterial
 
@@ -481,11 +349,7 @@ export class GlowEffectView {
 
   private updateMaterial(): void {
     validate(this.handVisuals?.handMesh)
-<<<<<<< HEAD
     const pinchStrength = this.hand.getPinchStrength() ?? 0
-=======
-
->>>>>>> crop
     const scaledIndexGlowBase = this.indexGlowBase * PINCH_BASE_BONUS_RATIO
     const scaledIndexGlowBonus =
       this.indexGlowBonus * (1 - PINCH_BASE_BONUS_RATIO)
@@ -495,7 +359,6 @@ export class GlowEffectView {
     const scaledThumbGlowBonus =
       this.indexGlowBonus * (1 - PINCH_BASE_BONUS_RATIO)
     const combinedThumbGlowFactor = scaledThumbGlowBase + scaledThumbGlowBonus
-<<<<<<< HEAD
 
     switch (this.handInteractor.fieldTargetingMode) {
       case FieldTargetingMode.FarField:
@@ -762,41 +625,6 @@ export class GlowEffectView {
         break
     }
     this.lastFrameField = this.handInteractor.fieldTargetingMode
-=======
-    this.applyMaterialUpdates(combinedIndexGlowFactor, combinedThumbGlowFactor)
-    this.updateMaterialTintColor(this.indexGlowBonus, this.thumbGlowBonus)
-
-    this.handVisuals.handMesh.mainMaterial.mainPass["brightness"] =
-      combinedIndexGlowFactor * MAX_HAND_MESH_MATERIAL_BRIGHTNESS
-  }
-
-  private applyMaterialUpdates(
-    combinedIndexGlowFactor: number,
-    combinedThumbGlowFactor: number
-  ): void {
-    this.tipGlowMaterialIndexTip.mainPass["fadeLevel"] = combinedIndexGlowFactor
-    this.tipGlowMaterialThumbTip.mainPass["fadeLevel"] = combinedThumbGlowFactor
-  }
-
-  private updateMaterialTintColor(
-    indexGlowBonus: number,
-    thumbGlowBonus: number
-  ) {
-    const indexTintColor = vec4.lerp(
-      this.config.idleColor,
-      this.config.pinchDownColor,
-      indexGlowBonus
-    )
-
-    const thumbTintColor = vec4.lerp(
-      this.config.idleColor,
-      this.config.pinchDownColor,
-      thumbGlowBonus
-    )
-
-    this.tipGlowMaterialIndexTip.mainPass["tintColor"] = indexTintColor
-    this.tipGlowMaterialThumbTip.mainPass["tintColor"] = thumbTintColor
->>>>>>> crop
   }
 
   private setIsInPalmUiMode(isInPalmUIMode: boolean): void {
@@ -872,11 +700,7 @@ export class GlowEffectView {
    * Cannot use this.config.hand.isFacingCamera() as that only triggers if hand
    * is facing directly at camera, where we need more broad definition
    *
-<<<<<<< HEAD
    * @param hand - the BaseHand to check
-=======
-   * @param hand the BaseHand to check
->>>>>>> crop
    * @returns boolean
    */
   private isHandFacingCamera(hand: BaseHand): boolean {
@@ -934,11 +758,7 @@ export class GlowEffectView {
     }
 
     const distanceToPalmCenter = tappingHandIndexTipPos.distance(
-<<<<<<< HEAD
       handToTapPalmCenterPos,
-=======
-      handToTapPalmCenterPos
->>>>>>> crop
     )
 
     if (distanceToPalmCenter >= this.config.tapProximityThreshold) {

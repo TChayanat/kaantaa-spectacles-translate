@@ -27,11 +27,7 @@ export class TouchRayProvider implements RayProvider {
         const locus = this.camera.screenSpaceToWorldSpace(
           this.cursorPosition.x,
           this.cursorPosition.y,
-<<<<<<< HEAD
           0,
-=======
-          0
->>>>>>> crop
         )
         this.raycastInfo = {
           locus: locus,
@@ -39,11 +35,7 @@ export class TouchRayProvider implements RayProvider {
             .screenSpaceToWorldSpace(
               this.cursorPosition.x,
               this.cursorPosition.y,
-<<<<<<< HEAD
               maxRayDistance,
-=======
-              maxRayDistance
->>>>>>> crop
             )
             .sub(locus)
             .normalize(),

@@ -17,20 +17,12 @@ export class ToggleButton extends BaseScriptComponent {
   _offIcon: SceneObject | undefined
   @input
   @hint(
-<<<<<<< HEAD
     "The initial state of the button, set to true if toggled on upon lens launch.",
-=======
-    "The initial state of the button, set to true if toggled on upon lens launch."
->>>>>>> crop
   )
   private _isToggledOn: boolean = false
   @input
   @hint(
-<<<<<<< HEAD
     "Enable this to add functions from another script to this component's callback events",
-=======
-    "Enable this to add functions from another script to this component's callback events"
->>>>>>> crop
   )
   editEventCallbacks: boolean = false
   @ui.group_start("On State Changed Callbacks")
@@ -41,11 +33,7 @@ export class ToggleButton extends BaseScriptComponent {
   private customFunctionForOnStateChanged: ScriptComponent | undefined
   @input
   @hint(
-<<<<<<< HEAD
     "The names for the functions on the provided script, to be called on toggle state change",
-=======
-    "The names for the functions on the provided script, to be called on toggle state change"
->>>>>>> crop
   )
   @allowUndefined
   private onStateChangedFunctionNames: string[] = []
@@ -57,21 +45,13 @@ export class ToggleButton extends BaseScriptComponent {
 
   onAwake() {
     this.interactable = this.getSceneObject().getComponent(
-<<<<<<< HEAD
       Interactable.getTypeName(),
-=======
-      Interactable.getTypeName()
->>>>>>> crop
     )
 
     this.createEvent("OnStartEvent").bind(() => {
       if (!this.interactable) {
         throw new Error(
-<<<<<<< HEAD
           "Toggle Button requires an Interactable Component on the same Scene object in order to work - please ensure one is added.",
-=======
-          "Toggle Button requires an Interactable Component on the same Scene object in order to work - please ensure one is added."
->>>>>>> crop
         )
       }
       this.interactable.onTriggerEnd.add(() => {
@@ -87,13 +67,8 @@ export class ToggleButton extends BaseScriptComponent {
       this.onStateChanged.add(
         createCallback<boolean>(
           this.customFunctionForOnStateChanged,
-<<<<<<< HEAD
           this.onStateChangedFunctionNames,
         ),
-=======
-          this.onStateChangedFunctionNames
-        )
->>>>>>> crop
       )
     }
 

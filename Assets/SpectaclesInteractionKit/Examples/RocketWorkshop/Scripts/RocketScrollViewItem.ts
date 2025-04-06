@@ -28,11 +28,7 @@ export class RocketScrollViewItem extends BaseScriptComponent {
       throw new Error("RocketConfigurator is null!")
     validate(this.backingImage)
     this.interactable = this.backingImage.sceneObject.getComponent(
-<<<<<<< HEAD
       Interactable.getTypeName(),
-=======
-      Interactable.getTypeName()
->>>>>>> crop
     )
     if (isNull(this.interactable))
       throw new Error("Interactable component not found!")
@@ -48,22 +44,14 @@ export class RocketScrollViewItem extends BaseScriptComponent {
     validate(this.rocketConfigurator)
     this.rocketConfigurator.setRocketPartSection(
       this.style.text,
-<<<<<<< HEAD
       this.item.text,
-=======
-      this.item.text
->>>>>>> crop
     )
   }
 
   private registerRocketListItemBacking = (): void => {
     let backingObject: SceneObject | null = findSceneObjectByName(
       this.sceneObject,
-<<<<<<< HEAD
       "Background",
-=======
-      "Background"
->>>>>>> crop
     )
     validate(backingObject)
     this.backingImage = backingObject.getComponent("Image")
@@ -73,11 +61,7 @@ export class RocketScrollViewItem extends BaseScriptComponent {
     this.rocketConfigurator.registerRocketListItemBacking(
       this.style.text,
       this.item.text,
-<<<<<<< HEAD
       this.backingImage,
-=======
-      this.backingImage
->>>>>>> crop
     )
   }
 }

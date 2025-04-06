@@ -1,8 +1,4 @@
 export class SpringAnimate {
-<<<<<<< HEAD
-=======
-
->>>>>>> crop
   // Spring constant
   k: number
   // Damping constant
@@ -20,19 +16,11 @@ export class SpringAnimate {
   }
 
   /**
-<<<<<<< HEAD
    * Evaluates the new position of the object based on the spring dynamics.
    * @param currentValue The current position of the object.
    * @param targetValue The target position of the object.
    * @returns The updated position of the object.
    */
-=======
-  * Evaluates the new position of the object based on the spring dynamics.
-  * @param currentValue The current position of the object.
-  * @param targetValue The target position of the object.
-  * @returns The updated position of the object.
-  */
->>>>>>> crop
   public evaluate(currentValue: vec3, targetValue: vec3): vec3 {
     // Calculate the spring force for each axis
     const forceX = -this.k * (currentValue.x - targetValue.x)
@@ -51,11 +39,7 @@ export class SpringAnimate {
 
     // Update position
     const updatedValue = currentValue.add(
-<<<<<<< HEAD
       this.velocity.uniformScale(getDeltaTime()),
-=======
-      this.velocity.uniformScale(getDeltaTime())
->>>>>>> crop
     )
 
     return updatedValue

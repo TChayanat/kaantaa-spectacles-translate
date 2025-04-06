@@ -22,11 +22,7 @@ export function parseColor(str: string, alpha: number = 1.0): vec4 {
 
   if (str.length !== 6) {
     throw new Error(
-<<<<<<< HEAD
       `parseColor: can't parse string of length ${str.length} "${str}"`,
-=======
-      `parseColor: can't parse string of length ${str.length} "${str}"`
->>>>>>> crop
     )
   }
 
@@ -34,11 +30,7 @@ export function parseColor(str: string, alpha: number = 1.0): vec4 {
     parseInt(str.substr(0, 2), 16) / 255,
     parseInt(str.substr(2, 2), 16) / 255,
     parseInt(str.substr(4, 2), 16) / 255,
-<<<<<<< HEAD
     alpha,
-=======
-    alpha
->>>>>>> crop
   )
 }
 
@@ -242,11 +234,7 @@ export function getMostCommonHue(texture: Texture): number {
   const sampleCount = MOST_COMMON_HUE_SAMPLES
   const pixels = width * height
   const samples = new SeededRandomNumberGenerator(
-<<<<<<< HEAD
     pixels,
-=======
-    pixels
->>>>>>> crop
   ).getRandomNumberArrayInRangeNoDuplicates(0, pixels - 1, sampleCount)
 
   // Reuse the vector for each loop to reduce allocations

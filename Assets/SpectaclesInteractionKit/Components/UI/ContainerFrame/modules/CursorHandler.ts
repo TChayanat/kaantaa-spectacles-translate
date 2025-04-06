@@ -91,11 +91,7 @@ export class CursorHandler {
         this.frame.innerSize.y +
           this.frame.constantPadding.y +
           this.frame.border * 2,
-<<<<<<< HEAD
         1,
-=======
-        1
->>>>>>> crop
       )
       this.parentTransform.setWorldScale(tempScale)
       const tempWorld = this.parentTransform.getWorldTransform()

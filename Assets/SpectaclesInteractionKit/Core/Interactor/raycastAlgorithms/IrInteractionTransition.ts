@@ -14,11 +14,7 @@ export interface IrInteractionTransition {
   computeXRotationInDegrees(
     gazePitchInDegrees: number,
     toWorldFromSituationSpace: mat4,
-<<<<<<< HEAD
     handPoint: vec3,
-=======
-    handPoint: vec3
->>>>>>> crop
   ): number
 
   /**
@@ -32,10 +28,6 @@ export interface IrInteractionTransition {
   computeXRotationInRadians(
     gazePitchInRadians: number,
     toWorldFromSituationSpace: mat4,
-<<<<<<< HEAD
     handPoint: vec3,
-=======
-    handPoint: vec3
->>>>>>> crop
   ): number
 }

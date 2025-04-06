@@ -39,7 +39,6 @@ export default class PalmTapDetector {
 
     try {
       this.gestureModule.getPalmTapDownEvent(gestureHandType).add(() => {
-<<<<<<< HEAD
         this.log.i(
           `GestureModule PalmTapDownEvent: { hand type: ${gestureHandType === 0 ? "Left" : "Right"} }`,
         )
@@ -51,15 +50,6 @@ export default class PalmTapDetector {
         this.log.i(
           `GestureModule PalmTapUpEvent: { hand type: ${gestureHandType === 0 ? "Left" : "Right"} }`,
         )
-=======
-        this.log.v("Palm tap down event from GestureModule")
-        this.palmTapDetectorStateMachine.notifyPalmTapEvent(
-          PalmTapEventType.Down
-        )
-      })
-      this.gestureModule.getPalmTapUpEvent(gestureHandType).add(() => {
-        this.log.v("Palm tap up event from GestureModule")
->>>>>>> crop
         this.palmTapDetectorStateMachine.notifyPalmTapEvent(PalmTapEventType.Up)
       })
     } catch (error) {

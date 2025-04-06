@@ -70,19 +70,11 @@ export default class HeuristicPinchDetectionStrategy
   private update() {
     const adjustedThumbPosition = this.adjustThumbDepthToPointer(
       this.config.thumbTip.position,
-<<<<<<< HEAD
       this.config.indexTip.position,
     )
 
     const pinchDistance = adjustedThumbPosition.sub(
       this.config.indexTip.position,
-=======
-      this.config.indexTip.position
-    )
-
-    const pinchDistance = adjustedThumbPosition.sub(
-      this.config.indexTip.position
->>>>>>> crop
     ).lengthSquared
     const thresholdResult = this.pinchEnterThreshold.update(pinchDistance)
 
@@ -98,11 +90,7 @@ export default class HeuristicPinchDetectionStrategy
 
   private updatePinchProximity(): void {
     const distance = this.config.thumbTip.position.distance(
-<<<<<<< HEAD
       this.config.indexTip.position,
-=======
-      this.config.indexTip.position
->>>>>>> crop
     )
     if (distance === null || distance > MAX_PINCH_DISTANCE) {
       this.currentPinchProximity = 0
@@ -113,11 +101,7 @@ export default class HeuristicPinchDetectionStrategy
       MAX_PINCH_DISTANCE,
       MIN_PINCH_DISTANCE,
       1,
-<<<<<<< HEAD
       0,
-=======
-      0
->>>>>>> crop
     )
 
     this.currentPinchProximity = 1 - mappedDistance

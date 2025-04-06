@@ -79,11 +79,7 @@ export default class SwitchIrInteractionTransition
   computeXRotationInDegrees(
     gazePitchInDegrees: number,
     toWorldFromSituationSpace: mat4,
-<<<<<<< HEAD
     handPoint: vec3,
-=======
-    handPoint: vec3
->>>>>>> crop
   ): number {
     const transformedHandPoint = toWorldFromSituationSpace
       .inverse()
@@ -99,22 +95,14 @@ export default class SwitchIrInteractionTransition
   computeXRotationInRadians(
     gazePitchInRadians: number,
     toWorldFromSituationSpace: mat4,
-<<<<<<< HEAD
     handPoint: vec3,
-=======
-    handPoint: vec3
->>>>>>> crop
   ): number {
     return (
       MathUtils.DegToRad *
       this.computeXRotationInDegrees(
         MathUtils.RadToDeg * gazePitchInRadians,
         toWorldFromSituationSpace,
-<<<<<<< HEAD
         handPoint,
-=======
-        handPoint
->>>>>>> crop
       )
     )
   }
@@ -127,11 +115,7 @@ export default class SwitchIrInteractionTransition
    */
   private computeMultiplier(
     handPoint: vec3,
-<<<<<<< HEAD
     gazePitchInDegrees: number,
-=======
-    gazePitchInDegrees: number
->>>>>>> crop
   ): number {
     if (this.inIrMode === false) {
       this.switchTransitionStrategyInDefaultMode(handPoint, gazePitchInDegrees)
@@ -148,11 +132,7 @@ export default class SwitchIrInteractionTransition
    */
   private switchTransitionStrategyInDefaultMode(
     handPoint: vec3,
-<<<<<<< HEAD
     gazePitchInDegrees: number,
-=======
-    gazePitchInDegrees: number
->>>>>>> crop
   ): void {
     if (
       handPoint.y < -this.config.neckHandHeightDifferenceToIr &&
@@ -169,11 +149,7 @@ export default class SwitchIrInteractionTransition
       this.irModeSaturationProgress = MathUtils.clamp(
         this.irModeSaturationProgress,
         0,
-<<<<<<< HEAD
         1,
-=======
-        1
->>>>>>> crop
       )
       this.debounceProgress -= getDeltaTime() / this.debounceToIrSeconds
       this.debounceProgress = MathUtils.clamp(this.debounceProgress, 0, 1)
@@ -187,11 +163,7 @@ export default class SwitchIrInteractionTransition
    */
   private switchTransitionStrategyInIrMode(
     handPoint: vec3,
-<<<<<<< HEAD
     gazePitchInDegrees: number,
-=======
-    gazePitchInDegrees: number
->>>>>>> crop
   ): void {
     if (
       handPoint.y >= -this.config.neckHandHeightDifferenceToDefault ||
@@ -208,11 +180,7 @@ export default class SwitchIrInteractionTransition
       this.irModeSaturationProgress = MathUtils.clamp(
         this.irModeSaturationProgress,
         0,
-<<<<<<< HEAD
         1,
-=======
-        1
->>>>>>> crop
       )
       this.debounceProgress -= getDeltaTime() / this.debounceToDefaultSeconds
       this.debounceProgress = MathUtils.clamp(this.debounceProgress, 0, 1)

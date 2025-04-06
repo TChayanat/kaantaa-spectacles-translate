@@ -38,11 +38,7 @@ export default class MouseTargetProvider extends TargetProvider {
 
   constructor(
     private interactor: BaseInteractor,
-<<<<<<< HEAD
     private config: MouseTargetProviderConfig,
-=======
-    private config: MouseTargetProviderConfig
->>>>>>> crop
   ) {
     super()
     this._drawDebug = this.interactor.drawDebug
@@ -52,11 +48,7 @@ export default class MouseTargetProvider extends TargetProvider {
       this.config.spherecastDistanceThresholds.length
     ) {
       throw new Error(
-<<<<<<< HEAD
         "An Interactor's Spherecast Radii and Spherecast Distance Thresholds input arrays are not the same length!",
-=======
-        "An Interactor's Spherecast Radii and Spherecast Distance Thresholds input arrays are not the same length!"
->>>>>>> crop
       )
     }
   }
@@ -73,11 +65,7 @@ export default class MouseTargetProvider extends TargetProvider {
    */
   get endPoint(): vec3 {
     return this.startPoint.add(
-<<<<<<< HEAD
       this.direction.uniformScale(this.config.maxRayDistance),
-=======
-      this.direction.uniformScale(this.config.maxRayDistance)
->>>>>>> crop
     )
   }
 
@@ -155,11 +143,7 @@ export default class MouseTargetProvider extends TargetProvider {
         } else {
           this.updateTargetedItem(null)
         }
-<<<<<<< HEAD
       },
-=======
-      }
->>>>>>> crop
     )
   }
 
@@ -176,11 +160,7 @@ export default class MouseTargetProvider extends TargetProvider {
     const offset = this.spherecastDistanceThresholds[index]
     const castOrigin = ray.locus.add(ray.direction.uniformScale(offset))
     const castEnd = castOrigin.add(
-<<<<<<< HEAD
       ray.direction.uniformScale(this.config.maxRayDistance - offset),
-=======
-      ray.direction.uniformScale(this.config.maxRayDistance - offset)
->>>>>>> crop
     )
 
     this.probe.sphereCastAll(
@@ -195,11 +175,7 @@ export default class MouseTargetProvider extends TargetProvider {
         }
 
         this.mouseSphereCast(ray, index + 1)
-<<<<<<< HEAD
       },
-=======
-      }
->>>>>>> crop
     )
   }
 

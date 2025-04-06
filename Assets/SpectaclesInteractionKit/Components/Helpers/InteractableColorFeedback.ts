@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 import {validate} from "../../Utils/validate"
 import {Interactable} from "../Interaction/Interactable/Interactable"
-=======
-import {Interactable} from "../Interaction/Interactable/Interactable"
-import {validate} from "../../Utils/validate"
->>>>>>> crop
 
 /**
  * This class provides visual feedback by changing the color of mesh visuals based on interaction events such as hover, pinch, and disable. It allows customization of colors for different interaction states.

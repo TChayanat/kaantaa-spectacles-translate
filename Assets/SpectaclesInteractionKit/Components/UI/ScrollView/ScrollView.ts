@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import {InteractorInputType} from "../../../Core/Interactor/Interactor"
 import {DragInteractorEvent} from "../../../Core/Interactor/InteractorEvent"
 import {MobileInteractor} from "../../../Core/MobileInteractor/MobileInteractor"
@@ -7,16 +6,6 @@ import {SceneObjectBoundariesProvider} from "./boundariesProvider/SceneObjectBou
 import {VisualBoundariesProvider} from "./boundariesProvider/VisualBoundariesProvider"
 import {ScrollArea} from "./ScrollArea"
 import {ScrollProvider} from "./ScrollProvider"
-=======
-import {DragInteractorEvent} from "../../../Core/Interactor/InteractorEvent"
-import {InteractorInputType} from "../../../Core/Interactor/Interactor"
-import {MobileInteractor} from "../../../Core/MobileInteractor/MobileInteractor"
-import NativeLogger from "../../../Utils/NativeLogger"
-import {SceneObjectBoundariesProvider} from "./boundariesProvider/SceneObjectBoundariesProvider"
-import {ScrollArea} from "./ScrollArea"
-import {ScrollProvider} from "./ScrollProvider"
-import {VisualBoundariesProvider} from "./boundariesProvider/VisualBoundariesProvider"
->>>>>>> crop
 
 export const AXIS_DIRECTION = [-1, 0, 1] as const
 export type AxisDirection = (typeof AXIS_DIRECTION)[number]
@@ -246,12 +235,9 @@ export class ScrollView extends BaseScriptComponent {
   get onFocusExit() {
     return this.scrollArea.onFocusExit
   }
-<<<<<<< HEAD
   get isDragging() {
     return this.scrollArea.isDragging
   }
-=======
->>>>>>> crop
 
   get debugDrawEnabled(): boolean {
     return this._debugDrawEnabled
@@ -332,7 +318,6 @@ export class ScrollView extends BaseScriptComponent {
   }
 
   /**
-<<<<<<< HEAD
    * Resets the inertia velocity in the case that the developer wants to stop physics upon certain events.
    */
   resetInertiaVelocity(): void {
@@ -340,8 +325,6 @@ export class ScrollView extends BaseScriptComponent {
   }
 
   /**
-=======
->>>>>>> crop
    * @returns the ScrollArea's size in local units relative to the ScrollView canvas.
    */
   get scrollAreaSize(): vec2 {

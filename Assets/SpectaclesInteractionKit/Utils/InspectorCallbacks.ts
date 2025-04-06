@@ -6,11 +6,7 @@
  */
 export function createCallback<T>(
   scriptComponent: ScriptComponent,
-<<<<<<< HEAD
   functionNames: string[],
-=======
-  functionNames: string[]
->>>>>>> crop
 ): (args: T) => void {
   if (scriptComponent === undefined) {
     return () => {}
@@ -18,11 +14,7 @@ export function createCallback<T>(
   return (args) => {
     functionNames.forEach((name) => {
       if ((scriptComponent as any)[name]) {
-<<<<<<< HEAD
         ;(scriptComponent as any)[name](args)
-=======
-        (scriptComponent as any)[name](args)
->>>>>>> crop
       }
     })
   }

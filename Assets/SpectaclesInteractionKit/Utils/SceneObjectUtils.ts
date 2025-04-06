@@ -7,11 +7,7 @@
  */
 export function findSceneObjectByName(
   root: SceneObject | null,
-<<<<<<< HEAD
   name: string,
-=======
-  name: string
->>>>>>> crop
 ): SceneObject | null {
   if (root === null) {
     const rootObjectCount = global.scene.getRootObjectsCount()
@@ -19,11 +15,7 @@ export function findSceneObjectByName(
     while (current < rootObjectCount) {
       const result = findSceneObjectByName(
         global.scene.getRootObject(current),
-<<<<<<< HEAD
         name,
-=======
-        name
->>>>>>> crop
       )
       if (result) {
         return result
@@ -54,11 +46,7 @@ export function findSceneObjectByName(
  */
 export function isDescendantOf(
   sceneObject: SceneObject,
-<<<<<<< HEAD
   root: SceneObject,
-=======
-  root: SceneObject
->>>>>>> crop
 ): boolean {
   if (sceneObject === root) {
     return true

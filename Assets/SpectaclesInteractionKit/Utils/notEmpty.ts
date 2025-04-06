@@ -6,11 +6,7 @@
  * @returns - True if it is neither null not undefined.
  */
 export function notEmpty<TValue>(
-<<<<<<< HEAD
   value: TValue | null | undefined,
-=======
-  value: TValue | null | undefined
->>>>>>> crop
 ): value is TValue {
   return value !== null && value !== undefined
 }

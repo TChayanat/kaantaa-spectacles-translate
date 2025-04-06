@@ -55,12 +55,9 @@
     - '// @ui {"widget":"group_start", "label":"Close Button"}'
     - // @input bool showCloseButton = true
     - '// @ui {"widget":"group_end"}'
-<<<<<<< HEAD
     - '// @ui {"widget":"group_start", "label":"Interaction Plane"}'
     - // @input bool _enableInteractionPlane
     - '// @ui {"widget":"group_end"}'
-=======
->>>>>>> crop
     - '// @ui {"widget":"separator"}'
   SvgIcon: ""
   Description: ""
@@ -68,19 +65,12 @@
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-<<<<<<< HEAD
   ComponentUid: 7770857d-cabb-451a-82dc-80e8e17bcd3a
-=======
-  ComponentUid: 6a0a4d8f-1fdb-4390-9554-09066523bb8b
->>>>>>> crop
   ExportUid: 00000000-0000-0000-0000-000000000000
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
-<<<<<<< HEAD
     _enableInteractionPlane: false
-=======
->>>>>>> crop
     allowScaling: false
     allowTranslation: false
     autoScaleContent: false
@@ -128,10 +118,7 @@
       allowTranslation: true
       worldSnapping: false
       itemSnapping: false
-<<<<<<< HEAD
       _enableInteractionPlane: false
-=======
->>>>>>> crop
   ScriptTypes:
     -
       {}

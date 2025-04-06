@@ -136,11 +136,7 @@ export class GlowEffectViewModel {
       name: GlowEffectStates.IdleTargeting,
       onEnter: () => {
         this.log.v(
-<<<<<<< HEAD
           `${this.config.handType} Entered state: ${this.currentState}`,
-=======
-          `${this.config.handType} Entered state: ${this.currentState}`
->>>>>>> crop
         )
         this.animateIndexGlowBaseEvent.invoke(false)
         this.animateIndexGlowBonusEvent.invoke(false)
@@ -174,11 +170,7 @@ export class GlowEffectViewModel {
       name: GlowEffectStates.IdleNotTargeting,
       onEnter: () => {
         this.log.v(
-<<<<<<< HEAD
           `${this.config.handType} Entered state: ${this.currentState}`,
-=======
-          `${this.config.handType} Entered state: ${this.currentState}`
->>>>>>> crop
         )
         this.animateIndexGlowBaseEvent.invoke(false)
         this.animateIndexGlowBonusEvent.invoke(false)
@@ -193,15 +185,12 @@ export class GlowEffectViewModel {
             return signal === StateMachineSignals.EnterTargeting
           },
         },
-<<<<<<< HEAD
         {
           nextStateName: GlowEffectStates.NearPinching,
           checkOnSignal: (signal: string) => {
             return signal === StateMachineSignals.EnterNearPinch
           },
         },
-=======
->>>>>>> crop
       ],
     })
 
@@ -209,11 +198,7 @@ export class GlowEffectViewModel {
       name: GlowEffectStates.NearPinching,
       onEnter: () => {
         this.log.v(
-<<<<<<< HEAD
           `${this.config.handType} Entered state: ${this.currentState}`,
-=======
-          `${this.config.handType} Entered state: ${this.currentState}`
->>>>>>> crop
         )
         this.animateIndexGlowBaseEvent.invoke(true)
         this.animateIndexGlowBonusEvent.invoke(false)
@@ -253,11 +238,7 @@ export class GlowEffectViewModel {
       name: GlowEffectStates.Pinching,
       onEnter: () => {
         this.log.v(
-<<<<<<< HEAD
           `${this.config.handType} Entered state: ${this.currentState}`,
-=======
-          `${this.config.handType} Entered state: ${this.currentState}`
->>>>>>> crop
         )
         this.animateIndexGlowBaseEvent.invoke(true)
         this.animateIndexGlowBonusEvent.invoke(true)
@@ -285,11 +266,7 @@ export class GlowEffectViewModel {
       name: GlowEffectStates.PinchingNotTargeting,
       onEnter: () => {
         this.log.v(
-<<<<<<< HEAD
           `${this.config.handType} Entered state: ${this.currentState}`,
-=======
-          `${this.config.handType} Entered state: ${this.currentState}`
->>>>>>> crop
         )
         this.animateIndexGlowBaseEvent.invoke(true)
         this.animateIndexGlowBonusEvent.invoke(true)
@@ -317,11 +294,7 @@ export class GlowEffectViewModel {
       name: GlowEffectStates.NearTapping,
       onEnter: () => {
         this.log.v(
-<<<<<<< HEAD
           `${this.config.handType} Entered state: ${this.currentState}`,
-=======
-          `${this.config.handType} Entered state: ${this.currentState}`
->>>>>>> crop
         )
         this.tapModeChangedEvent.invoke(true)
 
@@ -354,11 +327,7 @@ export class GlowEffectViewModel {
       name: GlowEffectStates.Tapping,
       onEnter: () => {
         this.log.v(
-<<<<<<< HEAD
           `${this.config.handType} Entered state: ${this.currentState}`,
-=======
-          `${this.config.handType} Entered state: ${this.currentState}`
->>>>>>> crop
         )
         this.animateIndexGlowBaseEvent.invoke(true)
         this.animateIndexGlowBonusEvent.invoke(true)

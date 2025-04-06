@@ -1,17 +1,11 @@
-<<<<<<< HEAD
 import {InteractionPlane} from "../../Components/Interaction/InteractionPlane/InteractionPlane"
-=======
->>>>>>> crop
 import {HandInputData} from "../../Providers/HandInputData/HandInputData"
 import {HandType} from "../../Providers/HandInputData/HandType"
 import TrackedHand from "../../Providers/HandInputData/TrackedHand"
 import TargetProvider, {
   InteractableHitInfo,
 } from "../../Providers/TargetProvider/TargetProvider"
-<<<<<<< HEAD
 import Event, {PublicApi} from "../../Utils/Event"
-=======
->>>>>>> crop
 import {validate} from "../../Utils/validate"
 import BaseInteractor from "../Interactor/BaseInteractor"
 import {DirectTargetProvider} from "../Interactor/DirectTargetProvider"
@@ -35,7 +29,6 @@ export type RaycastType =
   | "AnchorHead"
   | "Proxy"
 
-<<<<<<< HEAD
 export enum FieldTargetingMode {
   FarField,
   NearField,
@@ -51,11 +44,6 @@ const NEAR_FIELD_ANGLE_THRESHOLD_RADIAN = Math.PI / 4
 // The minimum pinch strength required to trigger a pinch instead of a poke during direct targeting.
 const MINIMUM_PINCH_STRENGTH = 0.2
 
-=======
-const TAG = "HandInteractor"
-const HANDUI_INTERACTION_DISTANCE_THRESHOLD_CM = 15
-
->>>>>>> crop
 /**
  * This class handles hand interactions within the Spectacles Interaction Kit. It provides various configurations for hand types and raycast types.
  *
@@ -102,7 +90,6 @@ export class HandInteractor extends BaseInteractor {
 
   @input
   private directDragThreshold: number = 3.0
-<<<<<<< HEAD
 
   @ui.group_end
   protected handProvider: HandInputData = HandInputData.getInstance()
@@ -112,11 +99,6 @@ export class HandInteractor extends BaseInteractor {
   readonly onFieldTargetingModeChanged: PublicApi<FieldTargetingMode> =
     this.onFieldTargetingModeChangedEvent.publicApi()
 
-=======
-  @ui.group_end
-  protected handProvider: HandInputData = HandInputData.getInstance()
-
->>>>>>> crop
   private hand: TrackedHand | undefined
 
   private handRayProvider: HandRayProvider | undefined
@@ -130,12 +112,9 @@ export class HandInteractor extends BaseInteractor {
   private pokeTargetProvider: PokeTargetProvider | undefined
   private activeTargetProvider: TargetProvider | undefined
 
-<<<<<<< HEAD
   private _fieldTargetingMode: FieldTargetingMode = FieldTargetingMode.FarField
   private _currentInteractionPlane: InteractionPlane | null = null
 
-=======
->>>>>>> crop
   onAwake(): void {
     this.inputType =
       this.handType === "left"
@@ -147,10 +126,7 @@ export class HandInteractor extends BaseInteractor {
     this.handRayProvider = new HandRayProvider({
       handType: this.handType as HandType,
       raycastAlgorithm: this.raycastAlgorithm as RaycastType,
-<<<<<<< HEAD
       handInteractor: this,
-=======
->>>>>>> crop
     })
 
     this.indirectTargetProvider = new IndirectTargetProvider(
@@ -280,11 +256,8 @@ export class HandInteractor extends BaseInteractor {
     super.updateState()
     this.updateTarget()
     this.updateDragVector()
-<<<<<<< HEAD
 
     this.processTriggerEvents()
-=======
->>>>>>> crop
   }
 
   protected override clearDragProviders(): void {
@@ -319,7 +292,6 @@ export class HandInteractor extends BaseInteractor {
     }
   }
 
-<<<<<<< HEAD
   /**
    * Clears an InteractionPlane from the cache of planes if it is nearby.
    * @param plane
@@ -372,8 +344,6 @@ export class HandInteractor extends BaseInteractor {
     }
   }
 
-=======
->>>>>>> crop
   isTargeting(): boolean {
     return this.hand?.isInTargetingPose() ?? false
   }
@@ -382,13 +352,9 @@ export class HandInteractor extends BaseInteractor {
    * Returns true if the hand interactor and the hand it is associated with are both enabled.
    */
   isActive(): boolean {
-<<<<<<< HEAD
     return (
       this.enabled && (this.hand?.enabled ?? false) && !this.hand.isPhoneInHand
     )
-=======
-    return this.enabled && (this.hand?.enabled ?? false)
->>>>>>> crop
   }
 
   /**
@@ -400,7 +366,6 @@ export class HandInteractor extends BaseInteractor {
     return this.hand.enabled && this.hand.isTracked()
   }
 
-<<<<<<< HEAD
   /**
    * Returns true if the hand is targeting via far field raycasting.
    */
@@ -412,8 +377,6 @@ export class HandInteractor extends BaseInteractor {
     return this.fieldTargetingMode === FieldTargetingMode.Direct
   }
 
-=======
->>>>>>> crop
   protected clearCurrentHitInfo(): void {
     this.indirectTargetProvider?.clearCurrentInteractableHitInfo()
     this.directTargetProvider?.clearCurrentInteractableHitInfo()
@@ -438,7 +401,6 @@ export class HandInteractor extends BaseInteractor {
       return
     }
 
-<<<<<<< HEAD
     // If the user is mid-interaction, do not hijack raycast logic to avoid jerky interactions.
     if (!this.preventTargetUpdate()) {
       const fieldTargetingMode = this.updateNearestPlane()
@@ -449,8 +411,6 @@ export class HandInteractor extends BaseInteractor {
       }
     }
 
-=======
->>>>>>> crop
     this.pokeTargetProvider?.update()
 
     // Workaround to get onTriggerExit event on poke end, since poke doesn't use hover
@@ -478,7 +438,6 @@ export class HandInteractor extends BaseInteractor {
         } else if (this.directTargetProvider?.hasTarget()) {
           this.activeTargetProvider = this.directTargetProvider
           this.dragProvider = this.directDragProvider
-<<<<<<< HEAD
         } else if (this.hand.targetingData?.intendsToTarget) {
           if (
             this.currentInteractionPlane &&
@@ -507,11 +466,6 @@ export class HandInteractor extends BaseInteractor {
               ? this.directTargetProvider
               : this.pokeTargetProvider
           this.dragProvider = this.directDragProvider
-=======
-        } else {
-          this.activeTargetProvider = this.indirectTargetProvider
-          this.dragProvider = this.indirectDragProvider
->>>>>>> crop
         }
       }
     }
@@ -586,7 +540,6 @@ export class HandInteractor extends BaseInteractor {
     )
   }
 
-<<<<<<< HEAD
   // Check for cached planes (via direct collider overlap), choosing the nearest plane if multiple are available.
   private updateNearestPlane(): FieldTargetingMode {
     const interactionPlanes = this.directTargetProvider.currentInteractionPlanes
@@ -650,10 +603,6 @@ export class HandInteractor extends BaseInteractor {
   }
 
   private onDestroy() {
-=======
-  private onDestroy() {
-    this.release()
->>>>>>> crop
     this.directTargetProvider?.destroy()
     this.indirectTargetProvider?.destroy()
     this.pokeTargetProvider?.destroy()

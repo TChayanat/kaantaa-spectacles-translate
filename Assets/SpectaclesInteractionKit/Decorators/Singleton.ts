@@ -4,11 +4,7 @@
  * @param constructor
  */
 export function Singleton<T extends new (...args: any[]) => any>(
-<<<<<<< HEAD
   constructor: T,
-=======
-  constructor: T
->>>>>>> crop
 ): T {
   let _instance: InstanceType<T> | null = null
 

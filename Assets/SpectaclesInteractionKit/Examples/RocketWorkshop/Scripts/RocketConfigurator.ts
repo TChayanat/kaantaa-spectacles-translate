@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 import {validate} from "../../../Utils/validate"
 import {ExhaustControls} from "./ExhaustControls"
-=======
-import {ExhaustControls} from "./ExhaustControls"
-import {validate} from "../../../Utils/validate"
->>>>>>> crop
 
 /**
  * This class is responsible for configuring the rocket by setting up its parts and managing the exhaust controls. It initializes the rocket sections and provides methods to set rocket part sections.
@@ -29,17 +24,10 @@ export class RocketConfigurator extends BaseScriptComponent {
   private finsBackingImages: Map<string, Image> = new Map()
 
   private activeBackingTexture: Texture = requireAsset(
-<<<<<<< HEAD
     "../../../Assets/Textures/Rectangle-Active.png",
   ) as Texture
   private inactiveBackingTexture: Texture = requireAsset(
     "../../../Assets/Textures/Rectangle-Inactive.png",
-=======
-    "../../../Assets/Textures/Rectangle-Active.png"
-  ) as Texture
-  private inactiveBackingTexture: Texture = requireAsset(
-    "../../../Assets/Textures/Rectangle-Inactive.png"
->>>>>>> crop
   ) as Texture
 
   onAwake(): void {

@@ -169,11 +169,7 @@ export default abstract class RaycastBase {
     let middleFingerThumbOffset: vec3 = middleKnuckle.sub(thumbKnuckle)
     let rootMiddleFinger: vec3 = this.knuckleOneEuroFilter
       ? thumbKnuckle.add(
-<<<<<<< HEAD
           this.knuckleOneEuroFilter.filter(middleFingerThumbOffset, getTime()),
-=======
-          this.knuckleOneEuroFilter.filter(middleFingerThumbOffset, getTime())
->>>>>>> crop
         )
       : thumbKnuckle.add(middleFingerThumbOffset)
     return rootMiddleFinger
@@ -209,11 +205,7 @@ export default abstract class RaycastBase {
    */
   protected calculateInteractionLocus(
     thumbKnuckle: vec3,
-<<<<<<< HEAD
     indexKnuckle: vec3,
-=======
-    indexKnuckle: vec3
->>>>>>> crop
   ): vec3 {
     return indexKnuckle
       .uniformScale(LOCUS_INDEX_KNUCKLE_SCALE)
@@ -254,11 +246,7 @@ export default abstract class RaycastBase {
     cameraToWorld: mat4,
     avgZ: number,
     filteredAvgZ: number,
-<<<<<<< HEAD
     worldPos: vec3 | null,
-=======
-    worldPos: vec3 | null
->>>>>>> crop
   ): vec3 | null {
     if (worldPos === null) {
       return null
@@ -273,11 +261,7 @@ export default abstract class RaycastBase {
     const newCameraPos = new vec3(
       (cameraPos.x / cameraPos.z) * newZ,
       (cameraPos.y / cameraPos.z) * newZ,
-<<<<<<< HEAD
       newZ,
-=======
-      newZ
->>>>>>> crop
     )
     return cameraToWorld.multiplyPoint(newCameraPos)
   }
@@ -318,11 +302,7 @@ export default abstract class RaycastBase {
         cameraToWorld,
         handZAverage.zAverage,
         handZAverage.filteredZAverage,
-<<<<<<< HEAD
         position,
-=======
-        position
->>>>>>> crop
       )
     }
 

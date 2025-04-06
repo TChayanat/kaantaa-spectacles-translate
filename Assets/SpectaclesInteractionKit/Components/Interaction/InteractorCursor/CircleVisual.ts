@@ -16,7 +16,6 @@ export type CircleVisualConfig = {
   textures: CircleVisualTextureConfig
 }
 
-<<<<<<< HEAD
 export type CircleVisualMaterialParameters = {
   maxAlpha: number
   outlineAlpha: number
@@ -29,8 +28,6 @@ export type CircleVisualMaterialParameters = {
   multipleInteractorsActive: boolean
 }
 
-=======
->>>>>>> crop
 // To make the math of calculating angles easier to follow, the CursorMat graph uses -1 and 1 to represent the left/right hand.
 const enum CursorMaterialHandType {
   Left = -1,
@@ -64,11 +61,7 @@ export class CircleVisual {
   private visual = this.sceneObject.getComponent("Component.RenderMeshVisual")
 
   private billboardComponent = this.sceneObject.createComponent(
-<<<<<<< HEAD
     Billboard.getTypeName(),
-=======
-    Billboard.getTypeName()
->>>>>>> crop
   )
 
   constructor(private config: CircleVisualConfig) {
@@ -159,11 +152,7 @@ export class CircleVisual {
         this.visual.mainPass.outlineAlpha = MathUtils.lerp(
           initialAlpha,
           alpha,
-<<<<<<< HEAD
           t,
-=======
-          t
->>>>>>> crop
         )
       },
     })
@@ -195,11 +184,7 @@ export class CircleVisual {
         this.visual.mainPass.outlineOffset = MathUtils.lerp(
           initialOffset,
           offset,
-<<<<<<< HEAD
           t,
-=======
-          t
->>>>>>> crop
         )
       },
     })
@@ -432,7 +417,6 @@ export class CircleVisual {
   get worldScale(): vec3 {
     return this.visual.getTransform().getWorldScale()
   }
-<<<<<<< HEAD
 
   get materialParameters(): CircleVisualMaterialParameters {
     return {
@@ -447,6 +431,4 @@ export class CircleVisual {
       multipleInteractorsActive: this.visual.mainPass.multipleInteractorsActive,
     }
   }
-=======
->>>>>>> crop
 }

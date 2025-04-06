@@ -13,11 +13,7 @@ export type lineVertex = [
   number,
 
   number,
-<<<<<<< HEAD
   number,
-=======
-  number
->>>>>>> crop
 ]
 
 /**
@@ -30,11 +26,7 @@ export type lineVertex = [
 export function getMiterOffset(
   prevSegment: vec3,
   nextSegment: vec3,
-<<<<<<< HEAD
   widthOffset: number,
-=======
-  widthOffset: number
->>>>>>> crop
 ): vec3 {
   let tangent = prevSegment.add(nextSegment).normalize()
   let miter = new vec3(-tangent.y, tangent.x, 0)
@@ -68,11 +60,7 @@ export function buildSegment(
   point: vec3,
   prevSegment: vec3,
   tangent: vec3,
-<<<<<<< HEAD
   uv_v: number,
-=======
-  uv_v: number
->>>>>>> crop
 ): number[] {
   return [
     //left vertices and tangent
@@ -111,11 +99,7 @@ export function buildVertex(
   prevSegment: vec3,
   tangent: vec3,
   uv_u: number,
-<<<<<<< HEAD
   uv_v: number,
-=======
-  uv_v: number
->>>>>>> crop
 ): lineVertex {
   return [
     position.x,

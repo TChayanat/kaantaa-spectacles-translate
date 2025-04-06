@@ -30,11 +30,7 @@ export class SeededRandomNumberGenerator {
     this.seed = seed ?? 0
     if (!Number.isInteger(this.seed)) {
       throw new Error(
-<<<<<<< HEAD
         `Illegal value: Non-Integer seed passed to SeededRandomNumberGenerator: ${this.seed}`,
-=======
-        `Illegal value: Non-Integer seed passed to SeededRandomNumberGenerator: ${this.seed}`
->>>>>>> crop
       )
     }
   }
@@ -91,19 +87,11 @@ export class SeededRandomNumberGenerator {
   public getRandomNumberArrayInRangeNoDuplicates(
     rangeMin: number,
     rangeMax: number,
-<<<<<<< HEAD
     numRandomNumbers: number,
   ): number[] {
     if (rangeMin >= rangeMax) {
       throw new Error(
         `Illegal arguments, rangeMin (${rangeMin}) cannot be >= rangeMax (${rangeMax})`,
-=======
-    numRandomNumbers: number
-  ): number[] {
-    if (rangeMin >= rangeMax) {
-      throw new Error(
-        `Illegal arguments, rangeMin (${rangeMin}) cannot be >= rangeMax (${rangeMax})`
->>>>>>> crop
       )
     }
 
@@ -111,11 +99,7 @@ export class SeededRandomNumberGenerator {
       throw new Error(
         `Illegal arguments, numRandomNumbers (${numRandomNumbers}) cannot be > rangeMax - rangeMin (${
           rangeMax - rangeMin
-<<<<<<< HEAD
         })`,
-=======
-        })`
->>>>>>> crop
       )
     }
 
@@ -168,11 +152,7 @@ export class SeededRandomNumberGenerator {
       minPoint.z > maxPoint.z
     ) {
       throw new Error(
-<<<<<<< HEAD
         "Illegal arguments, each component of minPoint cannot be greater than the corresponding component of maxPoint",
-=======
-        "Illegal arguments, each component of minPoint cannot be greater than the corresponding component of maxPoint"
->>>>>>> crop
       )
     }
 
@@ -181,33 +161,21 @@ export class SeededRandomNumberGenerator {
       1,
       0,
       maxPoint.x,
-<<<<<<< HEAD
       minPoint.x,
-=======
-      minPoint.x
->>>>>>> crop
     )
     const y = MathUtils.remap(
       this.randomRange(0, 1)(),
       1,
       0,
       maxPoint.y,
-<<<<<<< HEAD
       minPoint.y,
-=======
-      minPoint.y
->>>>>>> crop
     )
     const z = MathUtils.remap(
       this.randomRange(0, 1)(),
       1,
       0,
       maxPoint.z,
-<<<<<<< HEAD
       minPoint.z,
-=======
-      minPoint.z
->>>>>>> crop
     )
 
     return new vec3(x, y, z)

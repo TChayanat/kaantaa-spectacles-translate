@@ -52,11 +52,7 @@ export default class ContinuousIrInteractionTransition
   computeXRotationInDegrees(
     gazePitchInDegrees: number,
     toWorldFromSituationSpace: mat4,
-<<<<<<< HEAD
     handPoint: vec3,
-=======
-    handPoint: vec3
->>>>>>> crop
   ): number {
     const transformedHandPoint = toWorldFromSituationSpace
       .inverse()
@@ -72,22 +68,14 @@ export default class ContinuousIrInteractionTransition
   computeXRotationInRadians(
     gazePitchInRadians: number,
     toWorldFromSituationSpace: mat4,
-<<<<<<< HEAD
     handPoint: vec3,
-=======
-    handPoint: vec3
->>>>>>> crop
   ): number {
     return (
       MathUtils.DegToRad *
       this.computeXRotationInDegrees(
         MathUtils.RadToDeg * gazePitchInRadians,
         toWorldFromSituationSpace,
-<<<<<<< HEAD
         handPoint,
-=======
-        handPoint
->>>>>>> crop
       )
     )
   }
@@ -100,27 +88,16 @@ export default class ContinuousIrInteractionTransition
    */
   private computeMultiplier(
     handPoint: vec3,
-<<<<<<< HEAD
     gazePitchInDegrees: number,
-=======
-    gazePitchInDegrees: number
->>>>>>> crop
   ): number {
     const effect = MathUtils.clamp(
       inverseLerp(
         -ContinousIrInteractionTransitionConfigDefault.minNeckHandDifference,
         -ContinousIrInteractionTransitionConfigDefault.maxNeckHandDifference,
-<<<<<<< HEAD
         handPoint.y,
       ),
       0,
       1,
-=======
-        handPoint.y
-      ),
-      0,
-      1
->>>>>>> crop
     )
 
     const counterEffect =
@@ -129,17 +106,10 @@ export default class ContinuousIrInteractionTransition
             inverseLerp(
               -ContinousIrInteractionTransitionConfigDefault.minGazePitchDegrees,
               -ContinousIrInteractionTransitionConfigDefault.maxGazePitchDegrees,
-<<<<<<< HEAD
               gazePitchInDegrees,
             ),
             0,
             1,
-=======
-              gazePitchInDegrees
-            ),
-            0,
-            1
->>>>>>> crop
           )
         : 0
     return MathUtils.clamp(effect - counterEffect, 0, 1)

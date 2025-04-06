@@ -59,11 +59,7 @@ export default class PinchDetectorStateMachine {
           checkOnSignal: (signal: string) => {
             if (signal === PinchEventType.Down) {
               this.onPinchDownEvent.invoke()
-<<<<<<< HEAD
               this.log.i("PinchEvent : Pinch Down Event")
-=======
-              this.log.v("PinchEvent : " + "Pinch Down Event")
->>>>>>> crop
               return true
             }
 
@@ -82,19 +78,11 @@ export default class PinchDetectorStateMachine {
           checkOnSignal: (signal: string) => {
             if (signal === PinchEventType.Up) {
               this.onPinchUpEvent.invoke()
-<<<<<<< HEAD
               this.log.i("PinchEvent : Pinch Up Event")
               return true
             } else if (signal === PinchEventType.Cancel) {
               this.onPinchCancelEvent.invoke()
               this.log.i("PinchEvent : Pinch Cancel Event")
-=======
-              this.log.v("PinchEvent : " + "Pinch Up Event")
-              return true
-            } else if (signal === PinchEventType.Cancel) {
-              this.onPinchCancelEvent.invoke()
-              this.log.v("PinchEvent : " + "Pinch Cancel Event")
->>>>>>> crop
               return true
             }
 

@@ -42,7 +42,6 @@ export interface BaseHand {
   readonly onPinchCancel: PublicApi<void>
 
   /**
-<<<<<<< HEAD
    * Event called when the hand is holding a phone.
    */
   readonly onPhoneInHandBegin: PublicApi<void>
@@ -53,8 +52,6 @@ export interface BaseHand {
   readonly onPhoneInHandEnd: PublicApi<void>
 
   /**
-=======
->>>>>>> crop
    * The Keypoint of the wrist joint
    */
   readonly wrist: Keypoint

@@ -27,11 +27,7 @@ export class MobileRayProvider implements RayProvider {
       }
     } else {
       this.log.d(
-<<<<<<< HEAD
         "Mobile ray provider could not get raycast info because mobile input data provider was not available.",
-=======
-        "Mobile ray provider could not get raycast info because mobile input data provider was not available."
->>>>>>> crop
       )
       this.raycastInfo = {
         direction: vec3.zero(),

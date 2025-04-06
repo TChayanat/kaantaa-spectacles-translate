@@ -1,14 +1,7 @@
-<<<<<<< HEAD
 import {SIK} from "../../SIK"
 import {validate} from "../../Utils/validate"
 import {Interactable} from "../Interaction/Interactable/Interactable"
 import {ToggleButton} from "../UI/ToggleButton/ToggleButton"
-=======
-import {Interactable} from "../Interaction/Interactable/Interactable"
-import {SIK} from "../../SIK"
-import {ToggleButton} from "../UI/ToggleButton/ToggleButton"
-import {validate} from "../../Utils/validate"
->>>>>>> crop
 
 const PINCH_BUTTON: number = 0
 const TOGGLE_BUTTON: number = 1
@@ -406,7 +399,6 @@ export class ButtonFeedback extends BaseScriptComponent {
 
   private onToggleButtonEnabled = (): void => {
     validate(this.toggleButton)
-<<<<<<< HEAD
 
     let material = this.meshIdleMaterial
 
@@ -421,17 +413,6 @@ export class ButtonFeedback extends BaseScriptComponent {
     }
 
     this.changeButtonState(material)
-=======
-    validate(this.meshToggledIdleMaterial)
-    validate(this.meshStateIdleMaterial)
-    this.changeButtonState(
-      this.toggleButton.isToggledOn
-        ? this.buttonType === TOGGLE_BUTTON
-          ? this.meshToggledIdleMaterial
-          : this.meshStateIdleMaterial
-        : this.meshIdleMaterial,
-    )
->>>>>>> crop
   }
 
   private initializeHoverState_ToggleButton = (): void => {

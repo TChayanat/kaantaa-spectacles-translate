@@ -1,8 +1,5 @@
 import Event from "../../../../Utils/Event"
-<<<<<<< HEAD
 import NativeLogger from "../../../../Utils/NativeLogger"
-=======
->>>>>>> crop
 import StateMachine from "../../../../Utils/StateMachine"
 import {InteractionConfigurationProvider} from "../../../InteractionConfigurationProvider/InteractionConfigurationProvider"
 import {PalmTapEventType} from "../PalmTapEvent"
@@ -18,12 +15,9 @@ export enum PalmTapDetectorState {
  * Tracks states and transitions of palm tapping
  */
 export default class PalmTapDetectorStateMachine {
-<<<<<<< HEAD
   // Native Logging
   private log = new NativeLogger(TAG)
 
-=======
->>>>>>> crop
   private interactionConfigurationProvider: InteractionConfigurationProvider =
     InteractionConfigurationProvider.getInstance()
 
@@ -72,17 +66,11 @@ export default class PalmTapDetectorStateMachine {
       name: PalmTapDetectorState.Tap,
       onEnter: () => {
         this.onPalmTapDownEvent.invoke()
-<<<<<<< HEAD
         this.log.i("PalmTapEvent : PalmTap Down Event")
       },
       onExit: () => {
         this.onPalmTapUpEvent.invoke()
         this.log.i("PalmTapEvent : PalmTap Up Event")
-=======
-      },
-      onExit: () => {
-        this.onPalmTapUpEvent.invoke()
->>>>>>> crop
       },
       transitions: [
         {

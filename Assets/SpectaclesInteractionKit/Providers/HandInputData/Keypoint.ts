@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 import {validate} from "../../Utils/validate"
 import WorldCameraFinderProvider from "../CameraProvider/WorldCameraFinderProvider"
-=======
-import WorldCameraFinderProvider from "../CameraProvider/WorldCameraFinderProvider"
-import {validate} from "../../Utils/validate"
->>>>>>> crop
 
 const TAG = "Keypoint"
 
