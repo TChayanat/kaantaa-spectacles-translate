@@ -7,7 +7,7 @@ export class Gemini extends BaseScriptComponent {
     private ImageQuality = CompressionQuality.HighQuality;
     private ImageEncoding = EncodingType.Jpg;
 
-    private key = "AIzaSyBefsyRIGeFYW5AfhTjjMNwR2oO54OSqO8";
+    private key = "INSERT GEMINI API KEY";
 
     onAwake() {}
 
